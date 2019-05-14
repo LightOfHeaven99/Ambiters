@@ -1,0 +1,15 @@
+.getStarted{
+    font-size: calc(20px + 2vw);
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    width: 100%;
+}
+
+.turtle{
+  padding-top: 50px;
+  text-align: center;
+}
+.turtle >img {
+  width: 150px;
+}
