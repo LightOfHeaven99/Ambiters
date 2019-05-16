@@ -1,15 +1,9 @@
-<<<<<<< HEAD
 /node_modules
 /public/hot
 /public/storage
 /storage/*.key
-/vendor
-.env
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-=======
-node_modules
->>>>>>> f5f14d07259443f03907fb59ace1968be557ff96

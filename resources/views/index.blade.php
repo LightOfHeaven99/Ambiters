@@ -22,6 +22,10 @@
 
     </head>
     <body>
+      <!-- Bootsrapa i JQuery masz już podpięte. Wystarczy tylko działać. Wszystkie pliki źródłowe są w folderze public. Jest tego więcej ale to jeśli wolałbyś działać na
+      sass a nie css. Wtedy modyfikuje sie pliki w resources. Polecam jednak bezposrednio do public. Da sie tez zrobic rozszerzenia co to naglowkow
+      zeby byly na kazdej stronie bez powtarzania kodu ale to pewnie juz ogarniasz, albo dorobimy pozniej. Poki co to tu jest cala piaskownica
+      xoxxoxoxoxo -->
       <div class ="container">
         <div class="getStarted">
           Główcześ & Fadro Inc.
