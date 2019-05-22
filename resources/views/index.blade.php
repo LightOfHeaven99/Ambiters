@@ -57,7 +57,7 @@
       xoxxoxoxoxo -->
       <div class ="container">
         <div class="getStarted">
-          Główcześ & Fadro Inc.
+          Ambiters
         </div>
         <div class="turtle">
           <img src="img/elo.png">
