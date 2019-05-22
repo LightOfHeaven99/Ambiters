@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'PagesControler@index');
+Route::get('/noElo', 'PagesControler@registerNavbar');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
