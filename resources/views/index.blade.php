@@ -23,6 +23,22 @@
         <div class="turtle">
           <img src="img/elo.png">
         </div>
+
+      </br>
+        @if(count($courses)>0)
+          @foreach ($courses->all() as $course)
+            <div class="card">
+              <div class="card-body">
+              {{ $course->title }}: {{ $course->prize }} ziko </br>
+            </div>
+            </div>
+          @endforeach
+        @endif
+        @if(count($courses)==0)
+
+            NIE MA ZADNYCH KURSÓW
+
+        @endif
       </div>
 
       <!-- Bootstrap core JavaScript -->

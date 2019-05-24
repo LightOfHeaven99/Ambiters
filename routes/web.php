@@ -12,7 +12,8 @@
 */
 
 Route::get('/', 'PagesControler@index');
-Route::get('/noElo', 'PagesControler@registerNavbar');
+Route::get('/noElo', 'PagesControler@addCourse');
+Route::post('form', 'CourseController@create')->name('form.create');
 
 Auth::routes();
 
