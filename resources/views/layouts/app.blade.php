@@ -45,9 +45,6 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/Ambiters/public/">O nas</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/Ambiters/public/">Kontakt</a>
-                  </li>
                 @guest
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Zaloguj się') }}</a>
