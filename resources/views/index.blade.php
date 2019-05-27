@@ -17,15 +17,13 @@
       @section('content')
 
       <div class ="container">
+        <div class="ambiters-picture">
+          <img src="img/ambiters.png">
+        </div>
         <div class="getStarted">
-          <p>Twoja przyszłość jest</p>
-          <p>Naszym biznesem</p>
+          <p><i>Twoja przyszłość jest</i></p>
+          <p><i>Naszym biznesem</i></p>
         </div>
-        <div class="turtle">
-          <img src="img/elo.png">
-        </div>
-
-
 
       <!-- Bootstrap core JavaScript -->
       <script src="vendor/jquery/jquery.slim.min.js"></script>

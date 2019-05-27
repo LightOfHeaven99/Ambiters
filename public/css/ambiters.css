@@ -2,15 +2,16 @@
     font-size: calc(20px + 2vw);
     text-align: center;
     padding-top: 50px;
-    font-family: Arial;
+    font-family: 'Helvetica', sans-serif;
+    color: #00136F;
     width: 100%;
 }
 
-.turtle{
+.ambiters-picture{
   padding-top: 50px;
   text-align: center;
 }
-.turtle >img {
+.ambiters-picture >img {
   width: 150px;
 }
 
