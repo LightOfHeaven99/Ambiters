@@ -18,7 +18,8 @@
 
       <div class ="container">
         <div class="getStarted">
-          Ambiters
+          <p>Twoja przyszłość jest</p>
+          <p>Naszym biznesem</p>
         </div>
         <div class="turtle">
           <img src="img/elo.png">
