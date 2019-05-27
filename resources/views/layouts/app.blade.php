@@ -28,7 +28,7 @@
 
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
-              <a class="navbar-brand" href="/Ambiters/public/">Jazda</a>
+              <a class="navbar-brand" href="/Ambiters/public/">Ambiters</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -43,18 +43,18 @@
                     <a class="nav-link" href="/Ambiters/public/">Szkolenia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/Ambiters/public/">O autorze</a>
+                    <a class="nav-link" href="/Ambiters/public/">O nas</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/Ambiters/public/">Kontakt</a>
                   </li>
                 @guest
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="nav-link" href="{{ route('login') }}">{{ __('Zaloguj się') }}</a>
                   </li>
                 @if (Route::has('register'))
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    <a class="nav-link" href="{{ route('register') }}">{{ __('Rejestracja') }}</a>
                   </li>
                 @endif
                 @else
