@@ -13,6 +13,7 @@ class CourseController extends Controller
         $course->prize=$request->input('prize');
 
         $course->save();
-        return view('admin.newCourse');
+        $courses = Course::all();
+        return view('admin.newCourse')->with('courses', $courses);
     }
 }

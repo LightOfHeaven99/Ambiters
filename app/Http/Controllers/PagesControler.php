@@ -16,6 +16,7 @@ class PagesControler extends Controller
     }
 
     public function addCourse(){
-      return view('admin.newCourse');
+      $courses = Course::all();
+      return view('admin.newCourse')->with('courses',$courses);;
     }
 }
