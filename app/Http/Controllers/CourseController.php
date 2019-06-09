@@ -14,6 +14,23 @@ class CourseController extends Controller
 
         $course->save();
         $courses = Course::all();
-        return view('admin.newCourse')->with('courses', $courses);
+        return view('admin.panel')->with('courses', $courses);
+    }
+
+
+    public function edit($id){
+        $course =Course::find($id);
+        return view('admin.edit')->with('course', $course);
+    }
+
+    public function update(Request $request){
+        $id = $request->input('id');
+        $course =Course::find($id);
+        $course->title=$request->input('title');
+        $course->prize=$request->input('prize');
+
+        $course->save();
+        $courses = Course::all();
+        return view('admin.panel')->with('courses', $courses);
     }
 }
