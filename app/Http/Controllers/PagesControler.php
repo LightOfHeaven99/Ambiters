@@ -9,6 +9,12 @@ class PagesControler extends Controller
 {
     public function index(){
         return view('index');
+
+    }
+
+    public function courses(){
+
+        return view('courses');
     }
 
     public function registerNavbar(){

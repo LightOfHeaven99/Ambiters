@@ -11,11 +11,15 @@
      @foreach($courses->all() as $course)
         <div class="card">
           <div class="card-body">
-            {{$course->title}} ---> {{$course->prize}}
+            {{$course->title}} ---> {{$course->time}} {{$course->day}}
           </div>
           <div class ="button" style="text-align:left">
             <a class="btn btn-default" href="/Ambiters/public/admin/{{$course->id}}/edit">EDIT</a>
           </div>
+          <form method="get" action="{{route('form.delete')}}">
+            <input type="hidden" name="id" value="{{$course->id}}">
+            <button type="submit">USUN</button>
+          </form>
         </div>
      @endforeach
   @endif
