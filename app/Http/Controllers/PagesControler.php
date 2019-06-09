@@ -21,7 +21,15 @@ class PagesControler extends Controller
         return view('register');
     }
 
+<<<<<<< HEAD
     public function panel(){
+=======
+    public function faq(){
+        return view('faq');
+    }
+
+    public function addCourse(){
+>>>>>>> e1fb838db16e9ee08d04638540c723ba66f870c6
       $courses = Course::all();
       return view('admin.panel')->with('courses',$courses);
     }

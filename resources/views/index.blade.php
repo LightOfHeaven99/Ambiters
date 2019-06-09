@@ -15,18 +15,24 @@
 
       @section('content')
 
-      <div class="arrival_text">
-        <span class="text1">Welcome in</span>
-        <span class="text2">Ambiters</span>
-      </div>
+      
+
+
+
 
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
 
-
-      <!-- <div class ="container">
-        <div class="ambiters-picture">
-          <img src="img/ambiters.png">
-        </div> -->
+        <!-- <section class="laptop-bg">
+        <div class="container">
+          <div class="row">
+                  <section class="laptop-bg">
+                      <div class="arrival_text">
+                        <span class="text1">Welcome in</span>
+                        <span class="text2">Ambiters</span>
+                      </div>
+                    </div>
+                  </div> -->
 
       <!-- Bootstrap core JavaScript -->
       <script src="vendor/jquery/jquery.slim.min.js"></script>
