@@ -13,6 +13,7 @@
 
 Route::get('/', 'PagesControler@index');
 Route::get('/noElo', 'PagesControler@addCourse');
+Route::get('/faq', 'PagesControler@faq');
 Route::post('form', 'CourseController@create')->name('form.create');
 
 Auth::routes();
