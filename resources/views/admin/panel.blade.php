@@ -24,6 +24,9 @@
      @endforeach
   @endif
 </div>
+<<<<<<< HEAD
 if()
+=======
+>>>>>>> e295011f011e4899c3aec71cfe44bb62cb27abab
 
 @endsection
