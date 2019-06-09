@@ -150,7 +150,7 @@
 
 .text1{
   color: white;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: 700;
   letter-spacing: 8px;
   margin-bottom: 20px;
@@ -158,8 +158,20 @@
   animation: text 3s 1;
 }
 .text2{
-  font-size: 30px;
-  color: #279DEC;
+  font-size: 70px;
+  color: #29b6f6;
+  font-weight: 700;
+  letter-spacing: 5px;
+  -webkit-animation: fadein 3s linear 1 normal forwards;
+}
+
+@-webkit-keyframes fadein{
+    from{
+       opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 @keyframes text {
