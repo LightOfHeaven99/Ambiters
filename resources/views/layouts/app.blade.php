@@ -29,11 +29,11 @@
 
     </head>
     <body>
-        <div id="app">
+        <div id="navigation-bar">
 
           <!--Navigation-->
 
-          <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#e3f2fd;">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#eeeeee;">
             <div class="container">
               <a class="navbar-brand" href="/Ambiters/public/"><img src="img/ambiters.png" height="40" width="60"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,24 +41,23 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/Ambiters/public/">Start
-                      <span class="sr-only">(current)</span>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/"><b>Start</b>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/Ambiters/public/">Szkolenia</a>
+                    <a class="nav-link" href="/Ambiters/public/"><b>Szkolenia</b></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/Ambiters/public/">O nas</a>
+                    <a class="nav-link" href="/Ambiters/public/"><b>O nas</b></a>
                   </li>
                 @guest
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Zaloguj się') }}</a>
+                    <a class="nav-link" href="{{ route('login') }}"><b>{{ __('Zaloguj się') }}</b></a>
                   </li>
                 @if (Route::has('register'))
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Rejestracja') }}</a>
+                    <a class="nav-link" href="{{ route('register') }}"><b>{{ __('Rejestracja') }}</b></a>
                   </li>
                 @endif
                 @else
@@ -80,6 +79,9 @@
                     </div>
                   </li>
               @endguest
+              <li class="nav-item">
+                <a class="nav-link" href="/Ambiters/public/"><b>Koszyk</b></a>
+              </li>
                 </ul>
               </div>
             </div>
@@ -116,15 +118,15 @@
                         <h5>Pomoc</h5>
                         <ul>
                             <li><a href="#">Kontakt</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="/faq">FAQ</a></li>
                             <li><a href="#">Forums</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-3">
                         <div class="social-networks">
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-instagram"></i></a>
                             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google"></i></a>
                         </div>
                         <button type="button" class="btn btn-default">Contact us</button>
                     </div>
