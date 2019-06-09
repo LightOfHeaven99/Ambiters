@@ -33,9 +33,9 @@
 
           <!--Navigation-->
 
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#e3f2fd;">
             <div class="container">
-              <a class="navbar-brand" href="/Ambiters/public/">Ambiters</a>
+              <a class="navbar-brand" href="/Ambiters/public/"><img src="img/ambiters.png" height="40" width="60"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>

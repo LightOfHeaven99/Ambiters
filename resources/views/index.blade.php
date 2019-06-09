@@ -11,19 +11,22 @@
       działać, więc nooooo, myślałem, że nie będziemy tak robić na początku, ale dużo jednak daje. Tak naprawdę chodzi o to,
       że teraz jak będziesz pisać kod Pablito to lecisz z samym contentem, bez tego całego head, navbar i inne takie. Wszystko podpięte.-->
 
-
       @extends('layouts.app')
 
       @section('content')
 
-      <div class ="container">
+      <div class="arrival_text">
+        <span class="text1">Welcome in</span>
+        <span class="text2">Ambiters</span>
+      </div>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+      <!-- <div class ="container">
         <div class="ambiters-picture">
           <img src="img/ambiters.png">
-        </div>
-        <div class="getStarted">
-          <p><i>Twoja przyszłość jest</i></p>
-          <p><i>Naszym biznesem</i></p>
-        </div>
+        </div> -->
 
       <!-- Bootstrap core JavaScript -->
       <script src="vendor/jquery/jquery.slim.min.js"></script>
