@@ -10,8 +10,9 @@
         <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-        <!-- Styles -->
 
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="css/ambiters.css" type="text/css">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
