@@ -38,7 +38,7 @@ class User extends Authenticatable
     ];
 
 
-    public function posts(){
+    public function registers(){
       return $this->hasMany('App\Registers');
     }
 }

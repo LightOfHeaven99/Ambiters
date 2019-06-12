@@ -87,9 +87,12 @@
             </div>
           </nav>
           <!-- Dobra elo, tu jest cały content. Navbar będzie do każdej strony taki sam. Nie będzie trzeba powielać kodu -->
-              @yield('content')
+
         </div>
-        <br><br><br><br><br><br><br><br><br><br>
+
+
+        @yield('content')
+
 
         <!-- Footer -->
         <footer id="myFooter">
@@ -118,7 +121,7 @@
                         <h5>Pomoc</h5>
                         <ul>
                             <li><a href="#">Kontakt</a></li>
-                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/Ambiters/public/faq">FAQ</a></li>
                             <li><a href="#">Forums</a></li>
                         </ul>
                     </div>

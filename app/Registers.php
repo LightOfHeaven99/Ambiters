@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
 
 class Registers extends Model
 {
@@ -11,6 +12,6 @@ class Registers extends Model
     public $timeStamps =true;
 
     public function user(){
-      retun $this-belongsTo('App\User');
+      return $this->belongsTo('App\User');
     }
 }

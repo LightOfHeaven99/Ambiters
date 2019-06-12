@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Course;
+use App\Registers;
 
 class CourseController extends Controller
 {
@@ -28,6 +29,15 @@ class CourseController extends Controller
         $course =Course::find($id);
         return view('admin.edit')->with('course', $course);
     }
+
+    public function show($id){
+        $course =Course::find($id);
+        $registers = Registers::all()->where('courseID', $id);
+        return view('admin.show', ['course'=> $course,
+                                    'registers'=> $registers
+                                  ]);
+    }
+
 
     public function update(Request $request){
         $id = $request->input('id');

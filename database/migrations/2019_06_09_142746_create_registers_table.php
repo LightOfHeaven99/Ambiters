@@ -19,7 +19,7 @@ class CreateRegistersTable extends Migration
             $table->Integer('userID');
             $table->String('course');
             $table->Integer('courseID');
-            $table->Boolean('payed');
+            $table->String('status');
 
             $table->timestamps();
         });

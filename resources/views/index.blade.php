@@ -15,15 +15,22 @@
 
       @section('content')
 
-                <section class="laptop-bg">
+                <section id="laptop">
+                  <div class="laptop-bg">
                     <div class="arrival_text">
                       <span class="text1">Welcome in</span>
                       <span class="text2">Ambiters</span>
                     </div>
-
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+                  </div>
+                </section>
+                <section id="hejo">
+                  <div class="laptop-bg">
+                    <div class="arrival_text">
+                      <span class="text1">Welcome in</span>
+                      <span class="text2">Ambiters</span>
+                    </div>
+                  </div>
+                </section>
 
       <!-- Bootstrap core JavaScript -->
       <script src="vendor/jquery/jquery.slim.min.js"></script>
