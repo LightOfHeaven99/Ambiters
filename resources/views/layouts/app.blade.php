@@ -73,6 +73,11 @@
                                  document.getElementById('logout-form').submit();">
                         {{ __('Logout') }}
                       </a>
+                      <form method="get" action="{{route('user.panel')}}">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                        <button type="submit">PANEL</button>
+                      </form>
 
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

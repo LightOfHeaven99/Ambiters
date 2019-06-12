@@ -12,10 +12,17 @@
       <h4>Punkty:   {{$course->points}}</h4></br>
       <h4>Zniżka:   {{$course->discount}}</h4></br>
 
-      <!lista ziomków co się zapisała na kurs ->
+      <!-lista ziomków co się zapisała na kurs ->
       @if(count($registers))
         @foreach($registers->all() as $register)
-          {{$register->user}} -------   {{$register->status}} --------- {{$register->timeStamps}}</br>
+          {{$register->user}} -------   {{$register->status}} --------- {{$register->timeStamps}}
+          <form method="post" action="{{route('register.accept',[$course->id])}}">
+            {{ csrf_field() }}
+            <input type="hidden" name="id" value="{{$register->id}}">
+            <input type="hidden" name="courseID" value="{{$course->id}}">
+            <button type="submit">POTWIERDZ</button>
+          </form>
+          </br>
         @endforeach
       @endif
 

@@ -22,4 +22,19 @@ class RegistersController extends Controller
         return view('index');
 
     }
+
+    public function update(Request $request){
+      $id = $request->input('id');
+      $courseID = $request->input('courseID');
+      $course = Course::find($courseID);
+      $register = Registers::find($id);
+      if($register!=null){
+        $register -> status = "opłacony";
+        $register->save();
+      }
+      $registers = Registers::all()->where('courseID', $courseID);
+      return view('admin.show', ['course'=> $course,
+                                  'registers'=> $registers
+                                ]);
+    }
 }

@@ -25,13 +25,15 @@ class CourseController extends Controller
     }
 
 
-    public function edit($id){
+    public function edit(Request $request){
+        $id = $request->input('id');
         $course =Course::find($id);
         return view('admin.edit')->with('course', $course);
     }
 
-    public function show($id){
-        $course =Course::find($id);
+    public function show(Request $request){
+        $id = $request->input('id');
+        $course = Course::find($id);
         $registers = Registers::all()->where('courseID', $id);
         return view('admin.show', ['course'=> $course,
                                     'registers'=> $registers

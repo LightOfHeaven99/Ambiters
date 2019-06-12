@@ -13,12 +13,14 @@
           <div class="card-body">
             {{$course->title}} ---> {{$course->time}} {{$course->day}}
           </div>
-          <div class ="button" style="text-align:left; ">
-            <a class="btn btn-default" href="/Ambiters/public/admin/{{$course->id}}/edit">EDIT</a>
-          </div>
-          <div class ="button" style="text-align:left;">
-            <a class="btn btn-default" href="/Ambiters/public/admin/{{$course->id}}/show">SHOW</a>
-          </div>
+          <form method="get" action="{{route('form.edit', [$course->id])}}">
+            <input type="hidden" name="id" value="{{$course->id}}">
+            <button type="submit">EDIT</button>
+          </form>
+          <form method="get" action="{{route('form.show', [$course->id])}}">
+            <input type="hidden" name="id" value="{{$course->id}}">
+            <button type="submit">SHOW</button>
+          </form>
           <form method="get" action="{{route('form.delete')}}">
             <input type="hidden" name="id" value="{{$course->id}}">
             <button type="submit">USUN</button>

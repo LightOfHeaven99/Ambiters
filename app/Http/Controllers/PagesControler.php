@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Course;
+use App\User;
 
 class PagesControler extends Controller
 {
@@ -36,4 +37,11 @@ class PagesControler extends Controller
     public function newCourse(){
       return view('admin.newCourse');
     }
+
+    public function showUser(Request $request){
+      $id = $request-> input('id');
+      $user = User::find($id);
+      return view('user.panel')->with('user', $user);
+    }
+
 }
