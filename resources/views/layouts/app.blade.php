@@ -18,10 +18,21 @@
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <!--  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 
+        <!-- Custom fonts for this template -->
+        <link rel="stylesheet" href="css/fontawesome-free/css/all.min.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
 
         <!-- JS -->
         <script src='js/jquery-3.1.1.min.js'></script>
         <script src='js/bootstrap.min.js'></script>
+        <script src='js/ambiters.js'></script>
+        <script src='js/bootstrap.bundle.min.js'></script>
+        <script src='js/jquery.easing.js'></script>
+        <script src='js/jquery.min.js'></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -29,36 +40,36 @@
 
 
     </head>
-    <body>
-        <div id="navigation-bar">
+    <body id="page-top">
 
           <!--Navigation-->
 
-          <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#eeeeee;">
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-              <a class="navbar-brand" href="/Ambiters/public/"><img src="img/ambiters.png" height="40" width="60"></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <a class="navbar-brand js-scroll-trigger" href="/Ambiters/public/"><img src="img/ambiters.png" height="40" width="60"></a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="/"><b>Start</b>
+                    <a class="nav-link js-scroll-trigger" href="#start"><b>START</b>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/Ambiters/public/"><b>Szkolenia</b></a>
+                    <a class="nav-link js-scroll-trigger" href="#ambiters"><b>AMBITERS</b></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/Ambiters/public/"><b>O nas</b></a>
+                    <a class="nav-link js-scroll-trigger" href="#szkolenia"><b>SZKOLENIA</b></a>
                   </li>
                 @guest
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}"><b>{{ __('Zaloguj się') }}</b></a>
+                    <a class="nav-link" href="{{ route('login') }}"><b>{{ __('ZALOGUJ SIĘ') }}</b></a>
                   </li>
                 @if (Route::has('register'))
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}"><b>{{ __('Rejestracja') }}</b></a>
+                    <a class="nav-link" href="{{ route('register') }}"><b>{{ __('REJESTRACJA') }}</b></a>
                   </li>
                 @endif
                 @else
@@ -86,7 +97,7 @@
                   </li>
               @endguest
               <li class="nav-item">
-                <a class="nav-link" href="/Ambiters/public/"><b>Koszyk</b></a>
+                <a class="nav-link js-scroll-trigger" href="#about"><b>O NAS</b></a>
               </li>
                 </ul>
               </div>
@@ -94,7 +105,6 @@
           </nav>
           <!-- Dobra elo, tu jest cały content. Navbar będzie do każdej strony taki sam. Nie będzie trzeba powielać kodu -->
 
-        </div>
 
 
         @yield('content')
@@ -127,7 +137,7 @@
                         <h5>Pomoc</h5>
                         <ul>
                             <li><a href="#">Kontakt</a></li>
-                            <li><a href="/Ambiters/public/faq">FAQ</a></li>
+                            <li><a href=".../public/resources/views/faq">FAQ</a></li>
                             <li><a href="#">Forums</a></li>
                         </ul>
                     </div>

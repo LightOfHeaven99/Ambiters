@@ -14,25 +14,164 @@
       @extends('layouts.app')
 
       @section('content')
+            <header class="masthead">
+                <section id="start">
+                  <div class="laptop-bg">
+                    <div class="intro-text">
+                      <div class="intro-lead-in text-uppercase">Witaj w</div>
+                      <br>
+                      <div class="intro-heading text-uppercase">Ambiters</div>
+                      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#ambiters">Pokaż więcej!</a>
+                    </div>
+                  </div>
+                </section>
+              </header>
 
-                <section id="laptop">
-                  <div class="laptop-bg">
-                    <div class="arrival_text">
-                      <span class="text1">Welcome in</span>
-                      <span class="text2">Ambiters</span>
+              <section class="page-section" id="ambiters">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">Czym jest Ambiters?</h2>
+                      <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                     </div>
                   </div>
-                </section>
-                <section id="hejo">
-                  <div class="laptop-bg">
-                    <div class="arrival_text">
-                      <span class="text1">Welcome in</span>
-                      <span class="text2">Ambiters</span>
+                  <div class="row text-center">
+                    <div class="col-md-4">
+                      <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-book fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <h4 class="service-heading">Wiedza</h4>
+                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <h4 class="service-heading">Doświadczenie</h4>
+                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-star fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <h4 class="service-heading">Rozwój</h4>
+                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                   </div>
-                </section>
+                </div>
+              </section>
+
+            <section class="bg-light page-section" id="szkolenia">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Szkolenia</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 col-sm-6 szkolenia-item">
+                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal1">
+                      <div class="szkolenia-hover">
+                        <div class="szkolenia-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="../img/portfolio/01-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="szkolenia-caption">
+                      <h4>Szkolenie #1</h4>
+                      <p class="text-muted">Matematyka</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 szkolenia-item">
+                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal2">
+                      <div class="szkolenia-hover">
+                        <div class="szkolenia-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="szkolenia-caption">
+                      <h4>Szkolenie #2</h4>
+                      <p class="text-muted">Zarządzanie</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 szkolenia-item">
+                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal3">
+                      <div class="szkolenia-hover">
+                        <div class="szkolenia-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="szkolenia-caption">
+                      <h4>Szkolenie #3</h4>
+                      <p class="text-muted">Organizacja</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 szkolenia-item">
+                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal4">
+                      <div class="szkolenia-hover">
+                        <div class="szkolenia-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="szkolenia-caption">
+                      <h4>Szkolenie #4</h4>
+                      <p class="text-muted">Fizyka</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 szkolenia-item">
+                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal5">
+                      <div class="szkolenia-hover">
+                        <div class="szkolenia-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="szkolenia-caption">
+                      <h4>Szkolenie #5</h4>
+                      <p class="text-muted">Podstawy informatyki</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 szkolenia-item">
+                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal6">
+                      <div class="szkolenia-hover">
+                        <div class="szkolenia-hover-content">
+                          <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="szkolenia-caption">
+                      <h4>Szkolenie #6</h4>
+                      <p class="text-muted">Fotografia</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+
 
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.slim.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src='js/jquery-3.1.1.min.js'></script>
+      <script src='js/bootstrap.min.js'></script>
+      <script src='js/ambiters.js'></script>
+      <script src='js/bootstrap.bundle.min.js'></script>
+      <script src='js/jquery.easing.js'></script>
+      <script src='js/jquery.min.js'></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       @endsection
