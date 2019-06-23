@@ -474,7 +474,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #myFooter {
     background-color: #000051;
     color: white;
-    padding-top: 30px;
+    padding-top: 5px;
 }
 
 #myFooter .footer-copyright {
@@ -485,12 +485,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #myFooter .row {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 #myFooter .navbar-brand {
     margin-top: 45px;
-    height: 65px;
+    height: 35px;
 }
 
 #myFooter .footer-copyright p {
@@ -509,6 +509,10 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     color: white;
     font-weight: bold;
     margin-top: 30px;
+    text-align: center;
+}
+#myFooter h5 p{
+    text-align: center;
 }
 
 #myFooter h2 a{
@@ -528,14 +532,22 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     color: white;
 }
 
+#myFooter .help {
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #f9f9f9;
+}
+
+
 #myFooter .social-networks {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 #myFooter .social-networks a {
-    font-size: 32px;
+    font-size: 52px;
     color: #f9f9f9;
     padding: 10px;
     transition: 0.2s;
@@ -567,7 +579,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    line-height: 25px;
+    line-height: 50px;
 }
 
 @media screen and (max-width: 767px) {

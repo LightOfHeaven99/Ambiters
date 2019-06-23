@@ -114,33 +114,33 @@
         <footer id="myFooter">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <h2 class="logo"><a href="#"><br> Ambiters </a></h2>
+                    <div class="col-sm">
+                      <div class="help">
+                      <h5>O nas</h5>
+                      <p><a href="#"><b>Kontakt</b></a></p>
+                      <p><a href="#"><b>FAQ</b></a></p>
+                      <p><a href="#"><b>Regulamin</b></a></p>
                     </div>
-                    <div class="col-sm-3">
-                        <h5>O Nas</h5>
-                        <ul>
-                            <li><a href="#">Trenerzy</a></li>
-                            <li><a href="#">Coś tam</a></li>
-                            <li><a href="#">Coś tam</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
+                  </div>
+                    <div class="col-sm">
+                      <div class="help">
                         <h5>Pomoc</h5>
-                        <ul>
-                            <li><a href="#">Kontakt</a></li>
-                            <li><a href=".../public/resources/views/faq">FAQ</a></li>
-                            <li><a href="#">Forums</a></li>
-                        </ul>
+                        <p>
+                          <i class="fas fa-home mr-3"></i> Wrocław, Legnicka, 82/10</p>
+                        <p>
+                          <i class="fas fa-envelope mr-3"></i> ambiters@zenbox.com</p>
+                        <p>
+                          <i class="fas fa-phone mr-3"></i> +48 234567288</p>
+                        </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm">
                         <div class="social-networks">
-                          <p>Znajdziesz nas na:</p>
+                            <h5>Znajdziesz nas na:</h5>
+                            <br>
                             <a href="#" class="twitter"><i class="fab fa-instagram"></i></a>
                             <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
                             <a href="#" class="google"><i class="fab fa-google"></i></a>
                         </div>
-                        <button type="button" class="btn btn-default">Contact us</button>
                     </div>
                 </div>
             </div>
