@@ -161,6 +161,171 @@
               </div>
           </section>
 
+          <section class="page-section" id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Nasi trenerzy</h2>
+                  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="../img/team/1.jpg" alt="">
+                    <h4>Paweł Główczewski</h4>
+                    <p class="text-muted">Trener #1</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="../img/team/2.jpg" alt="">
+                    <h4>Rafał Okrągły</h4>
+                    <p class="text-muted">Trener #2</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="../img/team/3.jpg" alt="">
+                    <h4>Michał Fadrowski</h4>
+                    <p class="text-muted">Trener #3</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="../img/team/1.jpg" alt="">
+                    <h4>Krzysztof Zaraza</h4>
+                    <p class="text-muted">Trener #4</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="../img/team/2.jpg" alt="">
+                    <h4>Krystian Karczyński</h4>
+                    <p class="text-muted">Trener #5</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="../img/team/3.jpg" alt="">
+                    <h4>Janusz Górniak</h4>
+                    <p class="text-muted">Trener #6</p>
+                    <ul class="list-inline social-buttons">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
 
       <!-- Bootstrap core JavaScript -->
