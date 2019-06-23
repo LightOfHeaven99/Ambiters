@@ -68,7 +68,7 @@
               </li>
               @guest
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#szkolenia"><b>{{ __('REJESTRACJA') }}</b></a>
+                  <a class="nav-link js-scroll-trigger" href="#register"><b>{{ __('REJESTRACJA') }}</b></a>
                 </li>
               @if (Route::has('register'))
                 <li class="nav-item">
@@ -117,15 +117,7 @@
                     <div class="col-sm-3">
                         <h2 class="logo"><a href="#"><br> Ambiters </a></h2>
                     </div>
-                    <div class="col-sm-2">
-                        <h5>Panel</h5>
-                        <ul>
-                            <li><a href="#">Start</a></li>
-                            <li><a href="#">Rejestracja</a></li>
-                            <li><a href="#">Zaloguj się</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <h5>O Nas</h5>
                         <ul>
                             <li><a href="#">Trenerzy</a></li>
@@ -133,7 +125,7 @@
                             <li><a href="#">Coś tam</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                         <h5>Pomoc</h5>
                         <ul>
                             <li><a href="#">Kontakt</a></li>
@@ -143,6 +135,7 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="social-networks">
+                          <p>Znajdziesz nas na:</p>
                             <a href="#" class="twitter"><i class="fab fa-instagram"></i></a>
                             <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
                             <a href="#" class="google"><i class="fab fa-google"></i></a>
@@ -153,6 +146,7 @@
             </div>
             <div class="footer-copyright">
                 <p><b>Ambiters © All rights reserved.</b></p>
+                <p><font size="1"><b>Michał Fadrowski & Paweł Główczewski</b></font></p>
             </div>
         </footer>
 	<!-- ./Footer -->

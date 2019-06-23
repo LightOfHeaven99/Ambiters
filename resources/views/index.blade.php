@@ -159,16 +159,6 @@
                   </div>
                 </div>
               </div>
-
-
-              <!-- tu masz przycisk do logowania. Można wklieć gdzie chcesz i przerabiać. Jak nie zalogowany to masz zarejestruj, a jak
-              zaloowany to wypisuje Ci jestes juz zalogowany-->
-
-              @guest
-                <a class="nav-link js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('REJESTRACJA') }}</b></a>
-              @else
-                Jestes juz zalogowany
-              @endguest
           </section>
 
           <section class="page-section" id="about">
@@ -333,6 +323,25 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="bg-light page-section" id="register">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+            @guest
+              <p class="register-text text-uppercase">Dołącz do Ambiters już teraz!</p>
+              <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('ZAREJESTRUJ SIĘ!') }}</b></a>
+            @else
+              Jestes juz zalogowany
+            @endguest
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="page-section">
+
       </section>
 
 
