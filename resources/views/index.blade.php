@@ -159,6 +159,16 @@
                   </div>
                 </div>
               </div>
+
+
+              <!-- tu masz przycisk do logowania. Można wklieć gdzie chcesz i przerabiać. Jak nie zalogowany to masz zarejestruj, a jak
+              zaloowany to wypisuje Ci jestes juz zalogowany-->
+
+              @guest
+                <a class="nav-link js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('REJESTRACJA') }}</b></a>
+              @else
+                Jestes juz zalogowany
+              @endguest
           </section>
 
           <section class="page-section" id="about">
