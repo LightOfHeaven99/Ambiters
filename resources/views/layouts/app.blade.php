@@ -143,9 +143,9 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="social-networks">
-                            <a href="#" class="twitter"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google"></i></a>
+                            <a href="#" class="twitter"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="google"><i class="fab fa-google"></i></a>
                         </div>
                         <button type="button" class="btn btn-default">Contact us</button>
                     </div>
