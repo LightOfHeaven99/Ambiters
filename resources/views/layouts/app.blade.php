@@ -118,7 +118,7 @@
                       <div class="help">
                       <h5>O nas</h5>
                       <p><a href="#"><b>Kontakt</b></a></p>
-                      <p><a href="#"><b>FAQ</b></a></p>
+                      <p><a href="../public/resources/views/faq"><b>FAQ</b></a></p>
                       <p><a href="#"><b>Regulamin</b></a></p>
                     </div>
                   </div>
