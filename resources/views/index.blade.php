@@ -172,7 +172,7 @@
               <div class="row">
                 <div class="col-sm-4">
                   <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../img/team/pablo.jpg" alt="">
+                    <img class="mx-auto rounded-circle" src="img/team/pablo.jpg" alt="">
                     <h4>Paweł Główczewski</h4>
                     <p class="text-muted">Trener #1</p>
                     <ul class="list-inline social-buttons">
@@ -196,7 +196,7 @@
                 </div>
                 <div class="col-sm-4">
                   <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../img/team/rafal.jpg" alt="">
+                    <img class="mx-auto rounded-circle" src="img/team/rafal.jpg" alt="">
                     <h4>Rafał Okrągły</h4>
                     <p class="text-muted">Trener #2</p>
                     <ul class="list-inline social-buttons">
@@ -220,7 +220,7 @@
                 </div>
                 <div class="col-sm-4">
                   <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../img/team/michal.jpg" alt="">
+                    <img class="mx-auto rounded-circle" src="img/team/michal.jpg" alt="">
                     <h4>Michał Fadrowski</h4>
                     <p class="text-muted">Trener #3</p>
                     <ul class="list-inline social-buttons">
