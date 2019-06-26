@@ -519,8 +519,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background-color: #085E9F;
 }
 
-#register
-
 .ambiters-picture{
   padding-top: 50px;
   text-align: center;
@@ -528,6 +526,23 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .ambiters-picture >img {
   width: 150px;
 }
+
+
+/* KOSZYK */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* KONIEC KOSZYKA */
 
 /* Footer */
 #myFooter {
