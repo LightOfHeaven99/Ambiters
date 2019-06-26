@@ -20,6 +20,7 @@
             {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$register->id}}">
             <input type="hidden" name="courseID" value="{{$course->id}}">
+            <input type="hidden" name="price" value="{{$course->price}}">
             <button type="submit">POTWIERDZ</button>
           </form>
           </br>

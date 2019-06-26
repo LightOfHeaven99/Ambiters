@@ -35,6 +35,9 @@ Route::get('/deleted', 'UserController@delete')->name('user.delete');
 Route::post('create', 'RegistersController@create')->name('register.create');
 Route::post('/admin/{id}/show',  'RegistersController@update')->name('register.accept');
 
+//koszyk
+Route::get('/cart', 'PagesControler@showCart');
+
 
 Auth::routes();
 
