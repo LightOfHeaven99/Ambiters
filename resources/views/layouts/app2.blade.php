@@ -91,7 +91,7 @@
                 </li>
             @endguest
                   <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href=""><b>KOSZYK</b>
+                    <a class="nav-link js-scroll-trigger" href="/cart"><b>KOSZYK</b>
                     </a>
                   </li>
                 </ul>
