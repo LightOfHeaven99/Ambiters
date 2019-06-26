@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 
 @section('content')
   <section class="faq-section">
@@ -86,5 +86,6 @@
     </div>
   </div>
 </div>
+<br><br><br><br>
 
 @endsection

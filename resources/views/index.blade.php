@@ -158,8 +158,10 @@
                     </div>
                   </div>
                 </div>
+                <br>
                 <div class="button-center">
                   <h2>Chcesz zobaczyć więcej?</h2>
+                  <br>
                   <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#ambiters">Kup szkolenie</a>
                 </div>
               </div>
