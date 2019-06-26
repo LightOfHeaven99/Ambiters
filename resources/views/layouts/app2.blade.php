@@ -44,9 +44,9 @@
 
           <!--Navigation-->
 
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav2">
             <div class="container">
-              <a class="navbar-brand js-scroll-trigger" href="/Ambiters/public/"><img src="img/ambiters.png" height="40" width="60"></a>
+              <a class="navbar-brand" href="/Ambiters/public/"><img src="img/ambiters.png" height="40" width="60"></a>
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -54,18 +54,9 @@
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#start"><b>START</b>
+                    <a class="nav-link js-scroll-trigger" href="/"><b>START</b>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#ambiters"><b>AMBITERS</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#szkolenia"><b>SZKOLENIA</b></a>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about"><b>O NAS</b></a>
-              </li>
               @guest
                 <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#register"><b>{{ __('REJESTRACJA') }}</b></a>
