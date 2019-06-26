@@ -15,6 +15,7 @@ class RegistersController extends Controller
         $register->userID= $request->input('UserID');
         $register->course= $request->input('CourseName');
         $register->courseID= $request->input('CourseID');
+        $register->price= $request->input('price');
         $register->status="przyjeto";
         $register->save();
         $courses = Course::all();
