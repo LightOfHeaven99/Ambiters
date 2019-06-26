@@ -40,6 +40,10 @@ class PagesControler extends Controller
       return view('admin.newCourse');
     }
 
+    public function contact(){
+      return view('contact');
+    }
+
     public function showUser(Request $request){
       $id = $request-> input('id');
       $user = User::find($id);

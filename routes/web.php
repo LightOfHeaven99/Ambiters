@@ -14,6 +14,7 @@
 
 Route::get('/', 'PagesControler@index');
 Route::get('/admin', 'PagesControler@panel');
+Route::get('/contact', 'PagesControler@contact');
 Route::get('/admin/newCourse', 'PagesControler@newCourse');
 Route::get('/admin/{id}/edit', 'CourseController@edit');
 Route::get('/admin/{id}/show', 'CourseController@show')->name('form.show');
