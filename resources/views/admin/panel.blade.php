@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 @section('content')
 <div class="container">
 </br></br></br></br></br></br>
-<a href="/Ambiters/public/admin/newCourse">
+<a href="/admin/newCourse">
   <div class="btn">
     DODAJ KURS
   </div>

@@ -121,7 +121,7 @@
                     <div class="col-sm">
                       <div class="help">
                       <h5>O nas</h5>
-                      <p><a href="#"><b>Kontakt</b></a></p>
+                      <p><a href="/contact"><b>Kontakt</b></a></p>
                       <p><a href="/faq"><b>FAQ</b></a></p>
                       <p><a href="#"><b>Regulamin</b></a></p>
                     </div>

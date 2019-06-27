@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 @section('content')
 </br></br></br></br></br></br></br>
 <form method="post" action="{{route('form.update')}}">
