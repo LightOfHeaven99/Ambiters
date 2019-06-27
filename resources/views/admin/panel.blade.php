@@ -2,7 +2,11 @@
 @section('content')
 <div class="container">
 </br></br></br></br></br></br>
+<<<<<<< HEAD
 <a href="admin.newCourse">
+=======
+<a href="/admin/newCourse">
+>>>>>>> 12ee08612dff47e4eea1d93cbf26116f4e456660
   <div class="btn">
     DODAJ KURS
   </div>
