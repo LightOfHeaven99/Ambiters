@@ -1,7 +1,7 @@
   @extends('layouts.app2')
 @section('content')
 </br></br></br></br></br></br>
-  <form method="post" action="{{ route('form.create') }}">
+  <form method="post" action="{{ route('form.create') }}" enctype="multipart/form-data">
     {{ csrf_field() }}
     <label for="Tytuł">Nazwa kursu</label>
     <input type="text" name="title"></br>
@@ -17,6 +17,7 @@
     <input type="text" name="price"></br>
     <label for="points">Punkty</label>
     <input type="text" name="points"></br>
+    <input type="file" name="image" ></br>
     <button type="submit">Utwórz </button>
   </form>
 

@@ -19,6 +19,11 @@ class CourseController extends Controller
         $course->points=$request->input('points');
         $course->discount=0;
 
+        $image = $request->file('image');
+        $imageName = $request->input('title') . '.' . $image->getClientOriginalExtension();
+        $destinationPath = public_path('/img/courses');
+        $image->move($destinationPath, $imageName);
+
         $course->save();
         $courses = Course::all();
         return view('admin.panel')->with('courses', $courses);
