@@ -16,8 +16,8 @@ Route::get('/', 'PagesControler@index');
 Route::get('/admin', 'PagesControler@panel');
 Route::get('/contact', 'PagesControler@contact');
 Route::get('admin.newCourse', 'PagesControler@newCourse');
-Route::get('/admin/{id}/edit', 'CourseController@edit');
-Route::get('/admin/{id}/show', 'CourseController@show')->name('form.show');
+Route::post('admin.{id}.edit', 'CourseController@edit')->name('form.edit');
+Route::post('admin.{id}.show', 'CourseController@show')->name('form.show');
 Route::get('/courses', 'PagesControler@courses');
 Route::get('/faq', 'PagesControler@faq');
 Route::get('/noElo', 'PagesControler@addCourse');
@@ -27,7 +27,6 @@ Route::get('panel', 'PagesControler@showUser')->name('user.panel');
 Route::post('form', 'CourseController@create')->name('form.create');
 Route::post('update', 'CourseController@update')->name('form.update');
 Route::get('/admin/delete', 'CourseController@delete')->name('form.delete');
-Route::get('/admin/{id}/update', 'RegistersController@Update')->name('form.edit');
 
 //Działania na
 Route::get('/deleted', 'UserController@delete')->name('user.delete');

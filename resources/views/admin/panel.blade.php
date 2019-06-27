@@ -2,11 +2,7 @@
 @section('content')
 <div class="container">
 </br></br></br></br></br></br>
-<<<<<<< HEAD
 <a href="admin.newCourse">
-=======
-<a href="/admin/newCourse">
->>>>>>> 12ee08612dff47e4eea1d93cbf26116f4e456660
   <div class="btn">
     DODAJ KURS
   </div>
@@ -17,11 +13,13 @@
           <div class="card-body">
             {{$course->title}} ---> {{$course->time}} {{$course->day}}
           </div>
-          <form method="get" action="{{route('form.edit', [$course->id])}}">
+          <form method="post" action="{{route('form.edit', [$course->id])}}">
+            {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$course->id}}">
             <button type="submit">EDIT</button>
           </form>
-          <form method="get" action="{{route('form.show', [$course->id])}}">
+          <form method="post" action="{{route('form.show', [$course->id])}}">
+            {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$course->id}}">
             <button type="submit">SHOW</button>
           </form>

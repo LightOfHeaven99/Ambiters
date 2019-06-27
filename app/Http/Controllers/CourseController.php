@@ -65,6 +65,6 @@ class CourseController extends Controller
         $course ->delete();
       }
       $courses =Course::all();
-      return view('index')->with('courses', $courses);
+      return view('admin.panel')->with('courses', $courses);
     }
 }
