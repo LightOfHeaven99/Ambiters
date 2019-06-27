@@ -898,3 +898,11 @@ opacity: 0.75;
     margin-top: 10px;
   }
 }
+
+/* ADMIN PANEL */
+.admin-btn {
+  text-align: center;
+}
+.admin-options {
+padding-bottom: -40px;
+}

@@ -3,28 +3,53 @@
 <div class="container">
 </br></br></br></br></br></br>
 <a href="/admin/newCourse">
-  <div class="btn">
-    DODAJ KURS
+  <div class="admin-btn">
+    <div class="btn btn-primary btn-xl">
+      DODAJ KURS
+    </div>
   </div>
 </a>
+<br>
   @if(count($courses)>0)
      @foreach($courses->all() as $course)
         <div class="card">
           <div class="card-body">
-            {{$course->title}} ---> {{$course->time}} {{$course->day}}
+            <div class="row">
+              <div class="col-sm text-center">
+              <b>Nazwa szkolenia:</b> {{$course->title}}<br>
+            </div>
+            <div class="col-sm text-center">
+            <b>Data:</b> {{$course->time}} {{$course->day}} <!-- Tutaj data szkolenia -->
           </div>
+          <div class="col-sm text-center">
+          <b>Ilość zapisanych osób:</b> {{$course->time}} {{$course->day}} <!-- Tutaj ilość zapisanych ludzi na szkolenie -->
+         </div>
+        </div>
+      </div>
+              <div class="admin-options">
+          <div class="row">
+            <div class="col-sm text-center">
           <form method="get" action="{{route('form.edit', [$course->id])}}">
             <input type="hidden" name="id" value="{{$course->id}}">
-            <button type="submit">EDIT</button>
+            <button class="btn btn-primary" type="submit">EDYTUJ</button>
           </form>
+        </div>
+        <div class="col-sm text-center">
           <form method="get" action="{{route('form.show', [$course->id])}}">
             <input type="hidden" name="id" value="{{$course->id}}">
-            <button type="submit">SHOW</button>
+            <button class="btn btn-primary" type="submit">PODGLĄD</button>
           </form>
+        </div>
+        <div class="col-sm text-center">
           <form method="get" action="{{route('form.delete')}}">
             <input type="hidden" name="id" value="{{$course->id}}">
-            <button type="submit">USUN</button>
+            <button class="btn btn-primary" type="submit">USUŃ</button>
           </form>
+          <br>
+          </div>
+        </div>
+      </div>
+
 
 
           <!- tu jest zapis. Trzeba będzie przekopiować i wklejć w miejsce gdzie ma być ->
@@ -46,5 +71,6 @@
      @endforeach
   @endif
 </div>
+<br>
 
 @endsection
