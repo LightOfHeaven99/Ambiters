@@ -16,6 +16,8 @@
     <label for="price">Cena</label>
     <input type="text" name="price"></br>
     <label for="points">Punkty</label>
+    <input type="text" name="slots"></br>
+    <label for="slots">Ilość miejsc</label>
     <input type="text" name="points"></br>
     <input type="file" name="image" ></br>
     <button type="submit">Utwórz </button>

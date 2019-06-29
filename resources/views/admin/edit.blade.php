@@ -18,6 +18,8 @@
   <input type="text" name="price" value="{{$course->price}}"></br>
   <label for="points">Punkty</label>
   <input type="text" name="points" value="{{$course->points}}"></br>
+  <label for="points">Miejsca</label>
+  <input type="text" name="slots" value="{{$course->slots}}"></br>
   <label for="discount">Zniżka</label>
   <input type="text" name="discount" value="{{$course->discount}}"></br>
   <button type="submit">Zaktualizuj </button>

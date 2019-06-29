@@ -22,7 +22,7 @@
             <b>Data:</b> {{$course->time}} {{$course->day}} <!-- Tutaj data szkolenia -->
           </div>
           <div class="col-sm text-center">
-          <b>Ilość zapisanych osób:</b> {{$course->time}} {{$course->day}} <!-- Tutaj ilość zapisanych ludzi na szkolenie -->
+          <b>ilosc zapisanych osob:</b> {{$course->registered}}/{{$course->slots}} <!-- Tutaj ilość zapisanych ludzi na szkolenie -->
          </div>
         </div>
       </div>
@@ -53,20 +53,6 @@
       </div>
 
 
-
-          <!- tu jest zapis. Trzeba będzie przekopiować i wklejć w miejsce gdzie ma być ->
-
-          @guest
-          @else
-          <form method="post" action="{{route('register.create')}}">
-            {{ csrf_field() }}
-            <input type="hidden" name="UserID" value="{{Auth::user()->id}}">
-            <input type="hidden" name="UserName" value="{{Auth::user()->name}}">
-            <input type="hidden" name="CourseID" value="{{$course->id}}">
-            <input type="hidden" name="CourseName" value="{{$course->title}}">
-            <button type="submit">Zapisz się</button>
-          </form>
-          @endguest
 
 
         </div>

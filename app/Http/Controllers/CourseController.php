@@ -17,10 +17,13 @@ class CourseController extends Controller
         $course->time=$request->input('time');
         $course->price=$request->input('price');
         $course->points=$request->input('points');
+        $course->slots=$request->input('slots');
+        $course->registered =0;
         $course->discount=0;
 
         $image = $request->file('image');
         $imageName = $request->input('title') . '.' . $image->getClientOriginalExtension();
+        $course->img=$imageName;
         $destinationPath = public_path('/img/courses');
         $image->move($destinationPath, $imageName);
 
@@ -57,6 +60,7 @@ class CourseController extends Controller
         $course->price=$request->input('price');
         $course->points=$request->input('points');
         $course->discount=$request->input('discount');
+        $course->slots=$request->input('slots');
 
         $course->save();
         $courses = Course::all();

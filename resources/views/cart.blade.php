@@ -8,6 +8,9 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 <div class="container">
+	<div class="hidden">
+		{{$total =0}}
+	</div>
 	<table id="cart" class="table table-hover table-condensed">
     				<thead>
 						<tr>
@@ -18,32 +21,44 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td data-th="Product">
-								<div class="row">
-									<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Szkolenie 1</h4>
-										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
-									</div>
-								</div>
-							</td>
-							<td data-th="Price">199,99 zł</td>
-							<td data-th="Subtotal" class="text-center">-19,99 zł</td>
-							<td class="actions" data-th="">
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
-							</td>
-						</tr>
+						@if(count($registers))
+							@foreach($registers->all() as $register)
+							<div class="hidden">
+								{{$data =10}}
+								{{$course = App\Course::find($register->courseID)}}
+								{{$total = $total + $register->price}}
+							</div>
+								<tr>
+									<td data-th="Product">
+										<div class="row">
+											<div class="col-sm-2 hidden-xs"><img src="img/courses/{{$course->img}}" alt="..." class="img-responsive"/></div>
+											<div class="col-sm-10">
+												<h4 class="nomargin">{{$register->course}}</h4>
+												<p>{{$course->description}}</p>
+											</div>
+										</div>
+									</td>
+									<td data-th="Price">{{$register->price}} zł</td>
+									<td data-th="Subtotal" class="text-center">-Tu zniżki brak (jest od całości liczona)</td>
+									<td class="actions" data-th="">
+										<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+									</td>
+								</tr>
+							@endforeach
+						@else
+							PUSTO TU TROCHĘ
+						@endif
+
 					</tbody>
 					<tfoot>
 						<tr class="visible-xs">
-							<td class="text-center"><strong>Total 199,99 zł</strong></td>
+							<td class="text-center"><strong>Total {{$total}} zł</strong></td>
 						</tr>
 						<tr>
 							<!-- <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Kontynuuj Zakupy</a></td> -->
 							<td colspan="2" class="hidden-xs"></td>
               <td colspan="1" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong>Łącznie 199,99 zł</strong></td>
+							<td class="hidden-xs text-center"><strong>Łącznie {{$total}} zł</strong></td>
 							<td><a href="#" class="btn btn-success btn-block">Zapłać <i class="fa fa-angle-right"></i></a></td>
 						</tr>
 					</tfoot>

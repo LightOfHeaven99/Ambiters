@@ -4,6 +4,7 @@
   <div class ="contianer">
       <h2>{{$course->title}}</h2></br>
       <h4>ID:   {{$course->id}}</h4></br>
+      <h4>Zapisanych osób:   {{$course->registered}}/{{$course->slots}}</h4></br>
       <h4>Opis:   {{$course->description}}</h4></br>
       <h4>Miejsce:   {{$course->place}}</h4></br>
       <h4>Dzień:   {{$course->day}}</h4></br>

@@ -11,6 +11,11 @@ class RegistersController extends Controller
     public function create(Request $request){
         $register = new Registers();
 
+        $course = Course::find($request->input('CourseID'));
+        if($course->registered>= $course->slots){
+          return view('index');
+        }
+
         $register->user= $request->input('UserName');
         $register->userID= $request->input('UserID');
         $register->course= $request->input('CourseName');
@@ -19,6 +24,10 @@ class RegistersController extends Controller
         $register->status="przyjeto";
         $register->save();
         $courses = Course::all();
+
+        $data = \App\Registers::where('courseID', $course->id);
+        $course -> registered = $data->count();
+        $course ->save();
 
         return view('index');
 

@@ -15,7 +15,8 @@ class PagesControler extends Controller
     }
 
     public function courses(){
-        return view('courses');
+        $courses = Course::all();
+        return view('courses')->with('courses',$courses);
     }
 
     public function registerNavbar(){
