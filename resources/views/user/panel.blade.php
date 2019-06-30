@@ -12,10 +12,13 @@
                                     <br>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Informacje</a>
+                                    <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="home" aria-selected="true">Informacje</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Szkolenia</a>
+                                    <a class="nav-link" id="szkolenia-tab" data-toggle="tab" href="#szkolenia" role="tab" aria-controls="profile" aria-selected="false">Szkolenia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="ankiety-tab" data-toggle="tab" href="#ankiety" role="tab" aria-controls="profile" aria-selected="false">Ankiety</a>
                                 </li>
                             </ul>
                         </div>
@@ -34,7 +37,7 @@
                 </div>
                     <div class="col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label>Imię i Nazwisko</label>
@@ -72,7 +75,7 @@
                                             </div>
                                         </div>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="tab-pane fade" id="szkolenia" role="tabpanel" aria-labelledby="szkolenia-tab">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label>SZKOLENIE#1</label>
@@ -90,6 +93,24 @@
                                             </div>
                                         </div>
                                       </div>
+                                      <div class="tab-pane fade" id="ankiety" role="tabpanel" aria-labelledby="ankiety-tab">
+                                                  <div class="row">
+                                                      <div class="col-md-6">
+                                                          <label>ANKIETA#1</label>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                          <p>Ankieta</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row">
+                                                      <div class="col-md-6">
+                                                          <label>ANKIETA #2</label>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                          <p>Ankieta</p>
+                                                      </div>
+                                                  </div>
+                                                </div>
                                     </div>
                                   </div>
                                 </form>
