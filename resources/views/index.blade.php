@@ -339,7 +339,7 @@
               <p class="register-text text-uppercase">Dołącz do Ambiters już teraz!</p>
               <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('ZAREJESTRUJ SIĘ!') }}</b></a>
             @else
-              Jestes juz zalogowany
+            <p class="register-text text-uppercase">Dziękujemy za rejestrację!</p>
             @endguest
             </div>
           </div>

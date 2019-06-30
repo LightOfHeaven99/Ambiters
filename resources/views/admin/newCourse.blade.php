@@ -1,6 +1,6 @@
   @extends('layouts.app2')
 @section('content')
-</br></br></br>
+<section class="bg-light page-section">
 <div class="card">
 <div class="card-body">
 <div class="container">
@@ -39,6 +39,7 @@
 </div>
 </div>
 </div>
+</section>
 
 <style>
 form_main {

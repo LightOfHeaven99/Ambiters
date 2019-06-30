@@ -1,6 +1,7 @@
 @extends('layouts.app2')
 
 @section('content')
+<section class="bg-light page-section">
   <div class ="contianer">
     <div class="card">
       <div class="card-body">
@@ -32,6 +33,7 @@
   </div>
 </div>
 </div>
+</section>
 
 
 
