@@ -59,7 +59,7 @@
                   </li>
               @guest
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#register"><b>{{ __('REJESTRACJA') }}</b></a>
+                  <a class="nav-link js-scroll-trigger" href="/register"><b>{{ __('REJESTRACJA') }}</b></a>
                 </li>
               @if (Route::has('register'))
                 <li class="nav-item">
