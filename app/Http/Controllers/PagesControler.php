@@ -32,11 +32,6 @@ class PagesControler extends Controller
       return view('admin.panel')->with('courses', $courses);
     }
 
-    public function addCourse(){
-      $courses = Course::all();
-      return view('admin.panel')->with('courses',$courses);
-    }
-
     public function newCourse(){
       return view('admin.newCourse');
     }
@@ -53,8 +48,8 @@ class PagesControler extends Controller
 
     public function showCart(){
       $userID = Auth::id();
-      $user = User::find($userID);
-      $registers = Registers::all()->where('userID', $userID);
+      $user = User::find($userID)->where('status');
+      $registers = Registers::all()->where('userID', $userID)->where('status', "przyjeto");
       return view('cart', ['user'=> $user,
                                   'registers'=> $registers
                                 ]);

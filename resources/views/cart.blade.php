@@ -40,8 +40,12 @@
 									</td>
 									<td data-th="Price">{{$register->price}} zł</td>
 									<td data-th="Subtotal" class="text-center">-Tu zniżki brak (jest od całości liczona)</td>
-									<td class="actions" data-th="">
-										<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+									<td class="" data-th="">
+										<form method="post" action="{{route('register.delete')}}">
+											{{ csrf_field() }}
+											<input type="hidden" name="id" value="{{$register->id}}">
+											<button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+										</form>
 									</td>
 								</tr>
 							@endforeach

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Registers;
 use App\Course;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class RegistersController extends Controller
 {
@@ -44,6 +46,19 @@ class RegistersController extends Controller
       }
       $registers = Registers::all()->where('courseID', $courseID);
       return view('admin.show', ['course'=> $course,
+                                  'registers'=> $registers
+                                ]);
+    }
+
+    public function destroy(Request $request){
+      $register = Registers::find($request->input('id'));
+      if($register!=null){
+        $register -> delete();
+      }
+      $userID = Auth::id();
+      $user = User::find($userID)->where('status');
+      $registers = Registers::all()->where('userID', $userID)->where('status', "przyjeto");
+      return view('cart', ['user'=> $user,
                                   'registers'=> $registers
                                 ]);
     }

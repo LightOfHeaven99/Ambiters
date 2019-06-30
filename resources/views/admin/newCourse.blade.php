@@ -16,9 +16,10 @@
     <label for="price">Cena</label>
     <input type="text" name="price"></br>
     <label for="points">Punkty</label>
-    <input type="text" name="slots"></br>
-    <label for="slots">Ilość miejsc</label>
     <input type="text" name="points"></br>
+    <label for="slots">Ilość miejsc</label>
+    <input type="text" name="slots"></br>
+    <label for="image">Zdjęcie - max: 2MB - wymiary: 600x600</label></br>
     <input type="file" name="image" ></br>
     <button type="submit">Utwórz </button>
   </form>
