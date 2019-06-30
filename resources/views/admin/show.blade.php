@@ -2,6 +2,8 @@
 
 @section('content')
   <div class ="contianer">
+    <div class="card">
+      <div class="card-body">
       <h2>{{$course->title}}</h2></br>
       <h4>ID:   {{$course->id}}</h4></br>
       <h4>Zapisanych osób:   {{$course->registered}}/{{$course->slots}}</h4></br>
@@ -13,7 +15,7 @@
       <h4>Punkty:   {{$course->points}}</h4></br>
       <h4>Zniżka:   {{$course->discount}}</h4></br>
 
-      <!-lista ziomków co się zapisała na kurs ->
+      <!--lista ziomków co się zapisała na kurs -->
       @if(count($registers))
         @foreach($registers->all() as $register)
           {{$register->user}} -------   {{$register->status}} --------- {{$register->timeStamps}}
@@ -22,14 +24,14 @@
             <input type="hidden" name="id" value="{{$register->id}}">
             <input type="hidden" name="courseID" value="{{$course->id}}">
             <input type="hidden" name="price" value="{{$course->price}}">
-            <button type="submit">POTWIERDZ</button>
+            <button class="btn btn-primary" type="submit">POTWIERDZ</button>
           </form>
           </br>
         @endforeach
       @endif
-
-
   </div>
+</div>
+</div>
 
 
 

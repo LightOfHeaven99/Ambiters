@@ -22,7 +22,7 @@
             <b>Data:</b> {{$course->time}} {{$course->day}} <!-- Tutaj data szkolenia -->
           </div>
           <div class="col-sm text-center">
-          <b>ilosc zapisanych osob:</b> {{$course->registered}}/{{$course->slots}} <!-- Tutaj ilość zapisanych ludzi na szkolenie -->
+          <b>Ilość zapisanych osób:</b> {{$course->registered}}/{{$course->slots}} <!-- Tutaj ilość zapisanych ludzi na szkolenie -->
          </div>
         </div>
       </div>
@@ -51,10 +51,6 @@
           </div>
         </div>
       </div>
-
-
-
-
         </div>
      @endforeach
   @endif
