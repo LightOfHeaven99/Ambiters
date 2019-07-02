@@ -1,18 +1,6 @@
-
-      <!-- Page Content -->
-      <!-- Bootsrapa i JQuery masz już podpięte. Wystarczy tylko działać. Wszystkie pliki źródłowe są w folderze public. Jest tego więcej ale to jeśli wolałbyś działać na
-      sass a nie css. Wtedy modyfikuje sie pliki w resources. Polecam jednak bezposrednio do public. Da sie tez zrobic rozszerzenia co to naglowkow
-      zeby byly na kazdej stronie bez powtarzania kodu ale to pewnie juz ogarniasz, albo dorobimy pozniej. Poki co to tu jest cala piaskownica
-      xoxxoxoxoxo -->
-
-      <!-- Update 2.0 : Tu trochę magii Laravela. Tak więc jak widać teraz na tej stronie znajduje się coś co się nazywa content.
-      Jest to tak naprawdę rozszerzenie strony app znajdującej się w folderze layouts. Dzięki temu każda strona będzie
-      mogła być rozszerzeniem app, w którym znajduje się navbar. Mniej powielania kodu. I logowanie powinno mi teraz fajnie
-      działać, więc nooooo, myślałem, że nie będziemy tak robić na początku, ale dużo jednak daje. Tak naprawdę chodzi o to,
-      że teraz jak będziesz pisać kod Pablito to lecisz z samym contentem, bez tego całego head, navbar i inne takie. Wszystko podpięte.-->
+  <!-- Page Content -->
 
       @extends('layouts.app')
-
       @section('content')
             <header class="masthead">
                 <section id="start">
@@ -26,6 +14,25 @@
                   </div>
                 </section>
               </header>
+
+              @guest
+              @else
+              <section class="bg-light page-section" id="register">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <p class="register-text text-uppercase">Witaj</p>
+                      <font size="5">Przejdź do swojego profilu, aby obejrzeć swoje szkolenia oraz ankiety!</font><br><br>
+                      <form method="get" action="{{route('user.panel')}}">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                        <button class="btn btn-primary btn-xl" type="submit">PANEL UŻYTKOWNIKA</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              @endguest
 
               <section class="page-section" id="ambiters">
                 <div class="container">
@@ -176,7 +183,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                   <div class="team-member">
                     <img class="mx-auto rounded-circle" src="img/team/pablo.jpg" alt="">
                     <h4>Paweł Główczewski</h4>
@@ -200,7 +207,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                   <div class="team-member">
                     <img class="mx-auto rounded-circle" src="img/team/rafal.jpg" alt="">
                     <h4>Rafał Okrągły</h4>
@@ -224,105 +231,6 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-sm-4">
-                  <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/michal.jpg" alt="">
-                    <h4>Michał Fadrowski</h4>
-                    <p class="text-muted">Trener #3</p>
-                    <ul class="list-inline social-buttons">
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-google"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../img/team/pablo.jpg" alt="">
-                    <h4>Krzysztof Zaraza</h4>
-                    <p class="text-muted">Trener #4</p>
-                    <ul class="list-inline social-buttons">
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-google"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../img/team/rafal.jpg" alt="">
-                    <h4>Krystian Karczyński</h4>
-                    <p class="text-muted">Trener #5</p>
-                    <ul class="list-inline social-buttons">
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-google"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../img/team/michal.jpg" alt="">
-                    <h4>Janusz Górniak</h4>
-                    <p class="text-muted">Trener #6</p>
-                    <ul class="list-inline social-buttons">
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-google"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
               <div class="row">
                   <div class="col-lg-8 mx-auto text-center">
                     <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>

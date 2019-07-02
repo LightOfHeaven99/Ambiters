@@ -8,7 +8,7 @@
                     <div class="col-md">
                         <div class="profile-head">
                                     <h5>
-                                      Podlgąd szkolenia
+                                      Podgląd szkolenia
                                     </h5>
                                     <br>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
