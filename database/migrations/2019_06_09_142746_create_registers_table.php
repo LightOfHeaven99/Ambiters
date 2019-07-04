@@ -21,6 +21,7 @@ class CreateRegistersTable extends Migration
             $table->Integer('courseID');
             $table->Integer('price');
             $table->String('status');
+            
 
             $table->timestamps();
         });

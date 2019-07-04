@@ -76,23 +76,33 @@
                                         </div>
                             </div>
                             <div class="tab-pane fade" id="szkolenia" role="tabpanel" aria-labelledby="szkolenia-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>SZKOLENIE#1</label>
+                                        @if(count($registers)>0)
+                                          <div class="ukryj">
+                                            {{$index =0}}
+                                          </div>
+                                          @foreach($registers->all() as $register)
+                                            <div class="ukryj">
+                                              {{$index = $index+1}}
+                                              {{$course = App\Course::find($register->courseID)}}
                                             </div>
-                                            <div class="col-md-6">
-                                                <p>Zarządzanie</p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>{{$register->course}}</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <p>{{$course->day}}</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <p>{{$course->time}}</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <p>{{$register->status}}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>SZKOLENIE #2</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Organizacja</p>
-                                            </div>
-                                        </div>
-                                      </div>
+                                          @endforeach
+                                        @endif
+                              </div>
+
                                       <div class="tab-pane fade" id="ankiety" role="tabpanel" aria-labelledby="ankiety-tab">
                                                   <div class="row">
                                                       <div class="col-md-6">
@@ -119,6 +129,12 @@
 <style>
 body{
     background-color: #f2f2f2;
+}
+
+.ukryj{
+  visibility: hidden;
+  z-index: 30;
+  position: fixed;
 }
 .emp-profile{
     padding: 3%;

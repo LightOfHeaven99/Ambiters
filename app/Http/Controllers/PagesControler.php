@@ -43,7 +43,10 @@ class PagesControler extends Controller
     public function showUser(Request $request){
       $id = $request-> input('id');
       $user = User::find($id);
-      return view('user.panel')->with('user', $user);
+      $registers = Registers::all()->where('userID', $id);
+      return view('user.panel', ['user'=>$user,
+                                  'registers'=>$registers
+                                ]);
     }
 
     public function showCart(){

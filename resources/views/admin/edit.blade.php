@@ -28,7 +28,9 @@
   <label for="points"><b>Miejsca:</b></label>
   <input type="text" name="slots" value="{{$course->slots}}" class="txt"></br>
   <label for="discount"><b>Zniżka:</b></label>
-  <input type="text" name="discount" value="{{$course->discount}}" class="txt"></br></br><br>
+  <input type="text" name="discount" value="{{$course->discount}}" class="txt">
+  <label for="image"><b>Zdjęcie - max: 2MB - wymiary: 600x600</b></label></br>
+  <input type="file" name="image" ></br></br><br>
   <div class="col-sm text-center">
   <button class="btn btn-primary" type="submit">Zaktualizuj </button>
 </div>
