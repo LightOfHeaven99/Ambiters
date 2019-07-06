@@ -5,12 +5,9 @@
             <header class="masthead">
                 <section id="start">
                   <div class="laptop-bg">
-                    <div class="intro-text">
-                      <div class="intro-lead-in text-uppercase">Witaj w</div>
-                      <br>
-                      <div class="intro-heading text-uppercase">Ambiters</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
                       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#ambiters">Pokaż więcej!</a>
-                    </div>
                   </div>
                 </section>
               </header>
