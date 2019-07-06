@@ -166,7 +166,7 @@
                   </div>
                 </div>
                 <br>
-                <div class="button-center">
+                <div class="col-lg-12 text-center">
                   <h2>Chcesz zobaczyć więcej?</h2>
                   <br>
                   <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/courses">Kup szkolenie</a>
