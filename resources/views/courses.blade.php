@@ -5,8 +5,8 @@
     @if(count($courses))
       @foreach($courses->all() as $course)
         <div class="row">
-          <div class="col-xs-4">
-            <img style="width:300px;" src="img/courses/{{$course->img}}" class="img-fluid" />
+          <div class="col-md-6">
+            <img style="width:300px;" src="img/courses/{{$course->img}}" class="img-fluid rounded mb-3 mb-md-0" />
           </div>
           <div class="col-xs-4">
           </div>

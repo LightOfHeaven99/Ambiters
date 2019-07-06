@@ -27,16 +27,17 @@
 
 
         <!-- JS -->
-        <script src='js/jquery-3.1.1.min.js'></script>
+        <!-- <script src='js/jquery-3.1.1.min.js'></script> -->
         <script src='js/bootstrap.min.js'></script>
         <script src='js/ambiters.js'></script>
+        <script src='js/ambiters.min.js'></script>
         <script src='js/bootstrap.bundle.min.js'></script>
         <script src='js/jquery.easing.js'></script>
         <script src='js/jquery.min.js'></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
 
     </head>
@@ -52,7 +53,7 @@
                 <i class="fas fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav text-uppercase ml-auto">
                   <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#start"><b>START</b>
                     </a>
@@ -72,7 +73,7 @@
                 </li>
               @if (Route::has('register'))
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('login') }}"><b>{{ __('ZALOGUJ SIĘ') }}</b></a>
+                  <a class="nav-link js-scroll-trigger" href="{{ route('login') }}"><b>{{ __('ZALOGUJ SIĘ') }}</b></a>
                 </li>
               @endif
               @else
@@ -103,7 +104,7 @@
                     </form>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                  <a class="nav-link js-scroll-trigger" href="{{ route('logout') }}" onclick="event.preventDefault();
                    document.getElementById('logout-form').submit();">
                    <b>{{ __('WYLOGUJ SIĘ') }}</b>
                   </a>
