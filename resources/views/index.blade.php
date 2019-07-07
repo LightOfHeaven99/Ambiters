@@ -76,92 +76,93 @@
                 <div class="row">
                   <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase">Szkolenia</h2>
-                    <h3 class="section-subheading text-muted">Wybierz interesujący Cię temat kursu, w konkretny dzień i godzinę, w konkretnym miejscu i zobacz czego nauczysz się na szkoleniu klikając plusik po prawej stronie.</h3>
+                    <h3 class="section-subheading text-muted">Wybierz interesujący Cię temat kursu, w konkretny dzień i godzinę, w konkretnym miejscu i zobacz czego nauczysz się na szkoleniu klikając plusik pod danym szkoleniem.</h3>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal1">
+                    <!-- <a class="szkolenia-link" data-toggle="modal" href="/start">
                       <div class="szkolenia-hover">
                         <div class="szkolenia-hover-content">
                           <i class="fas fa-plus fa-3x"></i>
                         </div>
-                      </div>
+                      </div> -->
                       <img class="img-fluid" src="../img/portfolio/01-thumbnail.jpg" alt="">
                     </a>
                     <div class="szkolenia-caption">
-                      <h4>Szkolenie #1</h4>
-                      <p class="text-muted">Matematyka</p>
+                      <h4>Matematyka</h4>
+                      <p class="text-muted">15.09.2019<br>18:30</p>
+                      <a href="/courses"><i class="btn btn-primary fas fa-plus fa-2x"></i></a>
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal2">
-                      <div class="szkolenia-hover">
+                    <a class="szkolenia-link" data-toggle="modal" href="/courses">
+                      <!-- <div class="szkolenia-hover">
                         <div class="szkolenia-hover-content">
                           <i class="fas fa-plus fa-3x"></i>
                         </div>
-                      </div>
+                      </div> -->
                       <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
                     </a>
                     <div class="szkolenia-caption">
-                      <h4>Szkolenie #2</h4>
-                      <p class="text-muted">Zarządzanie</p>
+                      <h4>Zarządzanie</h4>
+                      <p class="text-muted">16.10.2019<br>15:00</p>
+                      <a href="/courses"><i class="btn btn-primary fas fa-plus fa-2x"></i></a>
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-6 szkolenia-item">
                     <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal3">
-                      <div class="szkolenia-hover">
+                      <!-- <div class="szkolenia-hover">
                         <div class="szkolenia-hover-content">
                           <i class="fas fa-plus fa-3x"></i>
                         </div>
-                      </div>
+                      </div> -->
                       <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
                     </a>
                     <div class="szkolenia-caption">
-                      <h4>Szkolenie #3</h4>
-                      <p class="text-muted">Organizacja</p>
+                      <h4>Organizacja</h4>
+                      <p class="text-muted">16.10.2019<br>15:00</p>
+                      <a href="/courses"><i class="btn btn-primary fas fa-plus fa-2x"></i></a>
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-6 szkolenia-item">
                     <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal4">
-                      <div class="szkolenia-hover">
+                      <!-- <div class="szkolenia-hover">
                         <div class="szkolenia-hover-content">
                           <i class="fas fa-plus fa-3x"></i>
                         </div>
-                      </div>
+                      </div> -->
                       <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
                     </a>
                     <div class="szkolenia-caption">
-                      <h4>Szkolenie #4</h4>
-                      <p class="text-muted">Fizyka</p>
+                      <h4>Fizyka</h4>
+                      <p class="text-muted">16.10.2019<br>15:00</p>
+                      <a href="/courses"><i class="btn btn-primary fas fa-plus fa-2x"></i></a>
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal5">
-                      <div class="szkolenia-hover">
-                        <div class="szkolenia-hover-content">
-                          <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                      </div>
+                    <a class="szkolenia-link" data-toggle="modal" href="/courses">
                       <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
                     </a>
                     <div class="szkolenia-caption">
-                      <h4>Szkolenie #5</h4>
-                      <p class="text-muted">Podstawy informatyki</p>
+                      <h4>Podstawy informatyki</h4>
+                      <p class="text-muted">16.10.2019<br>15:00</p>
+                      <a href="/courses"><i class="btn btn-primary fas fa-plus fa-2x"></i></a>
                     </div>
                   </div>
                   <div class="col-md-4 col-sm-6 szkolenia-item">
                     <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal6">
-                      <div class="szkolenia-hover">
+                      <!-- <div class="szkolenia-hover">
                         <div class="szkolenia-hover-content">
                           <i class="fas fa-plus fa-3x"></i>
                         </div>
-                      </div>
+                      </div> -->
                       <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
                     </a>
                     <div class="szkolenia-caption">
-                      <h4>Szkolenie #6</h4>
-                      <p class="text-muted">Fotografia</p>
+                      <h4>Telekomunikacja</h4>
+                      <p class="text-muted">16.10.2019<br>15:00</p>
+                      <a href="/courses"><i class="btn btn-primary fas fa-plus fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
