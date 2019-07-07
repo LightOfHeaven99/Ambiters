@@ -74,7 +74,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">Szkolenia</h2>
+                    <h2 class="section-heading text-uppercase">Kursy</h2>
                     <h3 class="section-subheading text-muted">Wybierz interesujący Cię temat kursu, w konkretny dzień i godzinę, w konkretnym miejscu i zobacz czego nauczysz się na szkoleniu klikając plusik pod danym szkoleniem.</h3>
                   </div>
                 </div>
