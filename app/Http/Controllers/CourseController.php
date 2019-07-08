@@ -16,9 +16,9 @@ class CourseController extends Controller
       $rules = [
   			'title'=>'required',
         'description'=>'required',
-        'place'=>'required|email',
+        'place'=>'required',
         'slots'=>'required',
-        'img'=>'required',
+        'image'=>'required',
         'points'=>'required',
         'price'=>'required'
   		];

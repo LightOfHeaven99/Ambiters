@@ -78,122 +78,29 @@
                   </div>
                 </div>
                 <div class="row">
-
-                  <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <!-- <a class="szkolenia-link" data-toggle="modal" href="/start">
-                      <div class="szkolenia-hover">
-                        <div class="szkolenia-hover-content">
-                          <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                      </div> -->
-                      <img class="img-fluid" src="../img/portfolio/01-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="szkolenia-caption">
-                      <h4>Technika</h4>
-                      <p class="text-muted">15.09.2019<br>18:30</p>
-                      <i class="btn btn-primary text-uppercase">SZCZEGÓŁY</i></a>
-                      <br><br>
-                      <button class="btn btn-primary" type="button">
-                      <i class="fas fa-shopping-cart"></i>
-                     Kup teraz</button>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <a class="szkolenia-link" data-toggle="modal" href="/courses">
-                      <!-- <div class="szkolenia-hover">
-                        <div class="szkolenia-hover-content">
-                          <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                      </div> -->
-                      <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="szkolenia-caption">
-                      <h4>Zarządzanie</h4>
-                      <p class="text-muted">16.10.2019<br>15:00</p>
-                      <i class="btn btn-primary text-uppercase">SZCZEGÓŁY</i></a>
-                      <br><br>
-                      <button class="btn btn-primary" type="button">
-                      <i class="fas fa-shopping-cart"></i>
-                     Kup teraz</button>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal3">
-                      <!-- <div class="szkolenia-hover">
-                        <div class="szkolenia-hover-content">
-                          <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                      </div> -->
-                      <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="szkolenia-caption">
-                      <h4>Organizacja</h4>
-                      <p class="text-muted">16.10.2019<br>15:00</p>
-                      <i class="btn btn-primary text-uppercase">SZCZEGÓŁY</i></a>
-                      <br><br>
-                      <button class="btn btn-primary" type="button">
-                      <i class="fas fa-shopping-cart"></i>
-                     Kup teraz</button>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal4">
-                      <!-- <div class="szkolenia-hover">
-                        <div class="szkolenia-hover-content">
-                          <i class="fas fa-plus fa-3x"></i>
-                        </div>
-                      </div> -->
-                      <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="szkolenia-caption">
-                      <h4>Fizyka</h4>
-                      <p class="text-muted">16.10.2019<br>15:00</p>
-                      <i class="btn btn-primary text-uppercase">SZCZEGÓŁY</i></a>
-                      <br><br>
-                      <button class="btn btn-primary" type="button">
-                      <i class="fas fa-shopping-cart"></i>
-                     Kup teraz</button>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <a class="szkolenia-link" data-toggle="modal" href="/courses">
-                      <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="szkolenia-caption">
-                      <h4>Podstawy informatyki</h4>
-                      <p class="text-muted">16.10.2019<br>15:00</p>
-                      <i class="btn btn-primary text-uppercase">SZCZEGÓŁY</i></a>
-                      <br><br>
-                      <button class="btn btn-primary" type="button">
-                      <i class="fas fa-shopping-cart"></i>
-                     Kup teraz</button>
-                    </a>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 col-sm-6 szkolenia-item">
-                    <a class="szkolenia-link">
-                      <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-                    </a>
-                    <div class="szkolenia-caption">
-                      <h4>Matematyka</h4>
-                      <p class="text-muted">16.10.2019<br>15:00</p>
-                      <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal6">
-                      <div class="szkolenia-hover">
-                        <div class="szkolenia-hover-content">
-                        <i class="btn btn-primary text-uppercase">SZCZEGÓŁY</i>
-                      </a>
+                  @if(count($courses)>0)
+                    @foreach($courses->all() as $course)
+                      <div class="col-md-4 col-sm-6 szkolenia-item">
+                        <a class="szkolenia-link">
+                          <img class="img-fluid" src="img/courses/{{$course->img}}" alt="">
+                        </a>
+                        <div class="szkolenia-caption">
+                          <h4>{{$course->title}}</h4>
+                          <p class="text-muted">{{$course->day}}<br>{{$course->time}}</p>
+                          <a class="szkolenia-link" data-toggle="modal" href="#course{{$course->id}}">
+                          <div class="szkolenia-hover">
+                            <div class="szkolenia-hover-content">
+                            <i class="btn btn-primary text-uppercase">SZCZEGÓŁY</i>
+                          </a>
+                            </div>
+                          </div>
+                          <br>
+                          <button class="btn btn-primary" type="button">
+                          <i class="fas fa-shopping-cart"></i>Kup teraz</button>
                         </div>
                       </div>
-                      <br>
-                      <button class="btn btn-primary" type="button">
-                      <i class="fas fa-shopping-cart"></i>Kup teraz</button>
-                    </div>
-                  </div>
+                    @endforeach
+                  @endif
 
                 </div>
                 <br>
@@ -288,50 +195,59 @@
 
 
 
+@if(count($courses)>0)
+  @foreach($courses->all() as $course)
 
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <h2 class="text-uppercase">Matematyka</h2>
-              <p class="item-intro text-muted">Podstawy Rachunku Prawdopodobieństwa</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-              <b>Czego się nauczysz?</b>
-              <br><br>
-              <ul>
-                <li>Geometria analityczna</li>
-                <li>Podstawy Rachunku Prawdopodobieństwa</li>
-                <li>Całki podwójne</li>
-              </ul>
-              <br>
-              <ul class="list-inline">
-                <li><b>Data: 10.05.2018<br>10:00</b></li>
-                <li><b>Cena: 299zł</b></li>
-                <li><b>Miejsce: Legnicka 52/19</b></li>
-              </ul>
-                <button class="btn btn-primary" type="button">
-                <i class="fas fa-plus"></i>
-                Dodaj do koszyka</button>
-                <br><br>
-                <button class="btn btn-primary" type="button">
-                <i class="fas fa-shopping-cart"></i>
-               Kup teraz</button>
+    <div class="portfolio-modal modal fade" id="course{{$course->id}}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">{{$course->title}}</h2>
+                  <p class="item-intro text-muted">{{$course->id}}</p>
+                  <p>{{$course->description}}</p>
+                  <b>Czego się nauczysz?</b>
+                  <br><br>
+                  <ul>
+                    @if($course->toLearn1!=null)
+                    <li>{{$course->toLearn1}} </li>
+                    @endif
+                    @if($course->toLearn2!=null)
+                    <li>{{$course->toLearn2}}</li>
+                    @endif
+                    @if($course->toLearn3!=null)
+                    <li>{{$course->toLearn3}}</li>
+                    @endif
+                  </ul>
+                  <br>
+                  <ul class="list-inline">
+                    <li><b>Data: {{$course->day}}<br>{{$course->time}}</b></li>
+                    <li><b>Cena: {{$course->price}}zł</b></li>
+                    <li><b>Miejsce: {{$course->place}}</b></li>
+                  </ul>
+                    <button class="btn btn-primary" type="button">
+                    <i class="fas fa-plus"></i>
+                    Dodaj do koszyka</button>
+                    <br><br>
+                    <button class="btn btn-primary" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                   Kup teraz</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
+  @endforeach
+@endif
 
 
 

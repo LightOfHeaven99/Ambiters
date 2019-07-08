@@ -11,8 +11,9 @@ use Illuminate\Support\Facades\Auth;
 class PagesControler extends Controller
 {
     public function index(){
-        return view('index');
-    }
+      $courses = Course::all()->where('status', true);
+      return view('index')->with('courses',$courses);
+  }
 
     public function courses(){
         $courses = Course::all();
