@@ -5,11 +5,10 @@
             <header class="masthead">
                 <section id="start">
                   <div class="laptop-bg">
-
                     <div class="intro-text">
-                      <div class="intro-lead-in text-uppercase">Profesjonalne</div><br>
-                      <div class="intro-lead-in text-uppercase">Korepetycje</div><br>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#ambiters">Pokaż więcej!</a>
+                      <div class="intro-lead-in text-uppercase hidden-xs">Profesjonalne</div><br>
+                      <div class="intro-lead-in text-uppercase hidden-xs">Korepetycje</div><br>
+                      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#ambiters">Pokaż więcej!</a>
                   </div>
                 </section>
               </header>
