@@ -100,6 +100,7 @@
 
 
 
+        @include('layouts.message_error')
         @yield('content')
 
 

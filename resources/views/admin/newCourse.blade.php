@@ -23,7 +23,7 @@
     <label for="price"><b>Cena:</b></label>
     <input type="text" name="price" class="txt"></br>
     <label for="points"><b>Punkty:</b></label>
-    <input type="text" name="points" class="txt"></br>
+    <input type="text" name="points" class="txt" value="0"></br>
     <label for="slots"><b>Ilość miejsc:</b></label>
     <input type="text" name="slots" class="txt"></br>
     <label for="toLearn1"><b>Nauczysz się (1):</b></label>

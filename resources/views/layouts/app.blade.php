@@ -110,8 +110,8 @@
           <!-- Dobra elo, tu jest cały content. Navbar będzie do każdej strony taki sam. Nie będzie trzeba powielać kodu -->
 
 
-
-        @yield('content')
+          @include('layouts.message_error')
+          @yield('content')
 
 
         <!-- Footer -->

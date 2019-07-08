@@ -11,6 +11,33 @@ use Illuminate\Support\Facades\Auth;
 class CourseController extends Controller
 {
     public function create(Request $request){
+
+      //Contola błędów
+      $rules = [
+  			'title'=>'required',
+        'description'=>'required',
+        'place'=>'required|email',
+        'slots'=>'required',
+        'img'=>'required',
+        'points'=>'required',
+        'price'=>'required'
+  		];
+
+  		$messeges = [
+  			'title.required' => "Pole Nazwa kursu nie moze byc puste.",
+  			'description.required' => "Pole Opis nie moze byc puste.",
+  			'place.required' => "Pole Miejsce kursu nie moze byc puste.",
+  			'slots.required' => "Pole Ilość miejsc nie moze byc puste.",
+  			'img.required' => "Musisz dodać zdjęciu do kursu. Zdjęcie, max: 2MB, wymiary: 600x600",
+  			'points.required' => "Wybierz ile jest kurs jest wart punktów. Jak ma być zero to napisz 0",
+        'price.required' => "Pole Cena nie może być puste"
+
+  		];
+
+      $this->validate($request, $rules, $messeges);
+
+
+
         $course = new Course;
         $course->title=$request->input('title');
         $course->description=$request->input('description');
@@ -56,6 +83,30 @@ class CourseController extends Controller
 
 
     public function update(Request $request){
+
+      $rules = [
+  			'title'=>'required',
+        'description'=>'required',
+        'place'=>'required|email',
+        'slots'=>'required',
+        'img'=>'required',
+        'points'=>'required',
+        'price'=>'required'
+  		];
+
+  		$messeges = [
+  			'title.required' => "Pole Nazwa kursu nie moze byc puste.",
+  			'description.required' => "Pole Opis nie moze byc puste.",
+  			'place.required' => "Pole Miejsce kursu nie moze byc puste.",
+  			'slots.required' => "Pole Ilość miejsc nie moze byc puste.",
+  			'img.required' => "Musisz dodać zdjęciu do kursu. Zdjęcie, max: 2MB, wymiary: 600x600",
+  			'points.required' => "Wybierz ile jest kurs jest wart punktów. Jak ma być zero to napisz 0",
+        'price.required' => "Pole Cena nie może być puste"
+
+  		];
+
+      $this->validate($request, $rules, $messeges);
+
         $id = $request->input('id');
         $course =Course::find($id);
         $course->title=$request->input('title');

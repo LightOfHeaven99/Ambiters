@@ -24,8 +24,8 @@ class CreateCoursesTable extends Migration
             $table->Integer('slots');
             $table->Integer('registered');
             $table->String('img');
-            $table->Integer('points')->nullable();
-            $table->Float('discount')->nullable();
+            $table->Integer('points');
+            $table->Float('discount');
             $table->Boolean('status');
             $table->String('toLearn1')->nullable();
             $table->String('toLearn2')->nullable();
