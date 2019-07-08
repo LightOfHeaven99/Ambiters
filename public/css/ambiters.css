@@ -191,6 +191,7 @@ h6 {
 header.masthead {
   text-align: center;
   color: white;
+  background-image: url("../laptop-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -207,7 +208,7 @@ header.masthead .intro-text {
 
 header.masthead .intro-text .intro-lead-in {
   color: white;
-  font-size: 47px;
+  font-size: 7vw;
   font-weight: 700;
   letter-spacing: 8px;
   margin-bottom: 20px;
@@ -233,7 +234,7 @@ header.masthead .intro-text .intro-heading {
   }
   header.masthead .intro-text .intro-lead-in {
     color: white;
-    font-size: 47px;
+    font-size: 4.5vw;
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;

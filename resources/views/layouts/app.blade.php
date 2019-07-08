@@ -62,7 +62,7 @@
                     <a class="nav-link js-scroll-trigger" href="#ambiters"><b>AMBITERS</b></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#szkolenia"><b>SZKOLENIA</b></a>
+                    <a class="nav-link js-scroll-trigger" href="#szkolenia"><b>KURSY</b></a>
                   </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#about"><b>O NAS</b></a>
