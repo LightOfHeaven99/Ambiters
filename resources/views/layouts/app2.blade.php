@@ -74,7 +74,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <div class="dropdown-text">
-                    <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>Profil</b></a>
+                    <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>PROFIL</b></a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
