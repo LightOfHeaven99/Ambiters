@@ -23,25 +23,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" id="punkty-tab" data-toggle="tab" href="#punkty" role="tab" aria-controls="profile" aria-selected="false">Wymiana punktów</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="delete-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="profile" aria-selected="false">Usuń konto</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <br>
-                    <div class="col-md-2">
-                      <form method="get" action="{{route('user.delete')}}">
-                        {{ csrf_field() }}
-                        <input type="hidden" name="id" value="{{$user->id}}">
-                        <button class="btn btn-primary" type="submit">USUŃ KONTO</button>
-                      </form>
-                    </div>
-                    <div class="col-md-2">
-                      <form method="POST"  action="{{ route('logout') }}">
-                        {{ csrf_field() }}
-                        <input type="hidden" name="id" value="{{$user->id}}">
-                        <button class="btn btn-primary" type="submit">WYLOGUJ SIĘ</button>
-                      </form>
-
-                    </div>
                 </div>
                     <div class="col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">
@@ -193,6 +181,17 @@
                                                             </div>
 
                                               </div>
+                                              <div class="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="delete-tab">
+                                                          <div class="row">
+                                              <div class="col-md-2">
+                                                <form method="get" action="{{route('user.delete')}}">
+                                                  {{ csrf_field() }}
+                                                  <input type="hidden" name="id" value="{{$user->id}}">
+                                                  <button class="btn btn-primary" type="submit">USUŃ KONTO</button>
+                                                </form>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </div>
                                   </div>
                                 </form>
