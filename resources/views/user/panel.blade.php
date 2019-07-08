@@ -20,11 +20,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" id="ankiety-tab" data-toggle="tab" href="#ankiety" role="tab" aria-controls="profile" aria-selected="false">Ankiety</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="punkty-tab" data-toggle="tab" href="#punkty" role="tab" aria-controls="profile" aria-selected="false">Wymiana punktów</a>
+                                </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                      <button class="btn btn-primary" type="submit">ZAMIEŃ PUNKTY</button>
                     </div>
                     <br>
                     <div class="col-md-2">
@@ -33,6 +33,14 @@
                         <input type="hidden" name="id" value="{{$user->id}}">
                         <button class="btn btn-primary" type="submit">USUŃ KONTO</button>
                       </form>
+                    </div>
+                    <div class="col-md-2">
+                      <form method="POST"  action="{{ route('logout') }}">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="id" value="{{$user->id}}">
+                        <button class="btn btn-primary" type="submit">WYLOGUJ SIĘ</button>
+                      </form>
+
                     </div>
                 </div>
                     <div class="col-md-8">
@@ -68,10 +76,14 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>ID</label>
+                                                <label>Zniżka przy kolejnym zakupie</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>{{$user->id}}</p>
+                                                <p>@if($user->discount>0)
+                                                  {{$user->discount}}
+                                                @else
+                                                  0
+                                                @endif</p>
                                             </div>
                                         </div>
                             </div>
@@ -121,6 +133,66 @@
                                                       </div>
                                                   </div>
                                                 </div>
+
+
+                                                <div class="tab-pane fade" id="punkty" role="tabpanel" aria-labelledby="punkty-tab">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label>RABAT 30 ZŁOTYCH</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                  @if($user->points>299)
+                                                                    <form method="post" action="{{route('user.discount')}}">
+                                                                      {{ csrf_field() }}
+                                                                      <input type="hidden" name="discount" value="30">
+                                                                      <input type="hidden" name="rPoints" value="300">
+                                                                      <button class="btn btn-primary" type="submit">300 PUNKTÓW</button>
+                                                                    </form>
+                                                                  @else
+                                                                    <button class="btn btn-primary" type="">300 PUNKTÓW</button>
+                                                                  @endif
+                                                                </div>
+                                                            </div>
+                                                            <br>
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label>RABAT 40 ZŁOTYCH</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                  @if($user->points>349)
+                                                                    <form method="post" action="{{route('user.discount')}}">
+                                                                      {{ csrf_field() }}
+                                                                      <input type="hidden" name="discount" value="40">
+                                                                      <input type="hidden" name="rPoints" value="350">
+                                                                      <button class="btn btn-primary" type="submit">350 PUNKTÓW</button>
+                                                                    </form>
+                                                                  @else
+                                                                    <button class="btn btn-primary" type="">350 PUNKTÓW</button>
+                                                                  @endif
+                                                                </div>
+                                                            </div>
+                                                            <br>
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label>RABAT 60 ZŁOTYCH</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                  @if($user->points>499)
+                                                                    <form method="post" action="{{route('user.discount')}}">
+                                                                      {{ csrf_field() }}
+                                                                      <input type="hidden" name="discount" value="50">
+                                                                      <input type="hidden" name="rPoints" value="400">
+                                                                      <button class="btn btn-primary" type="submit">500 PUNKTÓW</button>
+                                                                    </form>
+                                                                  @else
+                                                                    <button class="btn btn-primary" type="">500 PUNKTÓW</button>
+                                                                  @endif
+                                                                </div>
+                                                            </div>
+
+                                              </div>
                                     </div>
                                   </div>
                                 </form>
