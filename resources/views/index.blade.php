@@ -151,17 +151,17 @@
                   </div>
                   <div class="col-md-4 col-sm-6 szkolenia-item">
                     <a class="szkolenia-link" data-toggle="modal" href="#portfolioModal6">
-                      <!-- <div class="szkolenia-hover">
+                      <div class="szkolenia-hover">
                         <div class="szkolenia-hover-content">
                           <i class="fas fa-plus fa-3x"></i>
                         </div>
-                      </div> -->
+                      </div>
                       <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
                     </a>
                     <div class="szkolenia-caption">
                       <h4>Telekomunikacja</h4>
                       <p class="text-muted">16.10.2019<br>15:00</p>
-                      <a href="/courses"><i class="btn btn-primary fas fa-plus fa-2x"></i></a>
+                      <i class="btn btn-primary fas fa-plus fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -257,6 +257,221 @@
       <section class="page-section">
 
       </section>
+
+      <!-- Portfolio Modals -->
+
+<!-- Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Matematyka</h2>
+              <p class="item-intro text-muted">Podstawy Rachunku Prawdopodobieństwa</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <b>Czego się nauczysz?</b>
+              <br><br>
+              <ul>
+                <li>Geometria analityczna</li>
+                <li>Podstawy Rachunku Prawdopodobieństwa</li>
+                <li>Całki podwójne</li>
+              </ul>
+              <br>
+              <ul class="list-inline">
+                <li><b>Data: 10.05.2018<br>10:00</b></li>
+                <li><b>Cena: 299zł</li>
+                <li><b>Miejsce: Legnicka 52/19</b></li>
+              </ul>
+              <!-- <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Zamknij</button> -->
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-plus"></i>
+                Dodaj do koszyka</button>
+                <br><br>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-shopping-cart"></i>
+               Kup teraz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Project Name</h2>
+              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <ul class="list-inline">
+                <li>Date: January 2017</li>
+                <li>Client: Explore</li>
+                <li>Category: Graphic Design</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Project Name</h2>
+              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <ul class="list-inline">
+                <li>Date: January 2017</li>
+                <li>Client: Finish</li>
+                <li>Category: Identity</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Project Name</h2>
+              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <ul class="list-inline">
+                <li>Date: January 2017</li>
+                <li>Client: Lines</li>
+                <li>Category: Branding</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Project Name</h2>
+              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <ul class="list-inline">
+                <li>Date: January 2017</li>
+                <li>Client: Southwest</li>
+                <li>Category: Website Design</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Project Name</h2>
+              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <ul class="list-inline">
+                <li>Date: January 2017</li>
+                <li>Client: Window</li>
+                <li>Category: Photography</li>
+              </ul>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

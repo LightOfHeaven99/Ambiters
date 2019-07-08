@@ -1,22 +1,41 @@
   @extends('layouts.app2')
 @section('content')
-</br></br></br></br></br></br>
+</br></br></br></br>
 <div class="container">
+  <h1 class="text-center text-uppercase">Dostępne kursy</h1>
+  <br><br>
     @if(count($courses))
       @foreach($courses->all() as $course)
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-md">
             <img style="width:300px;" src="img/courses/{{$course->img}}" class="img-fluid rounded mb-3 mb-md-0" />
           </div>
-          <div class="col-xs-4">
-          </div>
+          <div class="col-md">
+            <b>{{$course->title}}</b>
+            <br>
             {{$course->description}}
-          </br>
-          Zapisanych osób: {{$course->registered}}/{{$course->slots}}
           </div>
-          <div class="col-xs-2" >
+          <div class="col-md">
+            <b>Data:</b>
+            <br>
+            {{$course->day}}
+            <br>
+            {{$course->time}}
+          </div>
+          <div class="col-md">
+            <b>Cena:</b>
+            <br>
+            {{$course->price}}
+          </div>
+          <!-- <div class="col-md">
+          <b>Zapisanych osób:</b>
+          <br>
+          {{$course->registered}}/{{$course->slots}}
+        </div> -->
+          <div class="col-md" >
             @if($course->registered >= $course->slots )
               BRAK MIEJSC
+            </div>
             @else
               @guest
               @else
@@ -27,15 +46,14 @@
                 <input type="hidden" name="CourseID" value="{{$course->id}}">
                 <input type="hidden" name="CourseName" value="{{$course->title}}">
                 <input type="hidden" name="price" value="{{$course->price}}">
-                <button class="btn btn-primary" type="submit">Zapisz się</button>
+                <button class="btn btn-primary" type="submit">Dodaj do koszyka</button>
               </form>
               @endguest
             @endif
-          </div>
+          </div><br><br><br>
         </div>
       @endforeach
     @endif
-  </div>
 
 
 
