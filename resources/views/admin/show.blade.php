@@ -129,10 +129,13 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-6">
-                                                        <label>Ilość szkoleń(?)</label>
+                                                        <label>Email:</label>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p>{{$register->timeStamps}}</p>
+                                                      <div class="ukryj">
+                                                        {{$user = App\User::find($register->userID)}}
+                                                      </div>
+                                                        <p>{{$user->email}}</p>
                                                     </div>
                                                 </div>
                                                   <form method="post" action="{{route('register.accept',[$course->id])}}">
@@ -159,6 +162,13 @@
 body{
     background-color: #f2f2f2;
 }
+
+.ukryj{
+  visibility: hidden;
+  z-index: 30;
+  position: fixed;
+}
+
 .emp-profile{
     padding: 3%;
     margin-top: 3%;

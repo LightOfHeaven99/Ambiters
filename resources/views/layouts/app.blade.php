@@ -77,24 +77,13 @@
                 </li>
               @endif
               @else
-                <li class="nav-item dropdown">
-                  <a id="navbarDropdownMenuLink" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <b>{{ Auth::user()->name }}</b> <span class="caret"></span>
+
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/panel"><b>PANEL</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/cart"><b>KOSZYK</b>
                   </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                    <form method="get" action="{{route('user.panel')}}">
-                      {{ csrf_field() }}
-                      <input type="hidden" name="id" value="{{Auth::user()->id}}">
-                      <button type="submit">PROFIL</button>
-                    </form>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      @csrf
-                    </form>
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                     document.getElementById('logout-form').submit();">
-                      {{ __('Wyloguj się') }}
-                    </a>
-                  </div>
                 </li>
                 <!-- <li class="nav-item">
                     <form method="get" action="{{route('user.panel')}}">
@@ -113,10 +102,7 @@
                   </form>
                 </li> -->
             @endguest
-                  <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/cart"><b>KOSZYK</b>
-                    </a>
-                  </li>
+
                 </ul>
               </div>
             </div>
@@ -124,8 +110,8 @@
           <!-- Dobra elo, tu jest cały content. Navbar będzie do każdej strony taki sam. Nie będzie trzeba powielać kodu -->
 
 
-
-        @yield('content')
+          @include('layouts.message_error')
+          @yield('content')
 
 
         <!-- Footer -->

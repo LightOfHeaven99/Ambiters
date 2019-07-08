@@ -28,7 +28,12 @@ class PagesControler extends Controller
     }
 
     public function panel(){
-      $courses = Course::all();
+      $courses = Course::all()->where('status', true);
+      return view('admin.panel')->with('courses', $courses);
+    }
+
+    public function deleted(){
+      $courses = Course::all()->where('status', false);
       return view('admin.panel')->with('courses', $courses);
     }
 
@@ -40,8 +45,8 @@ class PagesControler extends Controller
       return view('contact');
     }
 
-    public function showUser(Request $request){
-      $id = $request-> input('id');
+    public function showUser(){
+      $id = Auth::id();
       $user = User::find($id);
       $registers = Registers::all()->where('userID', $id);
       return view('user.panel', ['user'=>$user,
