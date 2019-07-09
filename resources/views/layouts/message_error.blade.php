@@ -9,6 +9,7 @@
 @endif
 
 @if(session('succes'))
+    <br><br><br><br><br>
     <div class="alert alert-succes">
         {{session('succes')}}
     </div>

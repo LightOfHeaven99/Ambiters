@@ -10,32 +10,33 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <form method="post" action="{{route('email.contact')}}">
+          {{ csrf_field() }}
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input class="form-control" id="name" type="text" placeholder="Imię i nazwisko *" required="required" data-validation-required-message="Please enter your name.">
+                <input class="form-control" name="name" type="text" placeholder="Imię i nazwisko *" required="required" data-validation-required-message="Proszę wpisać swoje imię.">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email address.">
+                <input class="form-control" name="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Proszę wpisać swój adres e-mail.">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="phone" type="tel" placeholder="Telefon *" required="required" data-validation-required-message="Please enter your phone number.">
+                <input class="form-control" name="phone" type="text" placeholder="Telefon *" required="required" data-validation-required-message="Proszę wpisać swój numer telefonu.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Wiadomość... *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <input class="form-control" name="message" type="text" placeholder="Wiadomość... *" required="required" data-validation-required-message="Proszę wpisać wiadomość.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="clearfix"></div>
             <div class="col-lg-12 text-center">
               <div id="success"></div>
-              <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Wyślij</button>
+              <button  class="btn btn-primary btn-xl text-uppercase" type="submit">Wyślij</button>
             </div>
           </div>
         </form>

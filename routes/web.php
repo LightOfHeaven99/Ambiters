@@ -39,8 +39,9 @@ Route::post('create', 'RegistersController@create')->name('register.create');
 Route::post('update.elo',  'RegistersController@update')->name('register.accept');
 Route::post('/cart', 'RegistersController@destroy')->name('register.delete');
 Route::get('transaction.$transactionID', 'RegistersController@transaction')->name('register.transaction');
-//koszyk
 
+//meile
+Route::post('sendEmail', 'EmailController@contactEmail')->name('email.contact');
 
 
 Auth::routes();

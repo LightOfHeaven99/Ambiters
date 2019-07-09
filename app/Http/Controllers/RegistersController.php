@@ -62,15 +62,21 @@ class RegistersController extends Controller
     }
 
     public function transaction(Request $request){
+      $total = $request ->input('total');
       $userID = $request->input('userID');
       $registers = Registers::all()->where('userID', $userID)->where('status', "przyjeto");
+      $points =0;
       foreach($registers as $register){
         $register -> status = "oczekuje";
+        $course = Course::find($register->courseID);
+        $points = $points + $course ->points;
         $register->save();
       }
       $user = User::find($userID);
+      $user->points = $user->points + $points;
       $user ->discount =0;
       $user->save();
+      return app('App\Http\Controllers\EmailController')->transactionUserEmail($registers, $user, $total);
       return view('end');
     }
 }

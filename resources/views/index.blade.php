@@ -107,7 +107,7 @@
                               {{$id= Auth::user()->id}}
                               {{$register =  App\Registers::all()->where('userID', $id)->where('courseID', $course->id)}}
                             </div>
-                            @if($register==null)
+                            @if(0==count($register))
                               @if($course->registered >= $course->slots )
                                 BRAK MIEJSC
                               @else
@@ -123,7 +123,7 @@
                                 @endif
                               @else
                                 ZAPISANO
-                          
+
                             @endif
                           @endguest
 
