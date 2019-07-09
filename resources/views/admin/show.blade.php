@@ -142,7 +142,6 @@
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="id" value="{{$register->id}}">
                                                     <input type="hidden" name="courseID" value="{{$course->id}}">
-                                                    <input type="hidden" name="price" value="{{$course->price}}">
                                                     <button class="btn btn-primary" type="submit">POTWIERDŹ</button>
                                                   </form>
                                                 </br><br><br>

@@ -31,7 +31,7 @@ class RegistersController extends Controller
         $course -> registered = $data->count();
         $course ->save();
 
-        return view('index');
+        return app('App\Http\Controllers\PagesControler')->index();
 
     }
 
@@ -40,10 +40,8 @@ class RegistersController extends Controller
       $courseID = $request->input('courseID');
       $course = Course::find($courseID);
       $register = Registers::find($id);
-      if($register!=null){
-        $register -> status = "opłacony";
-        $register->save();
-      }
+      $register -> status = "opłacony";
+      $register->save();
       $registers = Registers::all()->where('courseID', $courseID);
       return view('admin.show', ['course'=> $course,
                                   'registers'=> $registers
@@ -61,5 +59,18 @@ class RegistersController extends Controller
       return view('cart', ['user'=> $user,
                                   'registers'=> $registers
                                 ]);
+    }
+
+    public function transaction(Request $request){
+      $userID = $request->input('userID');
+      $registers = Registers::all()->where('userID', $userID)->where('status', "przyjeto");
+      foreach($registers as $register){
+        $register -> status = "oczekuje";
+        $register->save();
+      }
+      $user = User::find($userID);
+      $user ->discount =0;
+      $user->save();
+      return view('end');
     }
 }

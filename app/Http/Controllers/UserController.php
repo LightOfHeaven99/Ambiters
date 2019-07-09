@@ -17,6 +17,7 @@ class UserController extends Controller
         $howMany = DB::table('registers')->where('userID', $id)->count();
         foreach($registers as $register){
           $register -> status = "usunieto konto";
+          $register->save();
         }
         $user = User::find($id);
         $user->delete();

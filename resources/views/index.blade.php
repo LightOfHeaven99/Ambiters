@@ -95,12 +95,44 @@
                             </div>
                           </div>
                           <br>
-                          <button class="btn btn-primary" type="button">
-                          <i class="fas fa-shopping-cart"></i>Kup teraz</button>
+                          @guest
+                            @if($course->registered >= $course->slots )
+                              BRAK MIEJSC
+                            @else
+                              <a href="{{ route('login') }}"><button class="btn btn-primary" type="button">
+                              <i class="fas fa-shopping-cart"></i>Kup teraz</button></a>
+                            @endif
+                          @else
+                            <div class=" " style="visibility: hidden; z-index: 30; position: fixed;">
+                              {{$id= Auth::user()->id}}
+                              {{$register =  App\Registers::all()->where('userID', $id)->where('courseID', $course->id)}}
+                            </div>
+                            @if($register==null)
+                              @if($course->registered >= $course->slots )
+                                BRAK MIEJSC
+                              @else
+                                <form method="post" action="{{route('register.create')}}">
+                                  {{ csrf_field() }}
+                                  <input type="hidden" name="UserID" value="{{Auth::user()->id}}">
+                                  <input type="hidden" name="UserName" value="{{Auth::user()->name}}">
+                                  <input type="hidden" name="CourseID" value="{{$course->id}}">
+                                  <input type="hidden" name="CourseName" value="{{$course->title}}">
+                                  <input type="hidden" name="price" value="{{$course->price}}">
+                                  <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i>Kup teraz</button>
+                                </form>
+                                @endif
+                              @else
+                                ZAPISANO
+                          
+                            @endif
+                          @endguest
+
                         </div>
+                        </div>
+                        @endforeach
+                        @endif
                       </div>
-                    @endforeach
-                  @endif
+
 
                 </div>
                 <br>

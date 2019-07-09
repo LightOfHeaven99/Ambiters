@@ -26,7 +26,7 @@
 							<div class="hidden">
 								{{$data =10}}
 								{{$course = App\Course::find($register->courseID)}}
-								{{$total = $total + $register->price}}
+								{{$total = $total + $register->price - $course->discount}}
 							</div>
 								<tr>
 									<td data-th="Product">
@@ -39,7 +39,13 @@
 										</div>
 									</td>
 									<td data-th="Price">{{$register->price}} zł</td>
-									<td data-th="Subtotal" class="text-center">-Tu zniżki brak (jest od całości liczona)</td>
+									<td data-th="Subtotal" class="text-center">
+									@if($course->discount>0)
+										-{{$course->discount}}
+									@else
+										BRAK
+									@endif
+									</td>
 									<td class="" data-th="">
 										<form method="post" action="{{route('register.delete')}}">
 											{{ csrf_field() }}
@@ -55,6 +61,14 @@
 
 					</tbody>
 					<tfoot>
+						<div class="hidden">
+							{{$user = App\User::find(Auth::user()->id)}}
+							{{$total = $total - $user->discount}}
+							{{$transactionID = $total*69}}
+							@if($total<'0')
+								{{$total=0}}
+							@endif
+							</div>
 						<tr class="visible-xs">
 							<td class="text-center"><strong>Total {{$total}} zł</strong></td>
 						</tr>
@@ -62,8 +76,22 @@
 							<!-- <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Kontynuuj Zakupy</a></td> -->
 							<td colspan="2" class="hidden-xs"></td>
               <td colspan="1" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong>Łącznie {{$total}} zł</strong></td>
-							<td><a href="#" class="btn btn-success btn-block">Zapłać <i class="fa fa-angle-right"></i></a></td>
+							<td class="hidden-xs text-center"><strong>Rabat użytkownika:
+							@if($user->discount>0)
+								{{$user->discount}}
+							@else
+								0
+							@endif
+							 zł</strong></td>
+							<td class="hidden-xs text-center"><strong>Łącznie: {{$total}} zł</strong></td>
+							<td>
+								<form method="get" action="{{route('register.transaction', [$transactionID])}}">
+									<input type="hidden" name="userID" value="{{$user->id}}">
+									<input type="hidden" name="total" value="{{$total}}">
+									<input type="hidden" name="transactionID" value="{{$transactionID}}">
+									<button class="btn btn-success btn-block" type="submit">Zapłać <i class="fa fa-angle-right"></i></button>
+								</form>
+							</td>
 						</tr>
 					</tfoot>
 				</table>

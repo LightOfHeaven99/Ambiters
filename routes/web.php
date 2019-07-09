@@ -23,6 +23,7 @@ Route::get('/faq', 'PagesControler@faq');
 Route::get('/panel', 'PagesControler@showUser')->name('user.panel');
 Route::get('/cart', 'PagesControler@showCart');
 Route::get('/deletedCourses', 'PagesControler@deleted');
+Route::get('/contact', 'PagesControler@contact');
 
 //Działania na kurasach
 Route::post('form', 'CourseController@create')->name('form.create');
@@ -35,8 +36,9 @@ Route::post('/panel', 'UserController@getDiscount')->name('user.discount');
 
 // Działanie na zapisach
 Route::post('create', 'RegistersController@create')->name('register.create');
-Route::post('admin.{id}.show.update',  'RegistersController@update')->name('register.accept');
+Route::post('update.elo',  'RegistersController@update')->name('register.accept');
 Route::post('/cart', 'RegistersController@destroy')->name('register.delete');
+Route::get('transaction.$transactionID', 'RegistersController@transaction')->name('register.transaction');
 //koszyk
 
 
