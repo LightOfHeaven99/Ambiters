@@ -2,7 +2,7 @@
 @section('content')
 <br><br><br>
   <div class="container emp-profile">
-            <form method="post">
+
                 <div class="row">
                     <div class="col-md">
                         <div class="profile-head">
@@ -186,7 +186,6 @@
                                               <div class="col-md-2">
                                                 <form method="get" action="{{route('user.delete')}}">
                                                   {{ csrf_field() }}
-                                                  <input type="hidden" name="id" value="{{$user->id}}">
                                                   <button class="btn btn-primary" type="submit">USUŃ KONTO</button>
                                                 </form>
                                               </div>
@@ -194,7 +193,6 @@
                                           </div>
                                     </div>
                                   </div>
-                                </form>
                               </div>
 
 <style>

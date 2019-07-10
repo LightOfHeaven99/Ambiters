@@ -11,13 +11,18 @@ use Illuminate\Support\Facades\Auth;
 class RegistersController extends Controller
 {
     public function create(Request $request){
-        $register = new Registers();
 
         $course = Course::find($request->input('CourseID'));
         if($course->registered>= $course->slots){
-          return view('index');
+          return app('App\Http\Controllers\PagesControler')->index();
         }
 
+        $duplicat = Register::all()->where('userID', $request->input('UserID'))->where('course', $request->input('CourseID'))->where('status', "w koszyku");
+        if($duplicat!=null){
+          return app('App\Http\Controllers\PagesControler')->index();
+        }
+
+        $register = new Registers();
         $register->user= $request->input('UserName');
         $register->userID= $request->input('UserID');
         $register->course= $request->input('CourseName');
@@ -36,15 +41,20 @@ class RegistersController extends Controller
 
     }
 
-    public function accept(Request $request){
+    public function update(Request $request){
       $id = $request->input('id');
-      $courseID = $request->input('courseID');
-      $course = Course::find($courseID);
       $register = Registers::find($id);
+      $user = User::find($register->userID);
+      $courseID = $register->courseID;
+      $course = Course::find($courseID);
+      $user -> points = ($user -> points) + ($course ->points);
       $register -> status = "zatwierdzony";
       $register->save();
-      $registers = Registers::all()->where('courseID', $courseID);
+
+      app('App\Http\Controllers\EmailController')->acceptedEmail($register, $user, $course);
+
       return back();
+
     }
 
     public function destroy(Request $request){
@@ -78,6 +88,7 @@ class RegistersController extends Controller
       $user->save();
       $registersToSend = Registers::all()->where('userID', $userID)->where('toSend', true);
       app('App\Http\Controllers\EmailController')->transactionUserEmail($registersToSend, $user, $total, $idTransaction);
+      app('App\Http\Controllers\EmailController')->transactionAdminEmail($registersToSend, $user, $total, $idTransaction);
 
       foreach($registersToSend as $register){
         $register -> toSend = false;

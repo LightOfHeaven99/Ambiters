@@ -29,14 +29,14 @@
               <div class="admin-options">
           <div class="row">
             <div class="col-sm text-center">
-          <form method="post" action="{{route('form.edit', [$course->id])}}">
+          <form method="get" action="{{route('form.edit', [$course->id])}}">
             {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$course->id}}">
             <button class="btn btn-primary" type="submit">EDYTUJ</button>
           </form>
         </div>
         <div class="col-sm text-center">
-          <form method="post" action="{{route('form.show', [$course->id])}}">
+          <form method="get" action="{{route('form.show', [$course->id])}}">
             {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$course->id}}">
             <button class="btn btn-primary" type="submit">PODGLĄD</button>

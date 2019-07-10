@@ -16,8 +16,8 @@ Route::get('/', 'PagesControler@index');
 Route::get('/admin', 'PagesControler@panel');
 Route::get('/contact', 'PagesControler@contact');
 Route::get('admin.newCourse', 'PagesControler@newCourse');
-Route::post('admin.{id}.edit', 'CourseController@edit')->name('form.edit');
-Route::post('admin.{id}.show', 'CourseController@show')->name('form.show');
+Route::get('/edit', 'PagesControler@editCourse')->name('form.edit');
+Route::get('/show', 'PagesControler@showCourse')->name('form.show');
 Route::get('/courses', 'PagesControler@courses');
 Route::get('/faq', 'PagesControler@faq');
 Route::get('/panel', 'PagesControler@showUser')->name('user.panel');
@@ -32,12 +32,12 @@ Route::post('update', 'CourseController@update')->name('form.update');
 Route::get('/admin/delete', 'CourseController@delete')->name('form.delete');
 
 //działania na użytkowniku
-Route::get('/deleted', 'UserController@delete')->name('user.delete');
+Route::get('deleted', 'UserController@delete')->name('user.delete');
 Route::post('/panel', 'UserController@getDiscount')->name('user.discount');
 
 // Działanie na zapisach
+Route::post('accept/elo', 'RegistersController@update')->name('register.accept');
 Route::post('create', 'RegistersController@create')->name('register.create');
-Route::post('accept',  'RegistersController@accept')->name('register.accept');
 Route::post('/cart', 'RegistersController@destroy')->name('register.delete');
 Route::get('transaction.$transactionID', 'RegistersController@transaction')->name('register.transaction');
 

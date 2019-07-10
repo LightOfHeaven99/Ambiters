@@ -55,6 +55,21 @@ class PagesControler extends Controller
                                 ]);
     }
 
+    public function editCourse(Request $request){
+        $id = $request->input('id');
+        $course =Course::find($id);
+        return view('admin.edit')->with('course', $course);
+    }
+
+    public function showCourse(Request $request){
+        $id = $request->input('id');
+        $course = Course::find($id);
+        $registers = Registers::all()->where('courseID', $id);
+        return view('admin.show', ['course'=> $course,
+                                    'registers'=> $registers
+                                  ]);
+    }
+
     public function showCart(){
       $userID = Auth::id();
       $user = User::find($userID)->where('status');

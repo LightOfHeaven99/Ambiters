@@ -3,7 +3,7 @@
 @section('content')
 <br><br><br>
   <div class="container emp-profile">
-            <form method="post">
+
                 <div class="row">
                     <div class="col-md">
                         <div class="profile-head">
@@ -135,23 +135,25 @@
                                                       <div class="ukryj">
                                                         {{$user = App\User::find($register->userID)}}
                                                       </div>
+                                                        @if($user!=null)
                                                         <p>{{$user->email}}</p>
+                                                        @else
+                                                          BRAK DANYCH - USUNIĘTO KONTO
+                                                        @endif
                                                     </div>
                                                 </div>
-                                                  <form method="post" action="{{route('register.accept',[$course->id])}}">
+                                                  <form method="post" action="{{route('register.accept')}}">
                                                     {{ csrf_field() }}
                                                     <input type="hidden" name="id" value="{{$register->id}}">
                                                     <input type="hidden" name="courseID" value="{{$course->id}}">
                                                     <button class="btn btn-primary" type="submit">POTWIERDŹ</button>
                                                   </form>
-                                                </br><br><br>
                                                 @endforeach
                                               @endif
                                             </div>
                                       </div>
                                     </div>
                                   </div>
-                                </form>
                               </div>
                             </div>
                           </section>

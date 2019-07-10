@@ -9,21 +9,17 @@
 </head>
 <body>
 
-Dokonano właśnie zakupu <br>
+Zaksięgowano wpłatę!<br>
 <br>
-Użytkownik: {{$data['user']->name}}<br>
-ID zamówienia: {{$data['idTransaction']}}<br>
-Zapisy na kursy: <br>
-<br>
-@if(count($data['registers'])>0)
-  @foreach($data['registers']->all() as $register )
-    - {{$register->course}}<br>
-  @endforeach
-@endif
-
-<br>
-Koszt: {{$data['total']}}<br>
+Zatwierdzono właśnie zapis na kurs: <br>
+- {{$data['register']->course}}<br>
+Szkolenie odbędzie się dnia {{$data['course']->day}} o godzine {{$data['course']->time}}.<br>
+Miejsce szkolenia: {{$data['course']->place}}.
 <br><br>
+Do zobaczenia!
+<br><br>
+Pozdrawiamy<br>
+Zespół Ambiters
 
 </body>
 </html>

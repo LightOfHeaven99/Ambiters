@@ -47,4 +47,43 @@ class EmailController extends Controller
         Mail::to($user->email)->send(new SendEmail($data, $subject, $file));
 
     }
+
+
+    public function transactionAdminEmail($registers, $user, $total, $idTransaction )
+    {
+
+      $data = array(
+        'registers' => $registers,
+        'user' => $user,
+        'total' => $total,
+        'idTransaction' => $idTransaction);
+
+
+       $subject = 'Złożono zamówienie';
+       $file = 'emails.transactionAdmin';
+
+
+
+        Mail::to('kfadrowski@gmail.com')->send(new SendEmail($data, $subject, $file));
+
+    }
+
+    public function acceptedEmail($register, $user, $course)
+    {
+
+
+      $data = array(
+        'register' => $register,
+        'user' => $user,
+        'course' => $course);
+
+
+       $subject = 'Zatwierdzono zapis';
+       $file = 'emails.transactionAccepted';
+
+
+
+        Mail::to($user->email)->send(new SendEmail($data, $subject, $file));
+
+    }
 }

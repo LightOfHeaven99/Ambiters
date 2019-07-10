@@ -6,22 +6,20 @@ use Illuminate\Http\Request;
 use DB;
 use App\User;
 use App\Registers;
+use App\Course;
 use Illuminate\Support\Facades\Auth;
 
 
 class UserController extends Controller
 {
     public function delete(Request $request){
-        $id = $request->input('id');
+        $id = Auth::id();
         $registers = Registers::where('userID', $id)->get();
         $howMany = DB::table('registers')->where('userID', $id)->count();
-        foreach($registers as $register){
-          $register -> status = "usunieto konto";
-          $register->save();
-        }
         $user = User::find($id);
         $user->delete();
-        return view('index');
+        $courses = Course::all();
+        return view('index')->with('courses', $courses);
       }
 
     public function getDiscount(Request $request){
