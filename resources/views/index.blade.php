@@ -76,7 +76,7 @@
                       <h3 class="section-heading text-uppercase">Co zyskujesz dzięki współpracy z nami?</h3>
                       <br>
                       <ul class="list-inline" style="list-style-type: disc; text-align: left; font-size: 22px;">
-                        <li>2.5h zajęc z przerwą.</li>
+                        <li>2.5h zajęć z przerwą.</li>
                         <li>Świetna lokalizacja w centrum.</li>
                         <li>Grupa na Facebook’u tylko dla klientów.</li>
                         <li>Najniższa cena na rynku.</li>
