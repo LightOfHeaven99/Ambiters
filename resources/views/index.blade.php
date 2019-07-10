@@ -32,7 +32,7 @@
               </section>
               @endguest
 
-              <section class="page-section" id="ambiters">
+              <section class="bg-light page-section" id="ambiters">
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-12 text-center">
@@ -64,6 +64,25 @@
                       </span>
                       <h4 class="service-heading">Doświadczenie</h4>
                       <p class="text-muted">Starannie wyselekcjonowani korepetytorzy z wieloletnim doświadczeniem w nauczaniu doskonale opanowali metody skutecznego przekazywania wiedzy w sposób kreatywny i zachęcający do jej zgłębiania. Nasz zespół tworzą tylko i wyłącznie profesjonaliści! Zanim do Nas dołączą przechodzą szereg testów aby współpracowało się Wam jak najlepiej!</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="page-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h3 class="section-heading text-uppercase">Co zyskujesz dzięki współpracy z nami?</h3>
+                      <br>
+                      <ul class="list-inline" style="list-style-type: disc; text-align: left; font-size: 22px;">
+                        <li>2.5h zajęc z przerwą.</li>
+                        <li>Świetna lokalizacja w centrum.</li>
+                        <li>Grupa na Facebook’u tylko dla klientów.</li>
+                        <li>Najniższa cena na rynku.</li>
+                        <li>Ambitnych, zmotywowanych korepetytorów w drodze po Twój sukces.</li>
+                        <li>Bonusy o których dowiesz się po zajęciach!</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
