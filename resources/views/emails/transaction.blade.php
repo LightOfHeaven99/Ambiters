@@ -23,6 +23,7 @@ Twoje zamówienie ma teraz status oczekujący.<br>
 Wyślij należności na konto:<br>
 Rafał Okrągły <br>
 Adres:  <br>
+Tutył: {{$data['idTransaction']}} <br>
 Numer konta: 33 1020 2137 0000 9102 0215 6255 <br>
 Kwota: {{$data['total']}} złotych.<br>
 <br><br>
