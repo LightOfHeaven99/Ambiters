@@ -32,7 +32,7 @@
     <input type="text" name="toLearn2" class="txt"></br>
     <label for="toLearn3"><b>Nauczysz się (3):</b></label>
     <input type="text" name="toLearn3" class="txt"></br>
-    <label for="image"><b>Zdjęcie - max: 2MB - wymiary: 600x600</b></label></br>
+    <label for="image"><b>Zdjęcie - max: 2MB - wymiary: 400x300</b></label></br>
     <input type="file" name="image" ></br><br><br>
     <div class="col-sm text-center">
     <button class="btn btn-primary" type="submit">Utwórz Kurs</button>

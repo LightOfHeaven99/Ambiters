@@ -23,7 +23,8 @@ class RegistersController extends Controller
         $register->course= $request->input('CourseName');
         $register->courseID= $request->input('CourseID');
         $register->price= $request->input('price');
-        $register->status="przyjeto";
+        $register->status="w koszyku";
+        $register->toSend=false;
         $register->save();
         $courses = Course::all();
 
@@ -35,17 +36,15 @@ class RegistersController extends Controller
 
     }
 
-    public function update(Request $request){
+    public function accept(Request $request){
       $id = $request->input('id');
       $courseID = $request->input('courseID');
       $course = Course::find($courseID);
       $register = Registers::find($id);
-      $register -> status = "opłacony";
+      $register -> status = "zatwierdzony";
       $register->save();
       $registers = Registers::all()->where('courseID', $courseID);
-      return view('admin.show', ['course'=> $course,
-                                  'registers'=> $registers
-                                ]);
+      return back();
     }
 
     public function destroy(Request $request){
@@ -68,15 +67,20 @@ class RegistersController extends Controller
       $points =0;
       foreach($registers as $register){
         $register -> status = "oczekuje";
-        $course = Course::find($register->courseID);
-        $points = $points + $course ->points;
+        $register -> toSend = true;
         $register->save();
       }
       $user = User::find($userID);
-      $user->points = $user->points + $points;
       $user ->discount =0;
       $user->save();
-      return app('App\Http\Controllers\EmailController')->transactionUserEmail($registers, $user, $total);
+      $registersToSend = Registers::all()->where('userID', $userID)->where('toSend', true);
+      app('App\Http\Controllers\EmailController')->transactionUserEmail($registersToSend, $user, $total);
+
+      foreach($registersToSend as $register){
+        $register -> toSend = false;
+        $register->save();
+      }
+
       return view('end');
     }
 }

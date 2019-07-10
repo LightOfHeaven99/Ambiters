@@ -58,11 +58,7 @@
                                     {{ __('Zaloguj się') }}
                                 </button>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Zapomniałeś hasła?') }}
-                                    </a>
-                                @endif
+                                
                             </div>
                         </div>
                     </form>

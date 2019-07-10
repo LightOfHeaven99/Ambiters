@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Course;
 use App\Registers;
 use Illuminate\Support\Facades\Auth;
+use Intervention\Image\Facades\Image;
 
 
 class CourseController extends Controller
@@ -20,7 +21,8 @@ class CourseController extends Controller
         'slots'=>'required',
         'image'=>'required',
         'points'=>'required',
-        'price'=>'required'
+        'price'=>'required',
+        'image'
   		];
 
   		$messeges = [
@@ -54,11 +56,13 @@ class CourseController extends Controller
         $course->registered =0;
         $course->discount=0;
 
+
+
         $image = $request->file('image');
         $imageName = $request->input('title') . '.' . $image->getClientOriginalExtension();
         $course->img=$imageName;
-        $destinationPath = public_path('/img/courses');
-        $image->move($destinationPath, $imageName);
+        $destinationPath = public_path('/img/courses/');
+        Image::make($image)->fit('400', '300')->encode('jpg', 80)->save( $destinationPath . $imageName);
 
         $course->save();
 

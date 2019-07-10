@@ -41,7 +41,9 @@ class EmailController extends Controller
        $subject = 'Potwierdzenie zamównia';
        $file = 'emails.transaction';
 
+
+
         Mail::to($user->email)->send(new SendEmail($data, $subject, $file));
-        return back();
+
     }
 }
