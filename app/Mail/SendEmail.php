@@ -35,6 +35,6 @@ class SendEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('kfadrowski@gmail.com')->subject($this->subject)->view($this->file)->with('data', $this->data);
+        return $this->from('admin@ambiters.pl')->subject($this->subject)->view($this->file)->with('data', $this->data);
     }
 }

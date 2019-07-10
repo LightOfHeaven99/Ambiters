@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'ambiter1@s33.zenbox.pl'),
+        'address' => env('MAIL_FROM_ADDRESS', 'smtp.zenbox.pl'),
         'name' => env('MAIL_FROM_NAME', 'Ambiters'),
     ],
 
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', ''),
+    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
