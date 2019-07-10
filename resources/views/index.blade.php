@@ -74,7 +74,7 @@
                 <div class="row">
                   <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase">Kursy</h2>
-                    <h3 class="section-subheading text-muted">Wybierz interesujący Cię temat kursu, w konkretny dzień i godzinę, w konkretnym miejscu i zobacz czego nauczysz się na szkoleniu klikając plusik pod danym szkoleniem.</h3>
+                    <h3 class="section-subheading text-muted">Wybierz interesujący Cię temat kursu, w konkretny dzień i godzinę, w konkretnym miejscu i zobacz czego nauczysz się na szkoleniu klikając "Szczegóły" pod danym szkoleniem.</h3>
                   </div>
                 </div>
                 <div class="row">
@@ -247,9 +247,9 @@
                   <p>{{$course->description}}</p>
                   <b>Czego się nauczysz?</b>
                   <br><br>
-                  <ul>
+                  <ul class="list-inline" style="list-style-type: disc;">
                     @if($course->toLearn1!=null)
-                    <li>{{$course->toLearn1}} </li>
+                    <li>{{$course->toLearn1}}</li>
                     @endif
                     @if($course->toLearn2!=null)
                     <li>{{$course->toLearn2}}</li>
