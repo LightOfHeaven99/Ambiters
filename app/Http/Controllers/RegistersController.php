@@ -17,10 +17,7 @@ class RegistersController extends Controller
           return app('App\Http\Controllers\PagesControler')->index();
         }
 
-        $duplicat = Registers::all()->where('userID', $request->input('UserID'))->where('course', $request->input('CourseID'))->where('status', "w koszyku");
-        if($duplicat!=null){
-          return app('App\Http\Controllers\PagesControler')->index();
-        }
+        
 
         $register = new Registers();
         $register->user= $request->input('UserName');
