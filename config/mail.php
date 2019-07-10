@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'localhost'),
+    'host' => env('MAIL_HOST', 'smtp.zenbox.pl'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'smtp.zenbox.pl'),
+        'address' => env('MAIL_FROM_ADDRESS', 'admin@ambiters.pl'),
         'name' => env('MAIL_FROM_NAME', 'Ambiters'),
     ],
 
