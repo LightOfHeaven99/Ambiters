@@ -58,7 +58,7 @@ class PagesControler extends Controller
     public function showCart(){
       $userID = Auth::id();
       $user = User::find($userID)->where('status');
-      $registers = Registers::all()->where('userID', $userID)->where('status', "przyjeto");
+      $registers = Registers::all()->where('userID', $userID)->where('status', "w koszyku");
       return view('cart', ['user'=> $user,
                                   'registers'=> $registers
                                 ]);

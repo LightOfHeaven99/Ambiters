@@ -54,7 +54,7 @@ class RegistersController extends Controller
       }
       $userID = Auth::id();
       $user = User::find($userID)->where('status');
-      $registers = Registers::all()->where('userID', $userID)->where('status', "przyjeto");
+      $registers = Registers::all()->where('userID', $userID)->where('status', "w koszyku");
       return view('cart', ['user'=> $user,
                                   'registers'=> $registers
                                 ]);
@@ -63,18 +63,21 @@ class RegistersController extends Controller
     public function transaction(Request $request){
       $total = $request ->input('total');
       $userID = $request->input('userID');
-      $registers = Registers::all()->where('userID', $userID)->where('status', "przyjeto");
+      $idTransaction = 3;
+      $registers = Registers::all()->where('userID', $userID)->where('status', "w koszyku");
       $points =0;
       foreach($registers as $register){
+        $idTransaction =( $idTransaction + $register->courseID);
         $register -> status = "oczekuje";
         $register -> toSend = true;
         $register->save();
       }
+      $idTransaction = $idTransaction * 6969;
       $user = User::find($userID);
       $user ->discount =0;
       $user->save();
       $registersToSend = Registers::all()->where('userID', $userID)->where('toSend', true);
-      app('App\Http\Controllers\EmailController')->transactionUserEmail($registersToSend, $user, $total);
+      app('App\Http\Controllers\EmailController')->transactionUserEmail($registersToSend, $user, $total, $idTransaction);
 
       foreach($registersToSend as $register){
         $register -> toSend = false;

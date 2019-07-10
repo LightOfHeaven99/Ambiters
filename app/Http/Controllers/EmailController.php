@@ -29,13 +29,14 @@ class EmailController extends Controller
 
     }
 
-    public function transactionUserEmail($registers, $user, $total )
+    public function transactionUserEmail($registers, $user, $total, $idTransaction )
     {
 
       $data = array(
         'registers' => $registers,
         'user' => $user,
-        'total' => $total);
+        'total' => $total,
+        'idTransaction' => $idTransaction);
 
 
        $subject = 'Potwierdzenie zamównia';
