@@ -17,7 +17,7 @@ class RegistersController extends Controller
           return app('App\Http\Controllers\PagesControler')->index();
         }
 
-        
+
 
         $register = new Registers();
         $register->user= $request->input('UserName');
@@ -92,6 +92,7 @@ class RegistersController extends Controller
         $register->save();
       }
 
-      return view('end');
+      return view('end', ['registers'=> $registersToSend,
+                          'total'=> $total]);
     }
 }
