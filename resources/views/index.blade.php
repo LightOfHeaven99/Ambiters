@@ -116,7 +116,7 @@
                           <br>
                           @guest
                             @if($course->registered >= $course->slots )
-                              BRAK MIEJSC
+                              <b>BRAK MIEJSC</b>
                             @else
                               <a href="{{ route('login') }}"><button class="btn btn-primary" type="button">
                               <i class="fas fa-shopping-cart"></i>Kup teraz</button></a>
@@ -128,7 +128,7 @@
                             </div>
                             @if(0==count($register))
                               @if($course->registered >= $course->slots )
-                                BRAK MIEJSC
+                                <b>BRAK MIEJSC</b>
                               @else
                                 <form method="post" action="{{route('register.create')}}">
                                   {{ csrf_field() }}
@@ -285,7 +285,7 @@
                   </ul>
                   @guest
                     @if($course->registered >= $course->slots )
-                      BRAK MIEJSC
+                      <b>BRAK MIEJSC</b>
                     @else
                       <a href="{{ route('login') }}"><button class="btn btn-primary" type="button">
                       <i class="fas fa-shopping-cart"></i>Kup teraz</button></a>
