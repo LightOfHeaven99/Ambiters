@@ -15,7 +15,7 @@
 
               @guest
               @else
-              <section class="bg-light page-section" id="register">
+              <section class="page-section" id="register">
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-12 text-center">
@@ -76,12 +76,12 @@
                       <h3 class="section-heading text-uppercase">Co zyskujesz dzięki współpracy z nami?</h3>
                       <br>
                       <ul class="list-inlines" style="list-style-type: disc; text-align: left; font-size: 22px;">
-                        <li>2.5h zajęć z przerwą.</li>
-                        <li>Świetna lokalizacja w centrum.</li>
-                        <li>Grupa na Facebook’u tylko dla klientów.</li>
-                        <li>Najniższa cena na rynku.</li>
-                        <li>Ambitnych, zmotywowanych korepetytorów w drodze po Twój sukces.</li>
-                        <li>Bonusy o których dowiesz się po zajęciach!</li>
+                        <li>2.5h zajęć z przerwą. &#9201;</li>
+                        <li>Świetna lokalizacja w centrum. &#128270;</li>
+                        <li>Grupa na Facebook’u tylko dla klientów. &#128172;</li>
+                        <li>Najniższa cena na rynku. &#128202;</li>
+                        <li>Ambitnych, zmotywowanych korepetytorów w drodze po Twój sukces. &#128161;</li>
+                        <li>Bonusy o których dowiesz się po zajęciach! &#11088;</li>
                       </ul>
                     </div>
                   </div>
