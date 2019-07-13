@@ -145,7 +145,7 @@
                       <div class="help">
                         <h5>Pomoc</h5>
                         <p>
-                          <i class="fas fa-home mr-3"></i> Wrocław, Legnicka, 82/10</p>
+                          <i class="fas fa-home mr-3"></i> Wrocław, Leszczyńskiego 4/29</p>
                         <p>
                           <i class="fas fa-envelope mr-3"></i> ambiters@zenbox.com</p>
                         <p>
