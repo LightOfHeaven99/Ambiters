@@ -101,7 +101,7 @@
                     @foreach($courses->all() as $course)
                       <div class="col-md-4 col-sm-6 szkolenia-item">
                         <a class="szkolenia-link">
-                          <img class="img-fluid" src="public/img/portfolio/{{$course->img}}" alt="">
+                          <img class="img-fluid" src="img/portfolio/{{$course->img}}" alt="">
                         </a>
                         <div class="szkolenia-caption">
                           <h4>{{$course->title}}</h4>
