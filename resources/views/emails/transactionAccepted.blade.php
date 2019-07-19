@@ -13,7 +13,7 @@ Zaksięgowano wpłatę!<br>
 <br>
 Zatwierdzono właśnie zapis na kurs: <br>
 - {{$data['register']->course}}<br>
-Szkolenie odbędzie się dnia {{$data['course']->day}} o godzine {{$data['course']->time}}.<br>
+Szkolenie odbędzie się dnia {{$data['course']->day}} o godzine {{substr($data['course']->time, 0 , 5)}}.<br>
 Miejsce szkolenia: {{$data['course']->place}}.
 <br><br>
 Do zobaczenia!

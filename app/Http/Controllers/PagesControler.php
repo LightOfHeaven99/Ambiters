@@ -35,7 +35,7 @@ class PagesControler extends Controller
         $courses = Course::all()->where('status', true);
         return view('index')->with('courses',$courses);
       }
-      if($user->email != "kajetan.fadrowski@gmail.com"){
+      if($user->email != "okragly.rafal@gmail.com"){
         $courses = Course::all()->where('status', true);
         return view('admin.panel')->with('courses', $courses);
         $courses = Course::all()->where('status', true);

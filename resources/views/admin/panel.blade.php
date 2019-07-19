@@ -19,7 +19,7 @@
               <b>Nazwa szkolenia:</b> {{$course->title}}<br>
             </div>
             <div class="col-sm text-center">
-            <b>Data:</b> {{$course->time}} {{$course->day}} <!-- Tutaj data szkolenia -->
+            <b>Data:</b> {{substr($course->time,0,5)}} {{$course->day}} <!-- Tutaj data szkolenia -->
           </div>
           <div class="col-sm text-center">
           <b>Ilość zapisanych osób:</b> {{$course->registered}}/{{$course->slots}} <!-- Tutaj ilość zapisanych ludzi na szkolenie -->

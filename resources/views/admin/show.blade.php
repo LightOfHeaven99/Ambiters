@@ -77,7 +77,7 @@
                                                 <label>Czas</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>{{$course->time}}</p>
+                                                <p>{{substr($course->time,0,5)}}</p>
                                             </div>
                                         </div>
                                         <div class="row">

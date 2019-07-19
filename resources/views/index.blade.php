@@ -101,11 +101,11 @@
                     @foreach($courses->all() as $course)
                       <div class="col-md-4 col-sm-6 szkolenia-item">
                         <a class="szkolenia-link">
-                          <img class="img-fluid" src="img/portfolio/{{$course->img}}" alt="">
+                          <img class="img-fluid" src="public/img/portfolio/{{$course->img}}" alt="">
                         </a>
                         <div class="szkolenia-caption">
                           <h4>{{$course->title}}</h4>
-                          <p class="text-muted">{{$course->day}}<br>{{$course->time}}</p>
+                          <p class="text-muted">{{$course->day}}<br>{{substr($course->time, 0 , 5)}}</p>
                           <a class="szkolenia-link" data-toggle="modal" href="#course{{$course->id}}">
                           <div class="szkolenia-hover">
                             <div class="szkolenia-hover-content">
@@ -284,7 +284,7 @@
                   </ul>
                   <br>
                   <ul class="list-inline">
-                    <li><b>Data: {{$course->day}}<br>{{$course->time}}</b></li>
+                    <li><b>Data: {{$course->day}}<br>{{substr($course->time, 0 , 5)}}</b></li>
                     <li><b>Cena: {{$course->price}}zł</b></li>
                     <li><b>Miejsce: {{$course->place}}</b></li>
                   </ul>

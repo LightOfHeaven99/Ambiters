@@ -58,6 +58,10 @@ class RegistersController extends Controller
     public function destroy(Request $request){
       $register = Registers::find($request->input('id'));
       if($register!=null){
+        $course = Course::find($register->courseID);
+        $data = \App\Registers::where('courseID', $register->courseID);
+        $course -> registered = $data->count()-1;
+        $course ->save();
         $register -> delete();
       }
       $userID = Auth::id();
@@ -71,6 +75,10 @@ class RegistersController extends Controller
     public function destroyAdmin(Request $request){
       $register = Registers::find($request->input('id'));
       if($register!=null){
+        $course = Course::find($register->courseID);
+        $data = \App\Registers::where('courseID', $register->courseID);
+        $course -> registered = $data->count()-1;
+        $course ->save();
         $register -> delete();
       }
       $id = $request->input('CourseID');

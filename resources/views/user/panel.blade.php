@@ -93,7 +93,7 @@
                                                     <p>{{$course->day}}</p>
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <p>{{$course->time}}</p>
+                                                    <p>{{substr($course->time, 0 , 5)}}</p>
                                                 </div>
                                                 <div class="col-md-2">
                                                     <p>{{$register->status}}</p>
