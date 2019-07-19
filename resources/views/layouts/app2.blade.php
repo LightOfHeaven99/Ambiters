@@ -75,7 +75,7 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <div class="dropdown-text">
                     <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>PROFIL</b></a>
-                    @if (Auth::user()->email=="kajetan.fadrowski@gmail.com")
+                    @if (Auth::user()->email=="okragly.rafal@gmail.com")
                       <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>ADMIN</b></a>
                     @endif
 
