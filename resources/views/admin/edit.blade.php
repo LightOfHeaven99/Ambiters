@@ -35,6 +35,20 @@
   <input type="text" name="toLearn2" class="txt"></br>
   <label for="toLearn3"><b>Nauczysz się (3):</b></label>
   <input type="text" name="toLearn3" class="txt"></br>
+  <label for="toLearn4"><b>Nauczysz się (4):</b></label>
+  <input type="text" name="toLearn4" class="txt"></br>
+  <label for="toLearn5"><b>Nauczysz się (5):</b></label>
+  <input type="text" name="toLearn5" class="txt"></br>
+  <label for="image"><b>Wybierz zdjęcie</b></label></br>
+  <select name="image">
+    <option value="matma.jpg"> Matematyka </option>
+    <option value="fizyka.jpg"> Fizyka </option>
+  </select>
+  <label for="type"><b>Wybierz typ zajęć</b></label></br>
+  <select name="type">
+    <option value="matematyka"> Matematyka </option>
+    <option value="fizyka"> Fizyka </option>
+  </select>
   <div class="col-sm text-center">
   <button class="btn btn-primary" type="submit">Zaktualizuj </button>
 </div>

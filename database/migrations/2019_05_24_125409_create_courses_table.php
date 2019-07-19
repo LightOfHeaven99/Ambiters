@@ -27,9 +27,12 @@ class CreateCoursesTable extends Migration
             $table->Integer('points');
             $table->Float('discount');
             $table->Boolean('status');
+            $table->String('type');
             $table->String('toLearn1')->nullable();
             $table->String('toLearn2')->nullable();
             $table->String('toLearn3')->nullable();
+            $table->String('toLearn4')->nullable();
+            $table->String('toLearn5')->nullable();
             $table->timestamps();
         });
     }

@@ -1,5 +1,4 @@
 @extends('layouts.app2')
-
 @section('content')
 <br><br><br>
   <div class="container emp-profile">
@@ -147,7 +146,13 @@
                                                     <input type="hidden" name="id" value="{{$register->id}}">
                                                     <input type="hidden" name="courseID" value="{{$course->id}}">
                                                     <button class="btn btn-primary" type="submit">POTWIERDŹ</button>
-                                                  </form>
+                                                  </form><br>
+                                                  <form method="post" action="{{route('register.deleteAdmin')}}">
+                              											{{ csrf_field() }}
+                              											<input type="hidden" name="id" value="{{$register->id}}">
+                                                    <input type="hidden" name="CourseID" value="{{$course->id}}">
+                              											<button type="submit" class="btn btn-danger btn-sm">USUŃ</button>
+                              										</form>
                                                 @endforeach
                                               @endif
                                             </div>

@@ -53,17 +53,12 @@ class CourseController extends Controller
         $course->toLearn1=$request->input('toLearn1');
         $course->toLearn2=$request->input('toLearn2');
         $course->toLearn3=$request->input('toLearn3');
+        $course->toLearn4=$request->input('toLearn4');
+        $course->toLearn5=$request->input('toLearn5');
         $course->registered =0;
         $course->discount=0;
-
-
-
-        $image = $request->file('image');
-        $imageName = $request->input('title') . '.' . $image->getClientOriginalExtension();
-        $course->img=$imageName;
-        $destinationPath = public_path('/img/courses/');
-        Image::make($image)->fit('400', '300')->encode('jpg', 80)->save( $destinationPath . $imageName);
-
+        $course->img=$request->input('image');
+        $course->type=$request->input('type');
         $course->save();
 
         return app('App\Http\Controllers\PagesControler')->panel();
@@ -88,6 +83,10 @@ class CourseController extends Controller
         $course->toLearn1=$request->input('toLearn1');
         $course->toLearn2=$request->input('toLearn2');
         $course->toLearn3=$request->input('toLearn3');
+        $course->toLearn4=$request->input('toLearn4');
+        $course->toLearn5=$request->input('toLearn5');
+        $course->img=$request->input('image');
+        $course->type=$request->input('type');
         $course->status=true;
         $course->registered = $course->registered;
 

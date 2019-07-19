@@ -39,6 +39,7 @@ Route::post('/panel', 'UserController@getDiscount')->name('user.discount');
 Route::post('accept/elo', 'RegistersController@update')->name('register.accept');
 Route::post('create', 'RegistersController@create')->name('register.create');
 Route::post('/cart', 'RegistersController@destroy')->name('register.delete');
+Route::post('/show', 'RegistersController@destroyAdmin')->name('register.deleteAdmin');
 Route::get('transaction.$transactionID', 'RegistersController@transaction')->name('register.transaction');
 
 //meile

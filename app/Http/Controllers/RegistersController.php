@@ -34,7 +34,7 @@ class RegistersController extends Controller
         $course -> registered = $data->count();
         $course ->save();
 
-        return app('App\Http\Controllers\PagesControler')->index();
+        return app('App\Http\Controllers\PagesControler')->showCart();
 
     }
 
@@ -45,6 +45,7 @@ class RegistersController extends Controller
       $courseID = $register->courseID;
       $course = Course::find($courseID);
       $user -> points = ($user -> points) + ($course ->points);
+      $user->save();
       $register -> status = "zatwierdzony";
       $register->save();
 
@@ -63,6 +64,19 @@ class RegistersController extends Controller
       $user = User::find($userID)->where('status');
       $registers = Registers::all()->where('userID', $userID)->where('status', "w koszyku");
       return view('cart', ['user'=> $user,
+                                  'registers'=> $registers
+                                ]);
+    }
+
+    public function destroyAdmin(Request $request){
+      $register = Registers::find($request->input('id'));
+      if($register!=null){
+        $register -> delete();
+      }
+      $id = $request->input('CourseID');
+      $course = Course::find($id);
+      $registers = Registers::all()->where('courseID', $id);
+      return view('admin.show', ['course'=> $course,
                                   'registers'=> $registers
                                 ]);
     }
@@ -93,6 +107,7 @@ class RegistersController extends Controller
       }
 
       return view('end', ['registers'=> $registersToSend,
-                          'total'=> $total]);
+                          'total'=> $total,
+                          'idTransaction'=> $idTransaction]);
     }
 }

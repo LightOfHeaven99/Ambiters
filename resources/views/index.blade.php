@@ -101,7 +101,7 @@
                     @foreach($courses->all() as $course)
                       <div class="col-md-4 col-sm-6 szkolenia-item">
                         <a class="szkolenia-link">
-                          <img class="img-fluid" src="img/courses/{{$course->img}}" alt="">
+                          <img class="img-fluid" src="img/portfolio/{{$course->img}}" alt="">
                         </a>
                         <div class="szkolenia-caption">
                           <h4>{{$course->title}}</h4>
@@ -262,7 +262,6 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2 class="text-uppercase">{{$course->title}}</h2>
-                  <p class="item-intro text-muted">{{$course->id}}</p>
                   <p>{{$course->description}}</p>
                   <b>Czego się nauczysz?</b>
                   <br><br>
@@ -275,6 +274,12 @@
                     @endif
                     @if($course->toLearn3!=null)
                     <li>{{$course->toLearn3}}</li>
+                    @endif
+                    @if($course->toLearn4!=null)
+                    <li>{{$course->toLearn4}}</li>
+                    @endif
+                    @if($course->toLearn4!=null)
+                    <li>{{$course->toLearn4}}</li>
                     @endif
                   </ul>
                   <br>

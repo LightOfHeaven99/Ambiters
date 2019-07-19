@@ -75,6 +75,9 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <div class="dropdown-text">
                     <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>PROFIL</b></a>
+                    @if (Auth::user()->email=="kajetan.fadrowski@gmail.com")
+                      <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>ADMIN</b></a>
+                    @endif
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
