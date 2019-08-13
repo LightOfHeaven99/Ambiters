@@ -105,6 +105,7 @@
                         </a>
                         <div class="szkolenia-caption">
                           <h4>{{$course->title}}</h4>
+                          <h6>{{$course->subtitle}}</h6>
                           <p class="text-muted">{{$course->day}}<br>{{substr($course->time, 0 , 5)}}</p>
                           <a class="szkolenia-link" data-toggle="modal" href="#course{{$course->id}}">
                           <div class="szkolenia-hover">
@@ -262,6 +263,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2 class="text-uppercase">{{$course->title}}</h2>
+                  <h4 class="text-uppercase">{{$course->subtitle}}</h4>
                   <p>{{$course->description}}</p>
                   <b>Czego się nauczysz?</b>
                   <br><br>

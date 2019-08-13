@@ -31,16 +31,15 @@ class PagesControler extends Controller
     public function panel(){
       $id = Auth::id();
       $user = User::find($id);
+      $courses = Course::all()->where('status', true);
+  
       if($user==null){
-        $courses = Course::all()->where('status', true);
         return view('index')->with('courses',$courses);
       }
       if($user->email != "okragly.rafal@gmail.com"){
-        $courses = Course::all()->where('status', true);
         return view('index')->with('courses',$courses);
       }
       else{
-        $courses = Course::all()->where('status', true);
         return view('admin.panel')->with('courses', $courses);
       }
     }

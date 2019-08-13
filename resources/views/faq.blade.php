@@ -22,7 +22,7 @@
                 </div>
                 <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Ambiters to incijatywa poświęcona szkoleniom, dzięki którym mlodzi ludzie są w stanie szkolić się wedlug swoich potrzeb. </p>
+                      <p>Jesteśmy zespołem młodych osób, pasjonujących się nauką innych. Zdecydowanie wyróżnia Nas determinacja w dążeniu do osiągnięcia sukcesu, zbudowaniu silnej marki a taka jest tylko możliwa gdy Nasi klienci są w 100 % zadowoleni. Pomimo zajęć grupowych każdy jest traktowany indywidualnie. Zrobimy wszystko aby spełnić Wasze oczekiwania!</p>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,8 @@
                 </div>
                 <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
                     <div class="card-body">
-                        <p>W zaleznosci od dlugosci kursu, poziomu zaawansowania oraz ilosci prowadzacych, cena kursów może ulegać znanczym zmianon w stosunku do cen pozostalych inicjatyw.</p>
+                        <p>Każdy kurs dla przedmiotów maturalnych jest w stałej cenie 60 zł za 2,5 godzinne zajęcia.
+Pozostałe wydarzenia, kursy organizowane dodatkowo przez Nasz zespół będą wyceniane indywidualnie a informacja o cenie pojawi się przy kursie.</p>
                     </div>
                 </div>
             </div>
@@ -50,7 +51,7 @@
                 </div>
                 <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
                     <div class="card-body">
-                        <p>W pasku nawigacyjnym strony należy nacisnąć na zaklade "Zarejestruj". Po przekierowanie należy podać swoje imię, nazwsiko, adres e-mail oraz numer kontaktowy. Następine na podany adres e-mail zostanie wyslana wiadomość potwierdzająca rejestrację oraz weryfikacja.</p>
+                        <p>W pasku nawigacyjnym strony należy nacisnąć na zakładkę "Zarejestruj". Po przekierowanie należy podać swoje imię, nazwisko, adres e-mail oraz numer kontaktowy. Następnie na podany adres e-mail zostanie wysłana wiadomość potwierdzająca rejestrację oraz weryfikacja. </p>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@
                 </div>
                 <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Nie ma regularności odnośnie danych szkoleń.</p>
+                        <p>Kursy odbywają się regularnie co weekend w sobotę i niedzielę. Dodatkowe zajęcia mogą mieć indywidualny termin.</p>
                     </div>
                 </div>
             </div>
@@ -72,16 +73,73 @@
                 <div class="card-header" id="faqHeading-5">
                     <div class="mb-0">
                         <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-                            <span class="badge">5</span> Jak można się skontaktować??
+                            <span class="badge">5</span> Jak zapisać się na zajęcia?
                         </h5>
                     </div>
                 </div>
                 <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
                     <div class="card-body">
-                        <p> Zaklada "kontakt".</p>
+                        <p>Po rejestracji kliknij zakładkę ,, kursy’’, znajdziesz tam dostępne kursy z tematem, datą i miejscem a także informacją czego się nauczysz. Kliknij kup teraz, a po przeniesieniu do koszyka i wybraniu opcji ,, zapłać’’ dostaniesz maila z numerem konta, kwotą oraz tytułem przelewu. Po opłaceniu zamówienia w ciągu maksymalnie 2-3 dni Twój udział w kursie zostanie zatwierdzony.</p>
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading-6">
+                    <div class="mb-0">
+                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                            <span class="badge">6</span> Ilu osobowe są grupy?
+                        </h5>
+                    </div>
+                </div>
+                <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Grupy są zwykle do 8 osób. Mogą występować większe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading-7">
+                    <div class="mb-0">
+                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                            <span class="badge">7</span>Ile trwają zajęcia?
+                        </h5>
+                    </div>
+                </div>
+                <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Zajęcia trwają zwykle 2,5 godziny.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading-8">
+                    <div class="mb-0">
+                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8" data-aria-expanded="false" data-aria-controls="faqCollapse-8">
+                            <span class="badge">8</span> Z czego są prowadzone kursy?
+                        </h5>
+                    </div>
+                </div>
+                <div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Kursy prowadzimy głównie z matematyki, natomiast mogą pojawiać się kursy z przedsiębiorczości, fizyki, chemii, angielskiego, geografii oraz informatyki.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading-9">
+                    <div class="mb-0">
+                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-9" data-aria-expanded="false" data-aria-controls="faqCollapse-9">
+                            <span class="badge">9</span> O co chodzi z ankietami?
+                        </h5>
+                    </div>
+                </div>
+                <div id="faqCollapse-9" class="collapse" aria-labelledby="faqHeading-9" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Zaraz po zajęciach możesz wypełnić ankietę oceniającą Twój poziom zadowolenia z kursu. Za każdą prawidłowo wypełnioną ankietę po kursie możesz otrzymać od 10 do 20 punktów. Ankiety znajdziesz w ,,Panel użytkownika’’ ->,,Ankiety’’.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
   </div>

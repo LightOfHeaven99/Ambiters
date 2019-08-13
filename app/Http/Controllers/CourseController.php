@@ -16,6 +16,7 @@ class CourseController extends Controller
       //Contola błędów
       $rules = [
   			'title'=>'required',
+        'subtitle'=>'required',
         'description'=>'required',
         'place'=>'required',
         'slots'=>'required',
@@ -27,6 +28,7 @@ class CourseController extends Controller
 
   		$messeges = [
   			'title.required' => "Pole Nazwa kursu nie moze byc puste.",
+        'subtitle.required' => "Pole Podtytuł kursu nie moze byc puste.",
   			'description.required' => "Pole Opis nie moze byc puste.",
   			'place.required' => "Pole Miejsce kursu nie moze byc puste.",
   			'slots.required' => "Pole Ilość miejsc nie moze byc puste.",
@@ -42,6 +44,7 @@ class CourseController extends Controller
 
         $course = new Course;
         $course->title=$request->input('title');
+        $course->subtitle=$request->input('subtitle');
         $course->description=$request->input('description');
         $course->place=$request->input('place');
         $course->day=$request->input('day');
@@ -72,6 +75,7 @@ class CourseController extends Controller
         $id = $request->input('id');
         $course =Course::find($id);
         $course->title=$request->input('title');
+        $course->subtitle=$request->input('subtitle');
         $course->description=$request->input('description');
         $course->place=$request->input('place');
         $course->day=$request->input('day');

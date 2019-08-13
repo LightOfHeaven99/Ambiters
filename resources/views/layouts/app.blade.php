@@ -149,18 +149,18 @@
                         <p>
                           <i class="fas fa-home mr-3"></i> Wrocław, Leszczyńskiego 4/29</p>
                         <p>
-                          <i class="fas fa-envelope mr-3"></i> ambiters@zenbox.com</p>
+                          <i class="fas fa-envelope mr-3"></i> ambiters.pl@gmail.com</p>
                         <p>
-                          <i class="fas fa-phone mr-3"></i> +48 234567288</p>
+                          <i class="fas fa-phone mr-3"></i> 517 735 923</p>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="social-networks">
                             <h5>Znajdziesz nas na:</h5>
                             <br>
-                            <a href="#" class="twitter"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="google"><i class="fab fa-google"></i></a>
+                            <a href="https://www.instagram.com/ambiters/" class="twitter"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/ambiters" class="facebook"><i class="fab fa-facebook"></i></a>
+
                         </div>
                     </div>
                 </div>

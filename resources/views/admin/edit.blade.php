@@ -13,6 +13,8 @@
   <input type="hidden" name="id" value="{{$course->id}}" >
   <label for="Tytuł"><b>Nazwa kursu:</b></label>
   <input type="text" name="title" value="{{$course->title}}" class="txt"></br>
+  <label for="Podtytuł"><b>Podtytuł kursu:</b></label>
+  <input type="text" name="subtitle" value="{{$course->subtitle}}" class="txt"></br>
   <label for="Opis"><b>Opis:</b></label>
   <input type="text" name="description" value="{{$course->description}}" class="txt"></br>
   <label for="Adres"><b>Miejsce kursu:</b></label>

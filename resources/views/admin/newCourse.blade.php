@@ -12,6 +12,8 @@
     {{ csrf_field() }}
     <label for="Tytuł"><b>Nazwa kursu:</b></label>
     <input type="text" name="title" class="txt"></br>
+    <label for="Podtytuł"><b>Podtytuł kursu:</b></label>
+    <input type="text" name="subtitle" class="txt"></br>
     <label for="Opis"><b>Opis:</b></label>
     <input type="text" name="description" class="txt"></br>
     <label for="Adres"><b>Miejsce kursu:</b></label>
