@@ -172,9 +172,9 @@
               <div class="row">
                 <div class="col-sm-6">
                   <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/pablo.jpg" alt="">
-                    <h4>Paweł Główczewski</h4>
-                    <p class="text-muted">Trener #1</p>
+                    <img class="mx-auto rounded-circle" src="img/team/daniel.jpg" alt="">
+                    <h4>Daniel Tusiński</h4>
+                    <p class="text-muted">Absolwent kierunku finanse i rachunkowość o specjalizacji rynki finansowe. Od wielu lat działam na rynku korepetycji z matematyki z ogromną skutecznością. W wolnych chwilach interesuje się literaturą fantastyczną oraz jestem pasjonatem kultury czeskiej i grywam w szachy.</p>
                     <ul class="list-inline social-buttons">
                       <li class="list-inline-item">
                         <a href="#">
@@ -198,7 +198,8 @@
                   <div class="team-member">
                     <img class="mx-auto rounded-circle" src="img/team/rafal.jpg" alt="">
                     <h4>Rafał Okrągły</h4>
-                    <p class="text-muted">Trener #2</p>
+                    <p class="text-muted">Student Politechniki Wrocławskiej wydziału Mechanicznego. Przygotowaniami z przedmiotów ścisłych zajmuję się od kilku lat, a w ostatnim roku liczba osób, która skorzystała z mojej pomocy przekroczyła 60. Głównie interesuję się dietetyką, sprzedażą i przedsiębiorczością. W życiu stawiam na otwartość i szczerość.
+</p>
                     <ul class="list-inline social-buttons">
                       <li class="list-inline-item">
                         <a href="#">
