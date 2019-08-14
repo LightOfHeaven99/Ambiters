@@ -40,8 +40,13 @@
     <input type="text" name="toLearn5" class="txt"></br>
     <label for="image"><b>Wybierz zdjęcie</b></label></br>
     <select name="image">
-      <option value="matma.jpg"> Matematyka </option>
-      <option value="fizyka.jpg"> Fizyka </option>
+      <option value="matma1.jpg"> Matematyka 1</option>
+      <option value="matma2.jpg"> Matematyka 2</option>
+      <option value="matma3.jpg"> Matematyka 3</option>
+      <option value="matma4.jpg"> Matematyka 4</option>
+      <option value="matma5.jpg"> Matematyka 5</option>
+      <option value="matma6.jpg"> Matematyka 6</option>
+      <option value="matma7.jpg"> Matematyka 7</option>
     </select><br>
     <label for="type"><b>Wybierz typ zajęć</b></label></br>
     <select name="type">
