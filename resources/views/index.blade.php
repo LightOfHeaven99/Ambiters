@@ -76,7 +76,7 @@
                       <h3 class="section-heading text-uppercase">Co zyskujesz dzięki współpracy z nami?</h3>
                       <br>
                       <ul class="list-inlines" style="list-style-type: disc; text-align: left; font-size: 22px;">
-                        <li>2.5h zajęć z przerwą. &#9201;</li>
+                        <li>Do 150 minut zajęć z przerwą. &#9201;</li>
                         <li>Świetna lokalizacja w centrum. &#128270;</li>
                         <li>Grupa na Facebook’u tylko dla klientów. &#128172;</li>
                         <li>Najniższa cena na rynku. &#128202;</li>
@@ -288,6 +288,7 @@
                   <br>
                   <ul class="list-inline">
                     <li><b>Data: {{$course->day}}<br>{{substr($course->time, 0 , 5)}}</b></li>
+                    <li><b>Czas trwania: {{substr($course->timeEnd, 1 , 4)}} godziny</b></li>
                     <li><b>Cena: {{$course->price}}zł</b></li>
                     <li><b>Miejsce: {{$course->place}}</b></li>
                   </ul>

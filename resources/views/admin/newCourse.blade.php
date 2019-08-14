@@ -22,6 +22,8 @@
     <input type="date" name="day" class="datee"></br>
     <label for="Dzień"><b>Godzina:</b></label>
     <input type="time" name="time" class="timee"></br>
+    <label for="Time"><b>Czas Trwania:</b></label>
+    <input type="time" name="timeEnd" class="timee"></br>
     <label for="price"><b>Cena:</b></label>
     <input type="text" name="price" class="txt"></br>
     <label for="points"><b>Punkty:</b></label>

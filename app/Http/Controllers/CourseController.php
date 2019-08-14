@@ -49,6 +49,7 @@ class CourseController extends Controller
         $course->place=$request->input('place');
         $course->day=$request->input('day');
         $course->time=$request->input('time');
+        $course->timeEnd=$request->input('timeEnd');
         $course->price=$request->input('price');
         $course->points=$request->input('points');
         $course->slots=$request->input('slots');
@@ -80,6 +81,7 @@ class CourseController extends Controller
         $course->place=$request->input('place');
         $course->day=$request->input('day');
         $course->time=$request->input('time');
+        $course->timeEnd=$request->input('timeEnd');
         $course->price=$request->input('price');
         $course->points=$request->input('points');
         $course->discount=$request->input('discount');

@@ -106,10 +106,10 @@
                                       <div class="tab-pane fade" id="ankiety" role="tabpanel" aria-labelledby="ankiety-tab">
                                                   <div class="row">
                                                       <div class="col-md-6">
-                                                          <label>Ankieta Ewaluacyjna</label>
+                                                          <label>Feedback</label>
                                                       </div>
                                                       <div class="col-md-6">
-                                                          <p>Ankieta</p>
+                                                          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeFeNGA8dakKpzP8G6HdwDsfrJDmWjB9zYfa-OVYk9GgpAvXA/viewform"><p>Ankieta</p></a>
                                                       </div>
                                                   </div>
                                                   <div class="row">
@@ -117,7 +117,7 @@
                                                           <label>Dołącz do Ambiters</label>
                                                       </div>
                                                       <div class="col-md-6">
-                                                          <p>Ankieta</p>
+                                                          <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSecsASHW-qFofLlUpFLNV6j5-mJrDe3uR9M-hMGQM3DM_dHiw/viewform"><p>Ankieta</p></a>
                                                       </div>
                                                   </div>
                                                 </div>

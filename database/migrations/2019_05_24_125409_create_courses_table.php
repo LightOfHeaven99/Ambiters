@@ -21,6 +21,7 @@ class CreateCoursesTable extends Migration
             $table->String('place');
             $table->date('day');
             $table->time('time');
+            $table->time('timeEnd');
             $table->Float('price');
             $table->Integer('slots');
             $table->Integer('registered');

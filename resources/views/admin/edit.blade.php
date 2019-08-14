@@ -21,8 +21,10 @@
   <input type="text" name="place" value="{{$course->place}}" class="txt"></br>
   <label for="Dzień"><b>Dzień kursu:</b></label>
   <input type="date" name="day" value="{{$course->day}}" class="datee"></br>
-  <label for="Dzień"><b>Godzina:</b></label>
+  <label for="Time"><b>Godzina:</b></label>
   <input type="time" name="time" value="{{$course->time}}" class="timee"></br>
+  <label for="Time"><b>Czas Trwania:</b></label>
+  <input type="time" name="timeEnd" value="{{$course->timeEnd}}" class="timee"></br>
   <label for="price"><b>Cena:</b></label>
   <input type="text" name="price" value="{{$course->price}}" class="txt"></br>
   <label for="points"><b>Punkty:</b></label>
