@@ -280,8 +280,8 @@
                     @if($course->toLearn4!=null)
                     <li>{{$course->toLearn4}}</li>
                     @endif
-                    @if($course->toLearn4!=null)
-                    <li>{{$course->toLearn4}}</li>
+                    @if($course->toLearn5!=null)
+                    <li>{{$course->toLearn5}}</li>
                     @endif
                   </ul>
                   <br>

@@ -17,7 +17,7 @@ class CreateCoursesTable extends Migration
             $table->bigIncrements('id');
             $table->String('title');
             $table->String('subtitle');
-            $table->String('description');
+            $table->String('description', 300);
             $table->String('place');
             $table->date('day');
             $table->time('time');

@@ -139,6 +139,20 @@ Pozostałe wydarzenia, kursy organizowane dodatkowo przez Nasz zespół będą w
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading-10">
+                    <div class="mb-0">
+                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-10" data-aria-expanded="false" data-aria-controls="faqCollapse-10">
+                            <span class="badge">10</span> O co chodzi z tymi punktami?
+                        </h5>
+                    </div>
+                </div>
+                <div id="faqCollapse-10" class="collapse" aria-labelledby="faqHeading-10" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Punkty dostajesz za każdą kupioną i odbytą lekcję jak również za wypełnienie ankiety zaraz po lekcji.  Zwykle 1 punkt = 1 zł. Po zgromadzeniu odpowiedniej ilości punktów możesz wymienić je klikając w ,,Panel użytkownika’’ w zakładce ,,Wymiana punktów’’ na rabaty na kolejne zajęcia.</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>

@@ -32,7 +32,7 @@ class PagesControler extends Controller
       $id = Auth::id();
       $user = User::find($id);
       $courses = Course::all()->where('status', true);
-  
+      return view('admin.panel')->with('courses', $courses);
       if($user==null){
         return view('index')->with('courses',$courses);
       }

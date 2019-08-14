@@ -31,16 +31,48 @@
   <input type="text" name="slots" value="{{$course->slots}}" class="txt"></br>
   <label for="discount"><b>Zniżka:</b></label>
   <input type="text" name="discount" value="{{$course->discount}}" class="txt">
+
+  @if($course->toLearn1==null)
   <label for="toLearn1"><b>Nauczysz się (1):</b></label>
   <input type="text" name="toLearn1" class="txt"></br>
+  @else
+  <label for="toLearn1"><b>Nauczysz się (1):</b></label>
+  <input type="text" name="toLearn1" class="txt" value="{{$course->toLearn1}}"></br>
+  @endif
+
+  @if($course->toLearn2==null)
   <label for="toLearn2"><b>Nauczysz się (2):</b></label>
   <input type="text" name="toLearn2" class="txt"></br>
+  @else
+  <label for="toLearn2"><b>Nauczysz się (2):</b></label>
+  <input type="text" name="toLearn2" class="txt" value="{{$course->toLearn2}}"></br>
+  @endif
+
+  @if($course->toLearn3==null)
   <label for="toLearn3"><b>Nauczysz się (3):</b></label>
   <input type="text" name="toLearn3" class="txt"></br>
+  @else
+  <label for="toLearn3"><b>Nauczysz się (3):</b></label>
+  <input type="text" name="toLearn3" class="txt" value="{{$course->toLearn3}}"></br>
+  @endif
+
+  @if($course->toLearn4==null)
   <label for="toLearn4"><b>Nauczysz się (4):</b></label>
   <input type="text" name="toLearn4" class="txt"></br>
+  @else
+  <label for="toLearn4"><b>Nauczysz się (4):</b></label>
+  <input type="text" name="toLearn4" class="txt" value="{{$course->toLearn4}}"></br>
+  @endif
+
+  @if($course->toLearn5==null)
   <label for="toLearn5"><b>Nauczysz się (5):</b></label>
   <input type="text" name="toLearn5" class="txt"></br>
+  @else
+  <label for="toLearn5"><b>Nauczysz się (5):</b></label>
+  <input type="text" name="toLearn5" class="txt" value="{{$course->toLearn5}}"></br>
+  @endif
+
+
   <label for="image"><b>Wybierz zdjęcie</b></label></br>
   <select name="image">
     <option value="matma.jpg"> Matematyka </option>
