@@ -106,7 +106,7 @@
                                       <div class="tab-pane fade" id="ankiety" role="tabpanel" aria-labelledby="ankiety-tab">
                                                   <div class="row">
                                                       <div class="col-md-6">
-                                                          <label>ANKIETA#1</label>
+                                                          <label>Ankieta Ewaluacyjna</label>
                                                       </div>
                                                       <div class="col-md-6">
                                                           <p>Ankieta</p>
@@ -114,7 +114,7 @@
                                                   </div>
                                                   <div class="row">
                                                       <div class="col-md-6">
-                                                          <label>ANKIETA #2</label>
+                                                          <label>Dołącz do Ambiters</label>
                                                       </div>
                                                       <div class="col-md-6">
                                                           <p>Ankieta</p>
