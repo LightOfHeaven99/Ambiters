@@ -23,6 +23,8 @@ class CourseController extends Controller
         'image'=>'required',
         'points'=>'required',
         'price'=>'required',
+        'timeEnd'=>'required',
+        'tutor'=>'required',
         'image'
   		];
 
@@ -34,7 +36,9 @@ class CourseController extends Controller
   			'slots.required' => "Pole Ilość miejsc nie moze byc puste.",
   			'img.required' => "Musisz dodać zdjęciu do kursu. Zdjęcie, max: 2MB, wymiary: 600x600",
   			'points.required' => "Wybierz ile jest kurs jest wart punktów. Jak ma być zero to napisz 0",
-        'price.required' => "Pole Cena nie może być puste"
+        'price.required' => "Pole Cena nie może być puste",
+        'timeEnd.required' => "Pole Czas trwania nie może być puste",
+        'tutor.required' => "Pole Prowadzący nie może być puste"
 
   		];
 
@@ -42,10 +46,12 @@ class CourseController extends Controller
 
 
 
+
         $course = new Course;
         $course->title=$request->input('title');
         $course->subtitle=$request->input('subtitle');
         $course->description=$request->input('description');
+        $course->tutor=$request->input('tutor');
         $course->place=$request->input('place');
         $course->day=$request->input('day');
         $course->time=$request->input('time');
@@ -73,11 +79,44 @@ class CourseController extends Controller
 
     public function update(Request $request){
 
+      //Contola błędów
+      $rules = [
+  			'title'=>'required',
+        'subtitle'=>'required',
+        'description'=>'required',
+        'place'=>'required',
+        'slots'=>'required',
+        'image'=>'required',
+        'points'=>'required',
+        'price'=>'required',
+        'timeEnd'=>'required',
+        'tutor'=>'required',
+        'image'
+  		];
+
+  		$messeges = [
+  			'title.required' => "Pole Nazwa kursu nie moze byc puste.",
+        'subtitle.required' => "Pole Podtytuł kursu nie moze byc puste.",
+  			'description.required' => "Pole Opis nie moze byc puste.",
+  			'place.required' => "Pole Miejsce kursu nie moze byc puste.",
+  			'slots.required' => "Pole Ilość miejsc nie moze byc puste.",
+  			'img.required' => "Musisz dodać zdjęciu do kursu. Zdjęcie, max: 2MB, wymiary: 600x600",
+  			'points.required' => "Wybierz ile jest kurs jest wart punktów. Jak ma być zero to napisz 0",
+        'price.required' => "Pole Cena nie może być puste",
+        'timeEnd.required' => "Pole Czas trwania nie może być puste",
+        'tutor.required' => "Pole Prowadzący nie może być puste"
+
+  		];
+
+      $this->validate($request, $rules, $messeges);
+
+
         $id = $request->input('id');
         $course =Course::find($id);
         $course->title=$request->input('title');
         $course->subtitle=$request->input('subtitle');
         $course->description=$request->input('description');
+        $course->tutor=$request->input('tutor');
         $course->place=$request->input('place');
         $course->day=$request->input('day');
         $course->time=$request->input('time');

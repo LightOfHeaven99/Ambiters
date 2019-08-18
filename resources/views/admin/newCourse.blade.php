@@ -16,6 +16,8 @@
     <input type="text" name="subtitle" class="txt"></br>
     <label for="Opis"><b>Opis:</b></label>
     <input type="text" name="description" class="txt"></br>
+    <label for="Prowadzący"><b>Prowadzący:</b></label>
+    <input type="text" name="tutor" class="txt"></br>
     <label for="Adres"><b>Miejsce kursu:</b></label>
     <input type="text" name="place" class="txt"></br>
     <label for="Dzień"><b>Dzień kursu:</b></label>
@@ -23,7 +25,7 @@
     <label for="Dzień"><b>Godzina:</b></label>
     <input type="time" name="time" class="timee"></br>
     <label for="Time"><b>Czas Trwania:</b></label>
-    <input type="time" name="timeEnd" class="timee"></br>
+    <input type="text" name="timeEnd" class="txt"></br>
     <label for="price"><b>Cena:</b></label>
     <input type="text" name="price" class="txt"></br>
     <label for="points"><b>Punkty:</b></label>
@@ -54,6 +56,12 @@
     <select name="type">
       <option value="matematyka"> Matematyka </option>
       <option value="fizyka"> Fizyka </option>
+      <option value="angielski"> Język angielski </option>
+      <option value="przedsiebiorczosc"> Przedsiębiorczość </option>
+      <option value="szkolenia zewnetrzne"> Szkolenia zewnętrzne </option>
+      <option value="biologia"> Biologia </option>
+      <option value="chemia"> Chemia </option>
+      <option value="studia"> Studia </option>
     </select>
     <div class="col-sm text-center">
     <button class="btn btn-primary" type="submit">Utwórz Kurs</button>

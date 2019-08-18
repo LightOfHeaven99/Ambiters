@@ -221,7 +221,7 @@
                 </div>
               <div class="row">
                   <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">Szukasz ciekawej pracy? Masz nie małe doświadczenie w nauczaniu w biologi, chemii, przedsiębiorczości i innych przedmiotach ? Aplikuj wypełniając krótką ankietę dostępną <a href="#ankieta">tutaj</a>.</p>
+                    <p class="large text-muted">Szukasz ciekawej pracy? Masz nie małe doświadczenie w nauczaniu w biologi, chemii, przedsiębiorczości i innych przedmiotach ? Aplikuj wypełniając krótką ankietę dostępną <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSecsASHW-qFofLlUpFLNV6j5-mJrDe3uR9M-hMGQM3DM_dHiw/viewform">tutaj</a>.</p>
             </div>
           </div>
         </div>
@@ -288,7 +288,7 @@
                   <br>
                   <ul class="list-inline">
                     <li><b>Data: {{$course->day}}<br>{{substr($course->time, 0 , 5)}}</b></li>
-                    <li><b>Czas trwania: {{substr($course->timeEnd, 1 , 4)}} godziny</b></li>
+                    <li><b>Czas trwania: {{$course->timeEnd}}</b></li>
                     <li><b>Cena: {{$course->price}}zł</b></li>
                     <li><b>Miejsce: {{$course->place}}</b></li>
                   </ul>
