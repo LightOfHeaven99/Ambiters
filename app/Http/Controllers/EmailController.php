@@ -64,7 +64,7 @@ class EmailController extends Controller
 
 
 
-        Mail::to('kajetan.fadrowski@gmail.com')->send(new SendEmail($data, $subject, $file));
+        Mail::to('ambiters.pl@gmail.com')->send(new SendEmail($data, $subject, $file));
 
     }
 

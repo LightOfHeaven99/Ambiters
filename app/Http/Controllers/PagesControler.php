@@ -32,11 +32,10 @@ class PagesControler extends Controller
       $id = Auth::id();
       $user = User::find($id);
       $courses = Course::all()->where('status', true);
-      return view('admin.panel')->with('courses', $courses);
       if($user==null){
         return view('index')->with('courses',$courses);
       }
-      if($user->email != "okragly.rafal@gmail.com"){
+      if($user->email != "okragly.rafal@gmail.com" && $user->email != "kajetan.fadrowski@gmail.com"){
         return view('index')->with('courses',$courses);
       }
       else{
