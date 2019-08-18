@@ -25,6 +25,7 @@ class RegistersController extends Controller
         $register->course= $request->input('CourseName');
         $register->courseID= $request->input('CourseID');
         $register->price= $request->input('price');
+        $register->idTransaction= 0   ;
         $register->status="w koszyku";
         $register->toSend=false;
         $register->save();
@@ -92,30 +93,32 @@ class RegistersController extends Controller
     public function transaction(Request $request){
       $total = $request ->input('total');
       $userID = $request->input('userID');
-      $idTransaction = 3;
       $registers = Registers::all()->where('userID', $userID)->where('status', "w koszyku");
-      $points =0;
+      $idTransaction = 3;
       foreach($registers as $register){
-        $idTransaction =( $idTransaction + $register->courseID);
-        $register -> status = "oczekuje";
-        $register -> toSend = true;
-        $register->save();
+        $idTransaction = $idTransaction + ($register->id);
       }
       $idTransaction = $idTransaction * 6969;
+      $points =0;
+      foreach($registers as $register){
+        $register -> status = "oczekuje";
+        $register -> toSend = true;
+        $register -> idTransaction = $idTransaction;
+        $register->save();
+      }
       $user = User::find($userID);
       $user ->discount =0;
       $user->save();
-      $registersToSend = Registers::all()->where('userID', $userID)->where('toSend', true);
+      $registersToSend = Registers::all()->where('userID', $userID)->where('idTransaction', $idTransaction);
       app('App\Http\Controllers\EmailController')->transactionUserEmail($registersToSend, $user, $total, $idTransaction);
       app('App\Http\Controllers\EmailController')->transactionAdminEmail($registersToSend, $user, $total, $idTransaction);
 
-      foreach($registersToSend as $register){
-        $register -> toSend = false;
-        $register->save();
-      }
+      $data = array(
+        'registers' => $registersToSend,
+        'user' => $user,
+        'total' => $total,
+        'idTransaction' => $idTransaction);
 
-      return view('end', ['registers'=> $registersToSend,
-                          'total'=> $total,
-                          'idTransaction'=> $idTransaction]);
+      return view('end', ['data'=> $data]);
     }
 }
