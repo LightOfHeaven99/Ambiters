@@ -47,5 +47,8 @@ Route::post('sendEmail', 'EmailController@contactEmail')->name('email.contact');
 Route::get('profile', function(){
 
 })->middleware('verified');
+Route::get('/regulamin', function(){
+return view('layouts.regulamin');
+});
 
 Auth::routes(['verify'=> true]);
