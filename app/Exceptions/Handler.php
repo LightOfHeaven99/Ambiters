@@ -57,6 +57,9 @@ class Handler extends ExceptionHandler
               return response()->view('errors.419');
           }
       }
+
+        return response()->view('errors.customError');
+
         return parent::render($request, $exception);
     }
 }
