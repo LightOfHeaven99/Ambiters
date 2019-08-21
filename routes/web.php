@@ -53,5 +53,8 @@ return view('layouts.regulamin');
 Route::get('/419', function(){
 return view('errors.419');
 });
+Route::get('/6969', function(){
+return view('errors.customError');
+});
 
 Auth::routes(['verify'=> true]);
