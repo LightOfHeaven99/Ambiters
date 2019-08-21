@@ -75,10 +75,9 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <div class="dropdown-text">
                     <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>PROFIL</b></a>
-                    @if (Auth::user()->email=="okragly.rafal@gmail.com")
-                      <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>ADMIN</b></a>
+                    @if(Auth::user()->email=="okragly.rafal@gmail.com")
+                      <a class="dropdown-item" href="/admin" style="font-weight:100; "><b>ADMIN</b></a>
                     @endif
-
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
                     </form>
@@ -151,7 +150,7 @@
                             <br>
                             <a href="https://www.instagram.com/ambiters/" class="twitter"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.facebook.com/ambiters" class="facebook"><i class="fab fa-facebook"></i></a>
-                            
+
                         </div>
                     </div>
                 </div>

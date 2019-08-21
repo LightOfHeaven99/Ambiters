@@ -65,7 +65,7 @@
                         <!-- Tu jest reglamin i trzeba podpiąć -->
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Zgadzam się z <a href="/Ambiters/public/regulamin" target="_blank"> regulaminem</a></label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Zgadzam się z <a href="/regulamin" target="_blank"> regulaminem</a></label>
 
                             <div class="col-md-6">
                                 <input name="agree" required type="checkbox">
