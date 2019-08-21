@@ -119,7 +119,7 @@
 
         <br><br><br><br><br>
 
-      <h4>  Strona nie istnieje, wróć do <a href="ambiters.pl">normalności</a> </h4>
+      <h4>  Strona nie istnieje, wróć do <a href="https://ambiters.pl">normalności</a> </h4>
 
         <br><br><br>
 
