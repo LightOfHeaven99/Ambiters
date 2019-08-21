@@ -50,5 +50,8 @@ Route::get('profile', function(){
 Route::get('/regulamin', function(){
 return view('layouts.regulamin');
 });
+Route::get('/419', function(){
+return view('errors.419');
+});
 
 Auth::routes(['verify'=> true]);
