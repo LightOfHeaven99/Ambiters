@@ -361,7 +361,6 @@
                 <li>Otrzymasz maila z danymi do wpłaty.</li>
                 <li>Po wpłacie otrzymasz maila potwierdzającego oraz punkty na konto.</li>
                 <li>Przyjdź na zajęcia w wyznaczonym terminie.</li>
-                <li>Po zajęciach wypełnij ankietę zwrotna za która otrzymasz dodatkowe punkty.</li>
                 <li>Wymieniaj punkty w panelu użytkownika na tańsze lekcje grupowe jak i indywidualne. Enjoy!</li>
               </ol>
               <button class="btn btn-primary" data-dismiss="modal" type="button">
