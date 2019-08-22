@@ -80,6 +80,7 @@
                         <li>Świetna lokalizacja w centrum. &#128270;</li>
                         <li>Grupa na Facebook’u tylko dla klientów. &#128172;</li>
                         <li>Najniższa cena na rynku. &#128202;</li>
+                        <li>Stała cena niezależnie od ilości osób. &#128176;</li>
                         <li>Ambitnych, zmotywowanych korepetytorów w drodze po Twój sukces. &#128161;</li>
                         <li>Bonusy o których dowiesz się po zajęciach! &#11088;</li>
                       </ul>
