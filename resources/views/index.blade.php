@@ -154,7 +154,17 @@
                         @endif
                       </div>
 
-
+                      <br><br>
+                      <div class="">
+                        <div class="col-lg-12 text-center">
+                          <p><font size="4"><b>Nie wiesz jak się zapisać? Kliknij na przycisk poniżej, gdzie krok po kroku tłumaczymy jak zakupić kurs!</b></font></p>
+                          <a class="szkolenia-link" data-toggle="modal" href="#instruction">
+                          <div class="szkolenia-hover">
+                            <div class="szkolenia-hover-content">
+                            <i class="btn btn-primary text-uppercase">INSTRUKCJA</i>
+                          </a>
+                      </div>
+                    </div>
                 </div>
                 <br>
               </div>
@@ -184,7 +194,7 @@
                       </li>
                       <li class="list-inline-item">
                         <a href="#">
-                          <i class="fab fa-google"></i>
+                          <i class="fab fa-youtube"></i>
                         </a>
                       </li>
                       <li class="list-inline-item">
@@ -205,11 +215,6 @@
                       <li class="list-inline-item">
                         <a href="#">
                           <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-google"></i>
                         </a>
                       </li>
                       <li class="list-inline-item">
@@ -321,7 +326,6 @@
                         @endif
                       @else
                         ZAPISANO
-
                     @endif
                   @endguest
                 </div>
@@ -333,6 +337,43 @@
     </div>
   @endforeach
 @endif
+
+<div class="portfolio-modal modal fade" id="instruction" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">Jak zakupić kurs?</h2>
+              <p class="item-intro text-muted">Krótka instrukcja krok po kroku.</p>
+              <ol class="list-inlines2" style="text-align: left; font-size: 22px;">
+                <li>Zarejestruj się, potwierdź e-mail i zaloguj.</li>
+                <li>Przejdź do zakładki kursy</li>
+                <li>Wybierz temat, który Cię interesuje.</li>
+                <li>Kliknij ,,szczegóły” aby dowiedzieć się o dacie, miejscu oraz o tym czego się nauczysz.</li>
+                <li>Kliknij ,,Kup teraz” aby zakupić kurs.</li>
+                <li>Otrzymasz maila z danymi do wpłaty.</li>
+                <li>Po wpłacie otrzymasz maila potwierdzającego oraz punkty na konto.</li>
+                <li>Przyjdź na zajęcia w wyznaczonym terminie.</li>
+                <li>Po zajęciach wypełnij ankietę zwrotna za która otrzymasz dodatkowe punkty.</li>
+                <li>Wymieniaj punkty w panelu użytkownika na tańsze lekcje grupowe jak i indywidualne. Enjoy!</li>
+              </ol>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Zamknij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
