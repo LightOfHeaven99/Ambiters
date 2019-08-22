@@ -357,7 +357,7 @@
                 <li>Przejdź do zakładki kursy</li>
                 <li>Wybierz temat, który Cię interesuje.</li>
                 <li>Kliknij ,,szczegóły” aby dowiedzieć się o dacie, miejscu oraz o tym czego się nauczysz.</li>
-                <li>Kliknij ,,Kup teraz” aby zakupić kurs.</li>
+                <li>Kliknij ,,Kup teraz” aby zakupić kurs.Zostaniesz przeniesiony do koszyka gdzie musisz potwierdzić zakup.</li>
                 <li>Otrzymasz maila z danymi do wpłaty.</li>
                 <li>Po wpłacie otrzymasz maila potwierdzającego oraz punkty na konto.</li>
                 <li>Przyjdź na zajęcia w wyznaczonym terminie.</li>
