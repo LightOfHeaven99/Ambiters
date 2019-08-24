@@ -44,8 +44,19 @@ class PagesControler extends Controller
     }
 
     public function deleted(){
+      
+      $id = Auth::id();
+      $user = User::find($id);
       $courses = Course::all()->where('status', false);
-      return view('admin.panel')->with('courses', $courses);
+      if($user==null){
+        return view('index')->with('courses',$courses);
+      }
+      if($user->email != "okragly.rafal@gmail.com" && $user->email != "kajetan.fadrowski@gmail.com"){
+        return view('index')->with('courses',$courses);
+      }
+      else{
+        return view('admin.panel')->with('courses', $courses);
+      }
     }
 
     public function newCourse(){
