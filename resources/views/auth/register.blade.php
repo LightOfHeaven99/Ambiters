@@ -66,7 +66,7 @@
 
                         <div class="form-group row">
                           <div class="col-md">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Zgadzam się z <a href="/regulamin" target="_blank"> regulaminem</a></label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Zgadzam się z <a href="/regulamin" target="_blank"> regulaminem</a> i <a href="../politykaPrywatnosci.pdf">polityką prywatności</a>
                                 <input name="agree" required type="checkbox">
                             </div>
                         </div>

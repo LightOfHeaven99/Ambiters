@@ -50,6 +50,9 @@ Route::get('profile', function(){
 Route::get('/regulamin', function(){
 return view('layouts.regulamin');
 });
+Route::get('/polityka', function(){
+return view('layouts.politykaPrywatnosci');
+});
 Route::get('/419', function(){
 return view('errors.419');
 });

@@ -139,6 +139,7 @@
                       <p><a href="/contact"><b>Kontakt</b></a></p>
                       <p><a href="/faq"><b>FAQ</b></a></p>
                       <p><a href="../regulamin.pdf"><b>Regulamin</b></a></p>
+                      <p><a href="../politykaPrywatnosci.pdf"><b>Polityka Prywatności</b></a></p>
                     </div>
                   </div>
                     <div class="col-sm">
