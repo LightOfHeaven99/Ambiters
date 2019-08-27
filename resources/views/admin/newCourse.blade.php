@@ -44,13 +44,26 @@
     <input type="text" name="toLearn5" class="txt"></br>
     <label for="image"><b>Wybierz zdjęcie</b></label></br>
     <select name="image">
-      <option value="matma1.jpg"> Matematyka 1</option>
-      <option value="matma2.jpg"> Matematyka 2</option>
-      <option value="matma3.jpg"> Matematyka 3</option>
-      <option value="matma4.jpg"> Matematyka 4</option>
-      <option value="matma5.jpg"> Matematyka 5</option>
-      <option value="matma6.jpg"> Matematyka 6</option>
-      <option value="matma7.jpg"> Matematyka 7</option>
+      <option value="liczbyRzeczywiste.jpg"> Liczby Rzeczywiste</option>
+      <option value="funkcjaKwadratowa.jpg"> Funkcja Kwadratowa</option>
+      <option value="wyrazeniaAlgebraiczne.jpg"> Wyrażenia Algebraiczne</option>
+      <option value="funkcjaLiniowa.jpg"> Funkcja Liniowa</option>
+      <option value="funkcjaWymierna.jpg"> Funkcja Wymierna</option>
+      <option value="ciagi.jpg"> Ciągi</option>
+      <option value="funckjaLog.jpg"> Funkcje Logartymiczne i Wykładowe</option>
+      <option value="Algebra1.jpg"> Algebra 1</option>
+      <option value="Algebra2.jpg"> Algebra 2</option>
+      <option value="Analiza1.jpg"> Analiza 1</option>
+      <option value="Analiza2.jpg"> Analiza 2</option>
+      <option value="Planimetria.jpg"> Planimetria</option>
+      <option value="GeometriaAnalityczna.jpg"> Geometria Analityczna</option>
+      <option value="prawdopodobienstwo.jpg"> Prawdopodobieństwo</option>
+      <option value="sterometria.jpg"> Starometria</option>
+      <option value="trygonometria.jpg"> Trygonometria</option>
+      <option value="wielomiany.jpg"> Wielomiany</option>
+      <option value="Funkcja.jpg"> Funkcja</option>
+      <option value="Statystyka.jpg"> Statystyka</option>
+
     </select><br>
     <label for="type"><b>Wybierz typ zajęć</b></label></br>
     <select name="type">
