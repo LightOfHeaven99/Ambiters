@@ -120,7 +120,7 @@
                             @if($course->registered >= $course->slots )
                               <b>BRAK MIEJSC</b>
                             @else
-                              <a href="{{ route('login') }}"><button class="btn btn-primary" type="button">
+                              <a href="{{ route('register') }}"><button class="btn btn-primary" type="button">
                               <i class="fas fa-shopping-cart"></i>Kup teraz</button></a>
                             @endif
                           @else
@@ -239,7 +239,7 @@
             <div class="col-lg-12 text-center">
             @guest
               <p class="register-text text-uppercase">Dołącz do Ambiters już teraz!</p>
-              <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('ZAREJESTRUJ SIĘ!') }}</b></a>
+              <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('PRZEJDŹ DALEJ!') }}</b></a>
             @else
             <p class="register-text text-uppercase">Dziękujemy za rejestrację!</p>
             @endguest

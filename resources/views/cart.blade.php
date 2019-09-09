@@ -56,7 +56,7 @@
 								</tr>
 							@endforeach
 						@else
-							PUSTO TU TROCHĘ
+							PUSTY KOSZYK
 						@endif
 
 					</tbody>

@@ -19,7 +19,7 @@ Wyślij należności na konto:<br>
 Rafał Okrągły <br>
 Adres: Ulica Ferdynanda Magellana 28/21, 51-505 Wrocław <br>
 Tutył: {{$data['idTransaction']}} <br>
-Numer konta: 78 1140 2004 0000 3402 7804 9748 <br>
+Numer konta: 12 1140 2004 0000 3902 7916 5706 <br>
 Kwota: {{$data['total']}} złotych.<br>
 <br><br>
 Po dokonaniu przelewu Twoje zamówienie zostanie zatwierdzone w przeciągu 2/3 dni roboczych. <br><br>
