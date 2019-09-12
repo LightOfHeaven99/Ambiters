@@ -70,7 +70,7 @@
 							@endif
 							</div>
 						<tr class="visible-xs">
-							<td class="text-center"><strong>Total {{$total}} zł</strong></td>
+							<td class="text-center"><strong>Suma {{$total}} zł</strong></td>
 						</tr>
 						<tr>
 							<!-- <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Kontynuuj Zakupy</a></td> -->
