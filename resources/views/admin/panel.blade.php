@@ -44,6 +44,7 @@
         </div>
         <div class="col-sm text-center">
           <form method="get" action="{{route('form.delete')}}">
+            {{ csrf_field() }}
             <input type="hidden" name="id" value="{{$course->id}}">
             <button class="btn btn-primary" type="submit">USUŃ</button>
           </form>

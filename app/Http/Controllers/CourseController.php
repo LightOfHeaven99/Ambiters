@@ -148,12 +148,11 @@ class CourseController extends Controller
         if($course->status==true){
           $course ->status=false;
           $course->save();
+          return app('App\Http\Controllers\PagesControler')->panel();
         }else{
           $course->delete();
           return app('App\Http\Controllers\PagesControler')->deleted();
         }
       }
-
-      return app('App\Http\Controllers\PagesControler')->panel();
     }
 }
