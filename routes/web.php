@@ -25,6 +25,7 @@ Route::get('/cart', 'PagesControler@showCart');
 Route::get('/deletedCourses', 'PagesControler@deleted');
 Route::get('/contact', 'PagesControler@contact');
 Route::get('/end', 'PagesControler@end');
+Route::get('/about', 'PagesControler@about');
 
 //Działania na kurasach
 Route::post('form', 'CourseController@create')->name('form.create');

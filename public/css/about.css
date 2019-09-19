@@ -1,0 +1,44 @@
+.background{
+  position: fixed;
+  background-image: url('../img/blurr2.jpg');
+  background-repeat: repeat;;
+  width: 100vw;
+  height: 100vh;
+  z-index: -20;
+
+}
+
+.content{
+  margin-top: 70px;
+  color: white;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: 'Playfair Display', 'serif';
+}
+
+.top-title{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  line-height: 1.1em;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  vertical-align: baseline;
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 110px;
+}
+
+.main-content-top{
+  text-align: center;
+  margin-top: 45px;
+}
+
+.main-content{
+  margin-top: 30px;
+}
+
+.points{
+  margin: 30px 0 30px 0;
+}

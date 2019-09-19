@@ -44,7 +44,7 @@ class PagesControler extends Controller
     }
 
     public function deleted(){
-      
+
       $id = Auth::id();
       $user = User::find($id);
       $courses = Course::all()->where('status', false);
@@ -102,6 +102,10 @@ class PagesControler extends Controller
 
     public function end(){
       return view('end');
+    }
+
+    public function about(){
+      return view('about');
     }
 
 }

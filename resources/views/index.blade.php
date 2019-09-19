@@ -302,7 +302,7 @@
                     @if($course->registered >= $course->slots )
                       <b>BRAK MIEJSC</b>
                     @else
-                      <a href="{{ route('login') }}"><button class="btn btn-primary" type="button">
+                      <a href="{{ route('register') }}"><button class="btn btn-primary" type="button">
                       <i class="fas fa-shopping-cart"></i>Kup teraz</button></a>
                     @endif
                   @else
