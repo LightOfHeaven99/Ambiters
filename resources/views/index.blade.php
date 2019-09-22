@@ -181,31 +181,8 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-6">
-                  <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/daniel.jpg" alt="">
-                    <h4>Daniel Tusiński</h4>
-                    <p class="text-muted">Absolwent kierunku finanse i rachunkowość o specjalizacji rynki finansowe. Od wielu lat działam na rynku korepetycji z matematyki z ogromną skutecznością. W wolnych chwilach interesuje się literaturą fantastyczną oraz jestem pasjonatem kultury czeskiej i grywam w szachy.</p>
-                    <ul class="list-inline social-buttons">
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-youtube"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-6">
+                
+                <div class="col-sm-12">
                   <div class="team-member">
                     <img class="mx-auto rounded-circle" src="img/team/rafal.jpg" alt="">
                     <h4>Rafał Okrągły</h4>
