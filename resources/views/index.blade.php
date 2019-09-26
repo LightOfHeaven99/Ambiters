@@ -82,7 +82,7 @@
                         <li>Najniższa cena na rynku. &#128202;</li>
                         <li>Stała cena niezależnie od ilości osób. &#128176;</li>
                         <li>Ambitnych, zmotywowanych korepetytorów w drodze po Twój sukces. &#128161;</li>
-                        <li>Bonusy o których dowiesz się po zajęciach! &#11088;</li>
+                        <li>Program lojalnościowy – 10 zł rabatu za każde wydane 100 zł &#11088;</li>
                       </ul>
                     </div>
                   </div>
@@ -181,7 +181,7 @@
                 </div>
               </div>
               <div class="row">
-                
+
                 <div class="col-sm-12">
                   <div class="team-member">
                     <img class="mx-auto rounded-circle" src="img/team/rafal.jpg" alt="">
@@ -217,6 +217,7 @@
             @guest
               <p class="register-text text-uppercase">Dołącz do Ambiters już teraz!</p>
               <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('PRZEJDŹ DALEJ!') }}</b></a>
+            </br></br>Podaj nam niezbędne dane do zrealizowania płatności. Nie użyjemy Twojego maila do marketingu. Będziesz miał podgląd do kupionych zajęć i za każde wydane 100 zł otrzymasz 10 zł rabatu.
             @else
             <p class="register-text text-uppercase">Dziękujemy za rejestrację!</p>
             @endguest

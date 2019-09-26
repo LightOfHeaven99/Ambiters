@@ -140,7 +140,7 @@
 
                 <div class="end-top">Daj sobie zostać jednym z Ambitersów i wykup pierwszy kurs lub wykład!</br>  </div>
               </div>
-              <a href="https://ambiters.pl">
+              <a href="https://ambiters.pl/#szkolenia">
                 <div id="end-button">
                   <div id="end-button-text">
                     Sprawdź ofertę
@@ -152,10 +152,10 @@
                 <div class="col-xs-12 col-md-12 end-dis">
                   <img src="img/team/rafal.jpg" class="end-img">
                   <div class="end-text">
-                    ,,Absolwent kierunku finanse i rachunkowość o specjalizacji
-                    rynki finansowe. Od wielu lat działam na rynku korepetycji z matematyki
-                    z ogromną skutecznością. W wolnych chwilach interesuje się literaturą fantastyczną
-                    oraz jestem pasjonatem kultury czeskiej i grywam w szachy."
+                    Student Politechniki Wrocławskiej wydziału Mechanicznego.
+                     Przygotowaniami z przedmiotów ścisłych zajmuję się od kilku lat, a
+                      w ostatnim roku liczba osób, która skorzystała z mojej pomocy przekroczyła 60.
+                       Głównie interesuję się dietetyką, sprzedażą i przedsiębiorczością. W życiu stawiam na otwartość i szczerość.
                   </div>
                 </div>
 
