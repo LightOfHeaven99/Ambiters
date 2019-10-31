@@ -85,7 +85,9 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <div class="dropdown-text">
                     <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>PROFIL</b></a>
-
+                    @if(Auth::user()->email=="okragly.rafal@gmail.com")
+                      <a class="dropdown-item" href="/admin" style="font-weight:100; "><b>ADMIN</b></a>
+                    @endif
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
                     </form>
@@ -122,8 +124,6 @@
               </div>
             </div>
           </nav>
-          <!-- Dobra elo, tu jest cały content. Navbar będzie do każdej strony taki sam. Nie będzie trzeba powielać kodu -->
-
 
           @include('layouts.message_error')
           @yield('content')
@@ -138,7 +138,8 @@
                       <h5>O nas</h5>
                       <p><a href="/contact"><b>Kontakt</b></a></p>
                       <p><a href="/faq"><b>FAQ</b></a></p>
-                      <p><a href="#"><b>Regulamin</b></a></p>
+                      <p><a href="../regulamin.pdf"><b>Regulamin</b></a></p>
+                      <p><a href="../politykaPrywatnosci.pdf"><b>Polityka Prywatności</b></a></p>
                     </div>
                   </div>
                     <div class="col-sm">
@@ -147,18 +148,18 @@
                         <p>
                           <i class="fas fa-home mr-3"></i> Wrocław, Leszczyńskiego 4/29</p>
                         <p>
-                          <i class="fas fa-envelope mr-3"></i> ambiters@zenbox.com</p>
+                          <i class="fas fa-envelope mr-3"></i> ambiters.pl@gmail.com</p>
                         <p>
-                          <i class="fas fa-phone mr-3"></i> +48 234567288</p>
+                          <i class="fas fa-phone mr-3"></i> 517 735 923</p>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="social-networks">
                             <h5>Znajdziesz nas na:</h5>
                             <br>
-                            <a href="#" class="twitter"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="google"><i class="fab fa-google"></i></a>
+                            <a href="https://www.instagram.com/ambiters/" class="twitter"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/ambiters" class="facebook"><i class="fab fa-facebook"></i></a>
+
                         </div>
                     </div>
                 </div>

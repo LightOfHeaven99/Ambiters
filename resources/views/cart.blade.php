@@ -31,7 +31,7 @@
 								<tr>
 									<td data-th="Product">
 										<div class="row">
-											<div class="col-sm-2 hidden-xs"><img src="img/courses/{{$course->img}}" alt="..." class="img-responsive"/></div>
+											<div class="col-sm-2 hidden-xs"><img src="img/portfolio/{{$course->img}}" alt="..." class="img-responsive"/></div>
 											<div class="col-sm-10">
 												<h4 class="nomargin">{{$register->course}}</h4>
 												<p>{{$course->description}}</p>
@@ -56,7 +56,7 @@
 								</tr>
 							@endforeach
 						@else
-							PUSTO TU TROCHĘ
+							PUSTY KOSZYK
 						@endif
 
 					</tbody>
@@ -70,7 +70,7 @@
 							@endif
 							</div>
 						<tr class="visible-xs">
-							<td class="text-center"><strong>Total {{$total}} zł</strong></td>
+							<td class="text-center"><strong>Suma {{$total}} zł</strong></td>
 						</tr>
 						<tr>
 							<!-- <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Kontynuuj Zakupy</a></td> -->

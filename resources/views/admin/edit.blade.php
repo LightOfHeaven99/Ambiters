@@ -13,14 +13,20 @@
   <input type="hidden" name="id" value="{{$course->id}}" >
   <label for="Tytuł"><b>Nazwa kursu:</b></label>
   <input type="text" name="title" value="{{$course->title}}" class="txt"></br>
+  <label for="Podtytuł"><b>Podtytuł kursu:</b></label>
+  <input type="text" name="subtitle" value="{{$course->subtitle}}" class="txt"></br>
   <label for="Opis"><b>Opis:</b></label>
   <input type="text" name="description" value="{{$course->description}}" class="txt"></br>
+  <label for="Prowadzący"><b>Prowadzący:</b></label>
+  <input type="text" name="tutor" value="{{$course->tutor}}" class="txt"></br>
   <label for="Adres"><b>Miejsce kursu:</b></label>
   <input type="text" name="place" value="{{$course->place}}" class="txt"></br>
   <label for="Dzień"><b>Dzień kursu:</b></label>
   <input type="date" name="day" value="{{$course->day}}" class="datee"></br>
-  <label for="Dzień"><b>Godzina:</b></label>
+  <label for="Time"><b>Godzina:</b></label>
   <input type="time" name="time" value="{{$course->time}}" class="timee"></br>
+  <label for="Time"><b>Czas Trwania:</b></label>
+  <input type="text" name="timeEnd" value="{{$course->timeEnd}}" class="timee"></br>
   <label for="price"><b>Cena:</b></label>
   <input type="text" name="price" value="{{$course->price}}" class="txt"></br>
   <label for="points"><b>Punkty:</b></label>
@@ -29,12 +35,82 @@
   <input type="text" name="slots" value="{{$course->slots}}" class="txt"></br>
   <label for="discount"><b>Zniżka:</b></label>
   <input type="text" name="discount" value="{{$course->discount}}" class="txt">
+
+  @if($course->toLearn1==null)
   <label for="toLearn1"><b>Nauczysz się (1):</b></label>
   <input type="text" name="toLearn1" class="txt"></br>
+  @else
+  <label for="toLearn1"><b>Nauczysz się (1):</b></label>
+  <input type="text" name="toLearn1" class="txt" value="{{$course->toLearn1}}"></br>
+  @endif
+
+  @if($course->toLearn2==null)
   <label for="toLearn2"><b>Nauczysz się (2):</b></label>
   <input type="text" name="toLearn2" class="txt"></br>
+  @else
+  <label for="toLearn2"><b>Nauczysz się (2):</b></label>
+  <input type="text" name="toLearn2" class="txt" value="{{$course->toLearn2}}"></br>
+  @endif
+
+  @if($course->toLearn3==null)
   <label for="toLearn3"><b>Nauczysz się (3):</b></label>
   <input type="text" name="toLearn3" class="txt"></br>
+  @else
+  <label for="toLearn3"><b>Nauczysz się (3):</b></label>
+  <input type="text" name="toLearn3" class="txt" value="{{$course->toLearn3}}"></br>
+  @endif
+
+  @if($course->toLearn4==null)
+  <label for="toLearn4"><b>Nauczysz się (4):</b></label>
+  <input type="text" name="toLearn4" class="txt"></br>
+  @else
+  <label for="toLearn4"><b>Nauczysz się (4):</b></label>
+  <input type="text" name="toLearn4" class="txt" value="{{$course->toLearn4}}"></br>
+  @endif
+
+  @if($course->toLearn5==null)
+  <label for="toLearn5"><b>Nauczysz się (5):</b></label>
+  <input type="text" name="toLearn5" class="txt"></br>
+  @else
+  <label for="toLearn5"><b>Nauczysz się (5):</b></label>
+  <input type="text" name="toLearn5" class="txt" value="{{$course->toLearn5}}"></br>
+  @endif
+
+
+  <label for="image"><b>Wybierz zdjęcie</b></label></br>
+  <select name="image">
+    <option value="liczbyRzeczywiste.jpg"> Liczby Rzeczywiste</option>
+    <option value="funkcjaKwadratowa.jpg"> Funkcja Kwadratowa</option>
+    <option value="wyrazeniaAlgebraiczne.jpg"> Wyrażenia Algebraiczne</option>
+    <option value="funkcjaLiniowa.jpg"> Funkcja Liniowa</option>
+    <option value="funkcjaWymierna.jpg"> Funkcja Wymierna</option>
+    <option value="ciagi.jpg"> Ciągi</option>
+    <option value="funckjaLog.jpg"> Funkcje Logartymiczne i Wykładowe</option>
+    <option value="Algebra1.jpg"> Algebra 1</option>
+    <option value="Algebra2.jpg"> Algebra 2</option>
+    <option value="Analiza1.jpg"> Analiza 1</option>
+    <option value="Analiza2.jpg"> Analiza 2</option>
+    <option value="Planimetria.jpg"> Planimetria</option>
+    <option value="GeometriaAnalityczna.jpg"> Geometria Analityczna</option>
+    <option value="prawdopodobienstwo.jpg"> Prawdopodobieństwo</option>
+    <option value="sterometria.jpg"> Starometria</option>
+    <option value="trygonometria.jpg"> Trygonometria</option>
+    <option value="wielomiany.jpg"> Wielomiany</option>
+    <option value="Funkcja.jpg"> Funkcja</option>
+    <option value="Statystyka.jpg"> Statystyka</option>
+
+  </select>
+  <label for="type"><b>Wybierz typ zajęć</b></label></br>
+  <select name="type">
+    <option value="matematyka"> Matematyka </option>
+    <option value="fizyka"> Fizyka </option>
+    <option value="angielski"> Język angielski </option>
+    <option value="przedsiebiorczosc"> Przedsiębiorczość </option>
+    <option value="szkolenia zewnetrzne"> Szkolenia zewnętrzne </option>
+    <option value="biologia"> Biologia </option>
+    <option value="chemia"> Chemia </option>
+    <option value="studia"> Studia </option>
+  </select>
   <div class="col-sm text-center">
   <button class="btn btn-primary" type="submit">Zaktualizuj </button>
 </div>

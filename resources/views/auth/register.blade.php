@@ -62,10 +62,20 @@
                             </div>
                         </div>
 
+                        <!-- Tu jest reglamin i trzeba podpiąć -->
+
+                        <div class="form-group row">
+                          <div class="col-md">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Zgadzam się z <a href="/regulamin" target="_blank"> regulaminem</a> i <a href="../politykaPrywatnosci.pdf">polityką prywatności</a>
+                                <input name="agree" required type="checkbox">
+                            </div>
+                        </div>
+
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary text-center">
-                                    {{ __('Zarejestruj się') }}
+                                    {{ __('Dołącz') }}
                                 </button>
                             </div>
                         </div>

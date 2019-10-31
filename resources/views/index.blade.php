@@ -76,12 +76,13 @@
                       <h3 class="section-heading text-uppercase">Co zyskujesz dzięki współpracy z nami?</h3>
                       <br>
                       <ul class="list-inlines" style="list-style-type: disc; text-align: left; font-size: 22px;">
-                        <li>2.5h zajęć z przerwą. &#9201;</li>
+                        <li>Do 150 minut zajęć z przerwą. &#9201;</li>
                         <li>Świetna lokalizacja w centrum. &#128270;</li>
                         <li>Grupa na Facebook’u tylko dla klientów. &#128172;</li>
                         <li>Najniższa cena na rynku. &#128202;</li>
+                        <li>Stała cena niezależnie od ilości osób. &#128176;</li>
                         <li>Ambitnych, zmotywowanych korepetytorów w drodze po Twój sukces. &#128161;</li>
-                        <li>Bonusy o których dowiesz się po zajęciach! &#11088;</li>
+                        <li>Program lojalnościowy – 10 zł rabatu za każde wydane 100 zł &#11088;</li>
                       </ul>
                     </div>
                   </div>
@@ -101,11 +102,12 @@
                     @foreach($courses->all() as $course)
                       <div class="col-md-4 col-sm-6 szkolenia-item">
                         <a class="szkolenia-link">
-                          <img class="img-fluid" src="img/courses/{{$course->img}}" alt="">
+                          <img class="img-fluid" src="img/portfolio/{{$course->img}}" alt="">
                         </a>
                         <div class="szkolenia-caption">
                           <h4>{{$course->title}}</h4>
-                          <p class="text-muted">{{$course->day}}<br>{{$course->time}}</p>
+                          <h6>{{$course->subtitle}}</h6>
+                          <p class="text-muted">{{$course->day}}<br>{{substr($course->time, 0 , 5)}}</p>
                           <a class="szkolenia-link" data-toggle="modal" href="#course{{$course->id}}">
                           <div class="szkolenia-hover">
                             <div class="szkolenia-hover-content">
@@ -118,7 +120,7 @@
                             @if($course->registered >= $course->slots )
                               <b>BRAK MIEJSC</b>
                             @else
-                              <a href="{{ route('login') }}"><button class="btn btn-primary" type="button">
+                              <a href="{{ route('register') }}"><button class="btn btn-primary" type="button">
                               <i class="fas fa-shopping-cart"></i>Kup teraz</button></a>
                             @endif
                           @else
@@ -152,7 +154,17 @@
                         @endif
                       </div>
 
-
+                      <br><br>
+                      <div class="">
+                        <div class="col-lg-12 text-center">
+                          <p><font size="4"><b>Nie wiesz jak się zapisać? Kliknij na przycisk poniżej, gdzie krok po kroku tłumaczymy jak zakupić kurs!</b></font></p>
+                          <a class="szkolenia-link" data-toggle="modal" href="#instruction">
+                          <div class="szkolenia-hover">
+                            <div class="szkolenia-hover-content">
+                            <i class="btn btn-primary text-uppercase">INSTRUKCJA</i>
+                          </a>
+                      </div>
+                    </div>
                 </div>
                 <br>
               </div>
@@ -169,44 +181,17 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-6">
-                  <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/pablo.jpg" alt="">
-                    <h4>Paweł Główczewski</h4>
-                    <p class="text-muted">Trener #1</p>
-                    <ul class="list-inline social-buttons">
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-google"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-6">
+
+                <div class="col-sm-12">
                   <div class="team-member">
                     <img class="mx-auto rounded-circle" src="img/team/rafal.jpg" alt="">
                     <h4>Rafał Okrągły</h4>
-                    <p class="text-muted">Trener #2</p>
+                    <p class="text-muted">Student Politechniki Wrocławskiej wydziału Mechanicznego. Przygotowaniami z przedmiotów ścisłych zajmuję się od kilku lat, a w ostatnim roku liczba osób, która skorzystała z mojej pomocy przekroczyła 60. Głównie interesuję się dietetyką, sprzedażą i przedsiębiorczością. W życiu stawiam na otwartość i szczerość.
+</p>
                     <ul class="list-inline social-buttons">
                       <li class="list-inline-item">
                         <a href="#">
                           <i class="fab fa-facebook"></i>
-                        </a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="#">
-                          <i class="fab fa-google"></i>
                         </a>
                       </li>
                       <li class="list-inline-item">
@@ -219,7 +204,7 @@
                 </div>
               <div class="row">
                   <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">Szukasz ciekawej pracy? Masz nie małe doświadczenie w nauczaniu w biologi, chemii, przedsiębiorczości i innych przedmiotach ? Aplikuj wypełniając krótką ankietę dostępną <a href="#ankieta">tutaj</a>.</p>
+                    <p class="large text-muted">Szukasz ciekawej pracy? Masz nie małe doświadczenie w nauczaniu w biologi, chemii, przedsiębiorczości i innych przedmiotach ? Aplikuj wypełniając krótką ankietę dostępną <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSecsASHW-qFofLlUpFLNV6j5-mJrDe3uR9M-hMGQM3DM_dHiw/viewform">tutaj</a>.</p>
             </div>
           </div>
         </div>
@@ -231,7 +216,8 @@
             <div class="col-lg-12 text-center">
             @guest
               <p class="register-text text-uppercase">Dołącz do Ambiters już teraz!</p>
-              <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('ZAREJESTRUJ SIĘ!') }}</b></a>
+              <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('PRZEJDŹ DALEJ!') }}</b></a>
+            </br></br>Podaj nam niezbędne dane do zrealizowania płatności. Nie użyjemy Twojego maila do marketingu. Będziesz miał podgląd do kupionych zajęć i za każde wydane 100 zł otrzymasz 10 zł rabatu.
             @else
             <p class="register-text text-uppercase">Dziękujemy za rejestrację!</p>
             @endguest
@@ -262,7 +248,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2 class="text-uppercase">{{$course->title}}</h2>
-                  <p class="item-intro text-muted">{{$course->id}}</p>
+                  <h4 class="text-uppercase">{{$course->subtitle}}</h4>
                   <p>{{$course->description}}</p>
                   <b>Czego się nauczysz?</b>
                   <br><br>
@@ -276,10 +262,17 @@
                     @if($course->toLearn3!=null)
                     <li>{{$course->toLearn3}}</li>
                     @endif
+                    @if($course->toLearn4!=null)
+                    <li>{{$course->toLearn4}}</li>
+                    @endif
+                    @if($course->toLearn5!=null)
+                    <li>{{$course->toLearn5}}</li>
+                    @endif
                   </ul>
                   <br>
                   <ul class="list-inline">
-                    <li><b>Data: {{$course->day}}<br>{{$course->time}}</b></li>
+                    <li><b>Data: {{$course->day}}<br>{{substr($course->time, 0 , 5)}}</b></li>
+                    <li><b>Czas trwania: {{$course->timeEnd}}</b></li>
                     <li><b>Cena: {{$course->price}}zł</b></li>
                     <li><b>Miejsce: {{$course->place}}</b></li>
                   </ul>
@@ -287,7 +280,7 @@
                     @if($course->registered >= $course->slots )
                       <b>BRAK MIEJSC</b>
                     @else
-                      <a href="{{ route('login') }}"><button class="btn btn-primary" type="button">
+                      <a href="{{ route('register') }}"><button class="btn btn-primary" type="button">
                       <i class="fas fa-shopping-cart"></i>Kup teraz</button></a>
                     @endif
                   @else
@@ -311,7 +304,6 @@
                         @endif
                       @else
                         ZAPISANO
-
                     @endif
                   @endguest
                 </div>
@@ -323,6 +315,42 @@
     </div>
   @endforeach
 @endif
+
+<div class="portfolio-modal modal fade" id="instruction" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <h2 class="text-uppercase">Jak zakupić kurs?</h2>
+              <p class="item-intro text-muted">Krótka instrukcja krok po kroku.</p>
+              <ol class="list-inlines2" style="text-align: left; font-size: 22px;">
+                <li>Zarejestruj się, potwierdź e-mail i zaloguj.</li>
+                <li>Przejdź do zakładki kursy</li>
+                <li>Wybierz temat, który Cię interesuje.</li>
+                <li>Kliknij ,,szczegóły” aby dowiedzieć się o dacie, miejscu oraz o tym czego się nauczysz.</li>
+                <li>Kliknij ,,Kup teraz” aby zakupić kurs. Zostaniesz przeniesiony do koszyka gdzie musisz potwierdzić zakup.</li>
+                <li>Otrzymasz maila z danymi do wpłaty.</li>
+                <li>Po wpłacie otrzymasz maila potwierdzającego oraz punkty na konto.</li>
+                <li>Przyjdź na zajęcia w wyznaczonym terminie.</li>
+                <li>Wymieniaj punkty w panelu użytkownika na tańsze lekcje grupowe jak i indywidualne. Enjoy!</li>
+              </ol>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Zamknij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

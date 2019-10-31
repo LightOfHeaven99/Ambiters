@@ -75,9 +75,10 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <div class="dropdown-text">
                     <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>PROFIL</b></a>
-                    @if(Auth::user()->email=="okragly.rafal@gmail.com")
-                      <a class="dropdown-item" href="/admin" style="font-weight:100; "><b>ADMIN</b></a>
+                    @if (Auth::user()->email=="okragly.rafal@gmail.com")
+                      <a class="dropdown-item" href="/panel" style="font-weight:100; "><b>ADMIN</b></a>
                     @endif
+
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
                     </form>
@@ -116,10 +117,11 @@
           <!-- Dobra elo, tu jest cały content. Navbar będzie do każdej strony taki sam. Nie będzie trzeba powielać kodu -->
 
 
+        <br><br><br><br><br>
 
-        @include('layouts.message_error')
-        @yield('content')
+      <h4>  Strona nie istnieje, wróć do <a href="https://ambiters.pl">normalności</a> </h4>
 
+        <br><br><br>
 
         <!-- Footer -->
         <footer id="myFooter">
@@ -130,8 +132,7 @@
                       <h5>O nas</h5>
                       <p><a href="/contact"><b>Kontakt</b></a></p>
                       <p><a href="/faq"><b>FAQ</b></a></p>
-                      <p><a href="../regulamin.pdf"><b>Regulamin</b></a></p>
-                      <p><a href="../politykaPrywatnosci.pdf"><b>Polityka Prywatności</b></a></p>
+                      <p><a href="#"><b>Regulamin</b></a></p>
                     </div>
                   </div>
                     <div class="col-sm">

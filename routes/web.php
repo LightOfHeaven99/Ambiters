@@ -25,6 +25,7 @@ Route::get('/cart', 'PagesControler@showCart');
 Route::get('/deletedCourses', 'PagesControler@deleted');
 Route::get('/contact', 'PagesControler@contact');
 Route::get('/end', 'PagesControler@end');
+Route::get('/about', 'PagesControler@about');
 
 //Działania na kurasach
 Route::post('form', 'CourseController@create')->name('form.create');
@@ -39,6 +40,7 @@ Route::post('/panel', 'UserController@getDiscount')->name('user.discount');
 Route::post('accept/elo', 'RegistersController@update')->name('register.accept');
 Route::post('create', 'RegistersController@create')->name('register.create');
 Route::post('/cart', 'RegistersController@destroy')->name('register.delete');
+Route::post('/show', 'RegistersController@destroyAdmin')->name('register.deleteAdmin');
 Route::get('transaction.$transactionID', 'RegistersController@transaction')->name('register.transaction');
 
 //meile
@@ -46,5 +48,17 @@ Route::post('sendEmail', 'EmailController@contactEmail')->name('email.contact');
 Route::get('profile', function(){
 
 })->middleware('verified');
+Route::get('/regulamin', function(){
+return view('layouts.regulamin');
+});
+Route::get('/polityka', function(){
+return view('layouts.politykaPrywatnosci');
+});
+Route::get('/419', function(){
+return view('errors.419');
+});
+Route::get('/6969', function(){
+return view('errors.customError');
+});
 
 Auth::routes(['verify'=> true]);
