@@ -24,7 +24,7 @@ class EmailController extends Controller
        $file = 'emails.contact';
        $sukces='Pomyślnie wysłano email do zespołu Ambiters';
 
-        Mail::to('kfadrowski@gmail.com')->send(new SendEmail($data, $subject, $file));
+        Mail::to('ambiters.pl@gmail.com')->send(new SendEmail($data, $subject, $file));
         return back()->with('succes', $sukces);
 
     }
@@ -64,7 +64,7 @@ class EmailController extends Controller
 
 
 
-        Mail::to('kfadrowski@gmail.com')->send(new SendEmail($data, $subject, $file));
+        Mail::to('ambiters.pl@gmail.com')->send(new SendEmail($data, $subject, $file));
 
     }
 

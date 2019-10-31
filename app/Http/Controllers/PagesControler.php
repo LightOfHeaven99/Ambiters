@@ -31,25 +31,32 @@ class PagesControler extends Controller
     public function panel(){
       $id = Auth::id();
       $user = User::find($id);
+      $courses = Course::all()->where('status', true);
       if($user==null){
-        $courses = Course::all()->where('status', true);
         return view('index')->with('courses',$courses);
       }
-      if($user->email != "kajetan.fadrowski@gmail.com"){
-        $courses = Course::all()->where('status', true);
-        return view('admin.panel')->with('courses', $courses);
-        $courses = Course::all()->where('status', true);
+      if($user->email != "okragly.rafal@gmail.com" && $user->email != "kajetan.fadrowski@gmail.com"){
         return view('index')->with('courses',$courses);
       }
       else{
-        $courses = Course::all()->where('status', true);
         return view('admin.panel')->with('courses', $courses);
       }
     }
 
     public function deleted(){
+
+      $id = Auth::id();
+      $user = User::find($id);
       $courses = Course::all()->where('status', false);
-      return view('admin.panel')->with('courses', $courses);
+      if($user==null){
+        return view('index')->with('courses',$courses);
+      }
+      if($user->email != "okragly.rafal@gmail.com" && $user->email != "kajetan.fadrowski@gmail.com"){
+        return view('index')->with('courses',$courses);
+      }
+      else{
+        return view('admin.panel')->with('courses', $courses);
+      }
     }
 
     public function newCourse(){
@@ -95,6 +102,10 @@ class PagesControler extends Controller
 
     public function end(){
       return view('end');
+    }
+
+    public function about(){
+      return view('about');
     }
 
 }

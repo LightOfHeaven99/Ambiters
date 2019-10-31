@@ -428,6 +428,11 @@ ul.list-inlines {
   margin-bottom: 30px;
 }
 
+ol.list-inlines2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .szkolenia-modal .close-modal {
   position: absolute;
   top: 25px;

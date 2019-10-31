@@ -16,23 +16,29 @@ class CourseController extends Controller
       //Contola błędów
       $rules = [
   			'title'=>'required',
+        'subtitle'=>'required',
         'description'=>'required',
         'place'=>'required',
         'slots'=>'required',
         'image'=>'required',
         'points'=>'required',
         'price'=>'required',
+        'timeEnd'=>'required',
+        'tutor'=>'required',
         'image'
   		];
 
   		$messeges = [
   			'title.required' => "Pole Nazwa kursu nie moze byc puste.",
+        'subtitle.required' => "Pole Podtytuł kursu nie moze byc puste.",
   			'description.required' => "Pole Opis nie moze byc puste.",
   			'place.required' => "Pole Miejsce kursu nie moze byc puste.",
   			'slots.required' => "Pole Ilość miejsc nie moze byc puste.",
   			'img.required' => "Musisz dodać zdjęciu do kursu. Zdjęcie, max: 2MB, wymiary: 600x600",
   			'points.required' => "Wybierz ile jest kurs jest wart punktów. Jak ma być zero to napisz 0",
-        'price.required' => "Pole Cena nie może być puste"
+        'price.required' => "Pole Cena nie może być puste",
+        'timeEnd.required' => "Pole Czas trwania nie może być puste",
+        'tutor.required' => "Pole Prowadzący nie może być puste"
 
   		];
 
@@ -40,12 +46,16 @@ class CourseController extends Controller
 
 
 
+
         $course = new Course;
         $course->title=$request->input('title');
+        $course->subtitle=$request->input('subtitle');
         $course->description=$request->input('description');
+        $course->tutor=$request->input('tutor');
         $course->place=$request->input('place');
         $course->day=$request->input('day');
         $course->time=$request->input('time');
+        $course->timeEnd=$request->input('timeEnd');
         $course->price=$request->input('price');
         $course->points=$request->input('points');
         $course->slots=$request->input('slots');
@@ -53,17 +63,12 @@ class CourseController extends Controller
         $course->toLearn1=$request->input('toLearn1');
         $course->toLearn2=$request->input('toLearn2');
         $course->toLearn3=$request->input('toLearn3');
+        $course->toLearn4=$request->input('toLearn4');
+        $course->toLearn5=$request->input('toLearn5');
         $course->registered =0;
         $course->discount=0;
-
-
-
-        $image = $request->file('image');
-        $imageName = $request->input('title') . '.' . $image->getClientOriginalExtension();
-        $course->img=$imageName;
-        $destinationPath = public_path('/img/courses/');
-        Image::make($image)->fit('400', '300')->encode('jpg', 80)->save( $destinationPath . $imageName);
-
+        $course->img=$request->input('image');
+        $course->type=$request->input('type');
         $course->save();
 
         return app('App\Http\Controllers\PagesControler')->panel();
@@ -74,13 +79,48 @@ class CourseController extends Controller
 
     public function update(Request $request){
 
+      //Contola błędów
+      $rules = [
+  			'title'=>'required',
+        'subtitle'=>'required',
+        'description'=>'required',
+        'place'=>'required',
+        'slots'=>'required',
+        'image'=>'required',
+        'points'=>'required',
+        'price'=>'required',
+        'timeEnd'=>'required',
+        'tutor'=>'required',
+        'image'
+  		];
+
+  		$messeges = [
+  			'title.required' => "Pole Nazwa kursu nie moze byc puste.",
+        'subtitle.required' => "Pole Podtytuł kursu nie moze byc puste.",
+  			'description.required' => "Pole Opis nie moze byc puste.",
+  			'place.required' => "Pole Miejsce kursu nie moze byc puste.",
+  			'slots.required' => "Pole Ilość miejsc nie moze byc puste.",
+  			'img.required' => "Musisz dodać zdjęciu do kursu. Zdjęcie, max: 2MB, wymiary: 600x600",
+  			'points.required' => "Wybierz ile jest kurs jest wart punktów. Jak ma być zero to napisz 0",
+        'price.required' => "Pole Cena nie może być puste",
+        'timeEnd.required' => "Pole Czas trwania nie może być puste",
+        'tutor.required' => "Pole Prowadzący nie może być puste"
+
+  		];
+
+      $this->validate($request, $rules, $messeges);
+
+
         $id = $request->input('id');
         $course =Course::find($id);
         $course->title=$request->input('title');
+        $course->subtitle=$request->input('subtitle');
         $course->description=$request->input('description');
+        $course->tutor=$request->input('tutor');
         $course->place=$request->input('place');
         $course->day=$request->input('day');
         $course->time=$request->input('time');
+        $course->timeEnd=$request->input('timeEnd');
         $course->price=$request->input('price');
         $course->points=$request->input('points');
         $course->discount=$request->input('discount');
@@ -88,6 +128,10 @@ class CourseController extends Controller
         $course->toLearn1=$request->input('toLearn1');
         $course->toLearn2=$request->input('toLearn2');
         $course->toLearn3=$request->input('toLearn3');
+        $course->toLearn4=$request->input('toLearn4');
+        $course->toLearn5=$request->input('toLearn5');
+        $course->img=$request->input('image');
+        $course->type=$request->input('type');
         $course->status=true;
         $course->registered = $course->registered;
 
@@ -104,12 +148,11 @@ class CourseController extends Controller
         if($course->status==true){
           $course ->status=false;
           $course->save();
+          return app('App\Http\Controllers\PagesControler')->panel();
         }else{
           $course->delete();
           return app('App\Http\Controllers\PagesControler')->deleted();
         }
       }
-
-      return app('App\Http\Controllers\PagesControler')->panel();
     }
 }

@@ -22,6 +22,7 @@ class CreateRegistersTable extends Migration
             $table->Integer('price');
             $table->String('status');
             $table->Boolean('toSend');
+            $table->Integer('idTransaction');
 
             $table->timestamps();
         });
