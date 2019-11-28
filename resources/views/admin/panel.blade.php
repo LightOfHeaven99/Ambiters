@@ -26,7 +26,7 @@
          </div>
         </div>
       </div>
-              <div class="admin-options">
+      <div class="admin-options">
           <div class="row">
             <div class="col-sm text-center">
           <form method="get" action="{{route('form.edit', [$course->id])}}">

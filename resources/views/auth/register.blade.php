@@ -6,8 +6,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center text-uppercase"><b>{{ __('Rejestracja') }}</b></div>
+                <div class="card-header text-center text-uppercase"><b>{{ __('Przejdź dalej') }}</b></div>
 
+                <div style="padding: 10px 10px 10px 10px; font-size: 0.8rem; text-align: center;">
+                  Podaj nam niezbędne dane do zrealizowania płatności. Nie użyjemy Twojego maila do marketingu. Będziesz miał podgląd do kupionych zajęć i za każde wydane 100 zł otrzymasz 10 zł rabatu.
+                </div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -69,11 +72,12 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right">Zgadzam się z <a href="/regulamin" target="_blank"> regulaminem</a> i <a href="../politykaPrywatnosci.pdf">polityką prywatności</a>
                                 <input name="agree" required type="checkbox">
                             </div>
+
                         </div>
 
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-6 offset-md-5">
                                 <button type="submit" class="btn btn-primary text-center">
                                     {{ __('Dołącz') }}
                                 </button>

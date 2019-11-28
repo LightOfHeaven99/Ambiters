@@ -217,7 +217,7 @@
             @guest
               <p class="register-text text-uppercase">Dołącz do Ambiters już teraz!</p>
               <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ route('register') }}"><b>{{ __('PRZEJDŹ DALEJ!') }}</b></a>
-            </br></br>Podaj nam niezbędne dane do zrealizowania płatności. Nie użyjemy Twojego maila do marketingu. Będziesz miał podgląd do kupionych zajęć i za każde wydane 100 zł otrzymasz 10 zł rabatu.
+            
             @else
             <p class="register-text text-uppercase">Dziękujemy za rejestrację!</p>
             @endguest
